@@ -1,6 +1,6 @@
 V3
 
-The Personal Portfolio Website for Ryan Dixon.list-reset
+The Personal Portfolio Website for Ryan Dixon.
 
 Made using:
 -ReactJS
