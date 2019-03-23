@@ -60,7 +60,7 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero offset={0}>
         <BigTitle>
           Hello, <br /> I'm Ryan Dixon.
@@ -68,6 +68,35 @@ const Index = () => (
         <Subtitle>I'm a Front End Developer.</Subtitle>
       </Hero>
       <Projects offset={1}>
+        <Title>Commercial Work</Title>
+        <ProjectsWrapper>
+          <ProjectCard
+            title="Realistic Games July 2015 - November 2018"
+            link=""
+            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+          >
+            Realistic Games are a gambling company.
+            I was responsible for making slot games.
+          </ProjectCard>
+          <ProjectCard
+            title="The Logic Room December 2018 - January 2019"
+            link=""
+            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+          >
+            The Logic Room are an app development company.
+            During my time here I worked on a commercial app.
+          </ProjectCard>
+          <ProjectCard
+            title="Avvio Reply February 2019 - present"
+            link=""
+            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+          >
+            Avvio Reply are a digital agency.
+            Durin my time here I am a website developer.
+          </ProjectCard>
+        </ProjectsWrapper>
+      </Projects>
+      <Projects offset={2}>
         <Title>Personal Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
