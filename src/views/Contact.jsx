@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content from '../elements/Content'
 
-const Contact = ({ children, offset }) => (
+const Contact = ({ children }) => (
   <>
-    <Content speed={0.4} offset={offset}>
+    <Content>
       {children}
     </Content>
   </>
@@ -13,6 +13,5 @@ const Contact = ({ children, offset }) => (
 export default Contact
 
 Contact.propTypes = {
-  children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired,
+  children: PropTypes.node.isRequired
 }
