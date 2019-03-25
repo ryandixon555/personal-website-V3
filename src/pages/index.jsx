@@ -77,7 +77,7 @@ const Index = () => (
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
             Realistic Games are a gambling company.
-            I was responsible for making slot games.
+            I was responsible for the full lifecycle development of slot games, using JavsScript, HTML, CSS and Pixi JS
           </ProjectCard>
           <ProjectCard
             title="The Logic Room December 2018 - January 2019"
@@ -85,7 +85,7 @@ const Index = () => (
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
             The Logic Room are an app development company.
-            During my time here I worked on a commercial app.
+            During my time here I worked on a commercial app, making use of ReactJS
           </ProjectCard>
           <ProjectCard
             title="Avvio Reply February 2019 - present"
@@ -93,7 +93,7 @@ const Index = () => (
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
             Avvio Reply are a digital agency.
-            Durin my time here I am a website developer.
+            During my time here I am a website developer, making use of a wide range of flexible tools.
           </ProjectCard>
         </ProjectsWrapper>
         
@@ -112,15 +112,15 @@ const Index = () => (
             It's made using ReactJS, Styled Components, TailWind CSS and Gatsby
           </ProjectCard>
           <ProjectCard
-            title="Harry Potter"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
+            title="Company Website"
+            link="https://www.google.com"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
             I entered the DOCMA 2017 award with this Harry Potter inspired image.
           </ProjectCard>
           <ProjectCard
-            title="See more.."
-            link="https://www.behance.net/gallery/38068151/Eagle"
+            title="See more on my GitHub account"
+            link="https://github.com/ryandixon555"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
             See more at my GitHub account
