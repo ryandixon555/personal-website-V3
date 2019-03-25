@@ -7,6 +7,7 @@ const Wrapper = styled.a`
   width: 100%;
   ${tw`shadow-lg relative no-underline rounded-lg text-white`};
   background: ${props => props.bg};
+  padding: 20px;
   padding-bottom: 40px;
   &:hover {
     transform: translateY(-5px);

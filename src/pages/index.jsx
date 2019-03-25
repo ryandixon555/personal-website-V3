@@ -1,11 +1,15 @@
+import 'bootstrap/dist/css/bootstrap.css';
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { Parallax } from 'react-spring/renderprops-addons.cjs'
+import MyFooter from '../components/Footer'
 
 // Components
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
+import MyNavBar from '../components/NavBar'
 
 // Elements
 import Inner from '../elements/Inner'
@@ -24,6 +28,7 @@ const ProjectsWrapper = styled.div`
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
   @media (max-width: 1200px) {
     grid-gap: 3rem;
   }
@@ -35,6 +40,7 @@ const ProjectsWrapper = styled.div`
 
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
+  padding: 20px;
 `
 
 const Avatar = styled.img`
@@ -43,14 +49,17 @@ const Avatar = styled.img`
 
 const AboutSub = styled.span`
   ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  padding: 20px;
 `
 
 const AboutDesc = styled.p`
   ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+  padding: 20px;
 `
 
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  padding: 20px;
 `
 
 const Footer = styled.footer`
@@ -59,7 +68,8 @@ const Footer = styled.footer`
 
 const Index = () => (
   <>
-    <Layout />
+    <MyNavBar/>
+    <Layout/>
     <Hero>
         <BigTitle>
           Hello, <br /> I'm Ryan Dixon.
@@ -139,7 +149,7 @@ const Index = () => (
          I've been a Front End Developer for many years now, developing games, apps and websites both professionally and for fun. Get in touch if you want something made!
         </AboutDesc>
       </About>
-      <Contact offset={4}>
+      <Contact>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
@@ -149,9 +159,7 @@ const Index = () => (
           </ContactText>
         </Inner>
       </Contact>
-      <Footer>
-          &copy; Ryan Dixon 2019{' '}
-      </Footer>
+     <MyFooter/>
   </>
 )
 

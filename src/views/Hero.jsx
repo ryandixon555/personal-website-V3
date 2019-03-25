@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import tw from 'tailwind.macro'
 import Content from '../elements/Content'
 
 const Wrapper = styled.div`
-  ${tw`w-full xl:w-2/3`};
+  width: 100%;
+  background: black;
+  padding: 20px;
 `
 
 const Hero = ({ children }) => (
