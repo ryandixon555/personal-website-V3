@@ -67,10 +67,7 @@ const AboutDesc = styled.p`
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
   padding: 20px;
-`
-
-const Footer = styled.footer`
-  ${tw`text-center text-grey pin-b p-6 font-sans text-md lg:text-lg`};
+  padding-bottom: 80px;
 `
 
 const Index = () => (
@@ -86,61 +83,44 @@ const Index = () => (
           <Subtitle>I make websites, games, apps and more!</Subtitle>
           <Subtitle>Get in touch at <a href="mailto:ryan555@sky.com">ryan555@sky.com</a></Subtitle>
         </Fade>
-        
     </Hero>
     <Projects>
     <Slide left>
+
     <Title>Commercial Work</Title>
-       
-        
-        
-       <ProjectsWrapper>
-        
-        
-         <ProjectCard
-           title="Realistic Games"
-           dates=" July 2015 - November 2018"
-           link=""
-           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-         >
-           Realistic Games are a gambling company.
-           I was responsible for the full lifecycle development of slot games, using JavsScript, HTML, CSS and Pixi JS
-         </ProjectCard>
-        
-
-        
-         <ProjectCard
-           title="The Logic Room"
-           dates=" December 2018 - January 2019"
-           link=""
-           bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-         >
-           The Logic Room are an app development company.
-           During my time here I worked on a commercial app, making use of ReactJS
-         </ProjectCard>
-        
-
-         
-         <ProjectCard
-           title="Avvio Reply"
-           dates=" February 2019 - Present"
-           link=""
-           bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-         >
-           Avvio Reply are a digital agency.
-           During my time here I am a website developer, making use of a wide range of flexible tools.
-         </ProjectCard>
-         
-        
+    <ProjectsWrapper>
+      <ProjectCard
+        title="Realistic Games"
+        dates=" July 2015 - November 2018"
+        link=""
+        bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+      >
+        Realistic Games are a gambling company.
+        I was responsible for the full lifecycle development of slot games, using JavsScript, HTML, CSS and Pixi JS
+      </ProjectCard>
+      <ProjectCard
+        title="The Logic Room"
+        dates=" December 2018 - January 2019"
+        link=""
+        bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+      >
+        The Logic Room are an app development company.
+        During my time here I worked on a commercial app, making use of ReactJS
+      </ProjectCard>
+      <ProjectCard
+        title="Avvio Reply"
+        dates=" February 2019 - Present"
+        link=""
+        bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+      >
+        Avvio Reply are a digital agency.
+        During my time here I am a website developer, making use of a wide range of flexible tools.
+      </ProjectCard>
        </ProjectsWrapper>
     </Slide>
-        
-        
-        
         /**
         *   PERSONAL PROJECTS
          */
-
       <Slide right>
       <Title>Personal Projects</Title>
         <ProjectsWrapper>
