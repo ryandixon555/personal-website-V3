@@ -8,7 +8,7 @@ import styled from 'styled-components'
 import MyNavBar from '../components/NavBar'
 import MyFooter from '../components/Footer'
 
-// Anmations
+// Animations
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 
