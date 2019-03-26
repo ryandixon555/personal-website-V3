@@ -82,7 +82,8 @@ const Index = () => (
         <Title>Commercial Work</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Realistic Games July 2015 - November 2018"
+            title="Realistic Games"
+            dates=" July 2015 - November 2018"
             link=""
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
@@ -90,7 +91,8 @@ const Index = () => (
             I was responsible for the full lifecycle development of slot games, using JavsScript, HTML, CSS and Pixi JS
           </ProjectCard>
           <ProjectCard
-            title="The Logic Room December 2018 - January 2019"
+            title="The Logic Room"
+            dates=" December 2018 - January 2019"
             link=""
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
@@ -98,7 +100,8 @@ const Index = () => (
             During my time here I worked on a commercial app, making use of ReactJS
           </ProjectCard>
           <ProjectCard
-            title="Avvio Reply February 2019 - present"
+            title="Avvio Reply"
+            dates=" February 2019 - Present"
             link=""
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
@@ -115,6 +118,7 @@ const Index = () => (
         <ProjectsWrapper>
           <ProjectCard
             title="Personal Website"
+            dates=""
             link="https://www.behance.net/gallery/58937147/Freiheit"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
@@ -123,6 +127,7 @@ const Index = () => (
           </ProjectCard>
           <ProjectCard
             title="Company Website"
+            dates=""
             link="https://www.google.com"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
@@ -130,6 +135,7 @@ const Index = () => (
           </ProjectCard>
           <ProjectCard
             title="See more on my GitHub account"
+            dates=""
             link="https://github.com/ryandixon555"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >

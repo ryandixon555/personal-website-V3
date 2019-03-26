@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Content from '../elements/Content'
 
 const Wrapper = styled.div`
+  position: relative;
   width: 100%;
   background: black;
   padding: 20px;

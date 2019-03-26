@@ -11,11 +11,17 @@ const Wrapper = styled.a`
   padding-bottom: 40px;
   &:hover {
     transform: translateY(-5px);
+    text-decoration: none;
   }
 `
 const Title = styled.div`
   ${tw`text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pt-8`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+`
+const Dates = styled.div`
+  ${tw`opacity-75 font-sans text-sm md:text-base`};
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
 `
 
 const Text = styled.div`
@@ -24,9 +30,10 @@ const Text = styled.div`
   padding-top: 20px;
 `
 
-const ProjectCard = ({ title, link, children, bg }) => (
+const ProjectCard = ({ title, link, dates, children, bg }) => (
   <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
     <Title>{title}</Title>
+    <Dates>{dates}</Dates>
     <Text>{children}</Text>
   </Wrapper>
 )
@@ -36,6 +43,7 @@ export default ProjectCard
 ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  dates: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   bg: PropTypes.string.isRequired,
 }
