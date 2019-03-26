@@ -19,6 +19,7 @@ const Background = styled.div`
   position: relative;
   width: 100%;
   background: black;
+  height: 1001px;
 `
 const InnerText = styled.div`
   position: relative;
