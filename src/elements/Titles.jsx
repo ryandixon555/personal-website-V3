@@ -11,7 +11,7 @@ export const Subtitle = styled.p`
   position: relative;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   text-align: left;
-  font-size: 48px;
+  font-size: 40px;
   color: white;
 `
 
