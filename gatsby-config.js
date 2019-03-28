@@ -38,14 +38,14 @@ module.exports = {
         display: 'standalone',
         icons: [
           {
-            src: '/favicons/android-chrome-192x192.png',
+            src: '/favicons/favicon.ico',
             sizes: '192x192',
-            type: 'image/png',
+            type: 'image/ico',
           },
           {
-            src: '/favicons/android-chrome-512x512.png',
+            src: '/favicons/favicon.ico',
             sizes: '512x512',
-            type: 'image/png',
+            type: 'image/ico',
           },
         ],
       },

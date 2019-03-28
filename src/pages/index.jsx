@@ -134,7 +134,7 @@ const Index = () => (
             It's made using ReactJS, Styled Components, TailWind CSS and Gatsby
           </ProjectCard>
           <ProjectCard
-            title="Company Website"
+            title="Company Website - currently in development"
             dates=""
             link="https://www.google.com"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
