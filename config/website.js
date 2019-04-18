@@ -14,7 +14,7 @@ module.exports = {
   author: 'Ryan Dixon', // Author for schema.org JSONLD
 
   // Google Analytics
-  googleAnalyticsID: 'UA-47519312-5',
+  googleAnalyticsID: 'UA-138619516-1',
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,

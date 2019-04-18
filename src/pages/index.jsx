@@ -166,7 +166,7 @@ const Index = () => (
           </ContactText>
         </Inner>
       </Contact>
-     <MyFooter/>
+    
   </>
 )
 

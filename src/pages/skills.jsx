@@ -54,7 +54,7 @@ const Skills = () => (
               <li>TailWind CSS</li>
             </ul>
           </InnerText>
-    <MyFooter/>
+    
     </Background>
   </>
 )

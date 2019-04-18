@@ -34,7 +34,7 @@ const Qualifications = () => (
       <InnerText>
       A 2:1 Degree (Hons) from Bucks New University, 2009 - 2012
     </InnerText>
-    <MyFooter/>
+   
     </Background>
   </>
 )
