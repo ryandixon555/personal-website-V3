@@ -24,7 +24,6 @@ const InnerText = styled.div`
   font-size: 24px;
   padding: 20px;
 `
-
 const Qualifications = () => (
   <>
     <MyNavBar/>

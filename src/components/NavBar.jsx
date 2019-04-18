@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import { Link } from "gatsby"
+import React from 'react'
+import { Navbar, Nav} from 'react-bootstrap';
 
 const MyNavBar = () => (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">

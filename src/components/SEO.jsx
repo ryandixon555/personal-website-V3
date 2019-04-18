@@ -81,11 +81,11 @@ const Head = props => {
     <Helmet>
       <html lang={config.siteLanguage} />
       <title>{title}</title>
-      <link rel="apple-touch-icon" href="/favicons/favicon.ico" />
+      {/* <link rel="apple-touch-icon" href="/favicons/favicon.ico" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon.ico" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon.ico" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon.ico" /> */}
       <meta name="Ryan Dixon Portfolio" content="Ryan Dixon Portfolio" />
-      <link rel="shortcut icon" href="favicon.ico" />
+      {/* <link rel="shortcut icon" href="favicon.ico" /> */}
       <meta name="msapplication-TileColor" content={config.backgroundColor} />
       <meta name="msapplication-config" content="browserconfig.xml" />
       <meta name="description" content={description} />

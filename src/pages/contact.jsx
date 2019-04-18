@@ -4,9 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 import styled from 'styled-components'
 
-
 // Components
-
 import MyNavBar from '../components/NavBar'
 import MyFooter from '../components/Footer'
 
@@ -18,7 +16,6 @@ const Background = styled.div`
   width: 100%;
   background: white;
 `
-
 const Contact = () => (
   <>
     <MyNavBar/>
