@@ -8,23 +8,19 @@ import styled from 'styled-components'
 import MyNavBar from '../components/NavBar'
 import MyFooter from '../components/Footer'
 
-// Animations
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
-
 // Elements
 import { Title} from '../elements/Titles'
 
 const Background = styled.div`
   position: relative;
   width: 100%;
-  background: black;
+  background: white;
   height: 1001px;
 `
 const InnerText = styled.div`
   position: relative;
   width: 100%;
-  color: white;
+  color: black;
   font-size: 24px;
   padding: 20px;
 `
@@ -33,12 +29,9 @@ const Skills = () => (
   <>
     <MyNavBar/>
     <Background>
-      <Fade>
         <Title>
           Skills
         </Title>
-      </Fade>
-        <Zoom>
           <InnerText>
           Skills gained during my time as a front-end developer:
             <br/><br/>
@@ -61,7 +54,6 @@ const Skills = () => (
               <li>TailWind CSS</li>
             </ul>
           </InnerText>
-        </Zoom>
     <MyFooter/>
     </Background>
   </>

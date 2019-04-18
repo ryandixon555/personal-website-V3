@@ -49,7 +49,7 @@ const colors = {
   'blue-black': '#161719',
   'blue-grey': '#23262b',
 
-  black: '#222b2f',
+  black: '#ffffff',
   'grey-darkest': '#273238',
   'grey-darker': '#364349',
   'grey-dark': '#70818a',

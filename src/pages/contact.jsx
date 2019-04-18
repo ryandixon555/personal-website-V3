@@ -16,7 +16,7 @@ import Inner from '../elements/Inner'
 const Background = styled.div`
   position: relative;
   width: 100%;
-  background: black;
+  background: white;
 `
 
 const Contact = () => (

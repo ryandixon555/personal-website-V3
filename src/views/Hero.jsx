@@ -6,10 +6,9 @@ import Content from '../elements/Content'
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  background: black;
+  background: white;
   padding: 20px;
 `
-
 const Hero = ({ children }) => (
   <>
     <Content>

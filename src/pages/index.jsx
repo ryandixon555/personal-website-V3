@@ -22,7 +22,6 @@ import About from '../views/About'
 import Contact from '../views/Contact'
 
 // Animations
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import Roll from 'react-reveal/Roll';
@@ -44,30 +43,28 @@ const ProjectsWrapper = styled.div`
     grid-gap: 2rem;
   }
 `
-
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
   padding: 20px;
 `
-
 const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
 `
-
 const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  ${tw`pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
   padding: 20px;
+  color: black;
 `
-
 const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+  ${tw`text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
   padding: 20px;
+  color: black;
 `
-
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  ${tw`font-sans text-xl md:text-2xl lg:text-3xl`};
   padding: 20px;
   padding-bottom: 80px;
+  color: black;
 `
 
 const Index = () => (
@@ -75,14 +72,12 @@ const Index = () => (
     <MyNavBar/>
     <Layout/>
     <Hero>
-        <Fade>
-          <BigTitle>
-            Hello, <br /> I'm Ryan Dixon.
-          </BigTitle>
-          <Subtitle>I'm a Front End Developer.</Subtitle>
-          <Subtitle>I make websites, games, apps and more!</Subtitle>
-          <Subtitle>Get in touch at <a href="mailto:ryan555@sky.com">ryan555@sky.com</a></Subtitle>
-        </Fade>
+      <BigTitle>
+        Hello, <br /> I'm Ryan Dixon.
+      </BigTitle>
+      <Subtitle>I'm a Front End Developer.</Subtitle>
+      <Subtitle>I make websites, games, apps and more!</Subtitle>
+      <Subtitle>Get in touch at <a href="mailto:ryan555@sky.com">ryan555@sky.com</a></Subtitle>
     </Hero>
     <Projects>
     <Slide left>
@@ -118,9 +113,7 @@ const Index = () => (
       </ProjectCard>
        </ProjectsWrapper>
     </Slide>
-        /**
-        *   PERSONAL PROJECTS
-         */
+        
       <Slide right>
       <Title>Personal Projects</Title>
         <ProjectsWrapper>
@@ -133,14 +126,7 @@ const Index = () => (
             This project is my personal website - you're on it now!
             It's made using ReactJS, Styled Components, TailWind CSS and Gatsby
           </ProjectCard>
-          <ProjectCard
-            title="Company Website - currently in development"
-            dates=""
-            link="https://www.google.com"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-          >
-            I entered the DOCMA 2017 award with this Harry Potter inspired image.
-          </ProjectCard>
+          
           <ProjectCard
             title="See more on my GitHub account"
             dates=""
