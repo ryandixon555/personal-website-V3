@@ -2,28 +2,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 import React from 'react'
-import styled from 'styled-components'
 
 // Components
 import MyNavBar from '../components/NavBar'
-import MyFooter from '../components/Footer'
 
 // Elements
 import { Title} from '../elements/Titles'
-
-const Background = styled.div`
-  position: relative;
-  width: 100%;
-  background: white;
-  height: 1001px;
-`
-const InnerText = styled.div`
-  position: relative;
-  width: 100%;
-  color: black;
-  font-size: 24px;
-  padding: 20px;
-`
+import { InnerText } from './../elements/InnerText';
+import { Background } from '../elements/Background'
 
 const Skills = () => (
   <>

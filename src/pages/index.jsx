@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import MyFooter from '../components/Footer'
 
 // Components
 import Layout from '../components/Layout'
@@ -14,10 +13,10 @@ import MyNavBar from '../components/NavBar'
 // Elements
 import Inner from '../elements/Inner'
 import { Title, BigTitle, Subtitle } from '../elements/Titles'
+import { ProjectsWrapper } from '../elements/ProjectsWrapper'
 
 // Views
 import Hero from '../views/Hero'
-import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
 
@@ -29,23 +28,10 @@ import Roll from 'react-reveal/Roll';
 // Images
 import avatar from '../images/avatar.png'
 
-const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
-  display: grid;
-  grid-gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 20px;
-  @media (max-width: 1200px) {
-    grid-gap: 3rem;
-  }
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
-`
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
   padding: 20px;
+  justify-content: center;
 `
 const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
@@ -73,13 +59,13 @@ const Index = () => (
     <Layout/>
     <Hero>
       <BigTitle>
-        Hello, <br /> I'm Ryan Dixon.
+        Hello, I'm Ryan Dixon.
       </BigTitle>
       <Subtitle>I'm a Front End Developer.</Subtitle>
       <Subtitle>I make websites, games, apps and more!</Subtitle>
       <Subtitle>Get in touch at <a href="mailto:ryan555@sky.com">ryan555@sky.com</a></Subtitle>
     </Hero>
-    <Projects>
+ 
     <Slide left>
 
     <Title>Commercial Work</Title>
@@ -120,13 +106,22 @@ const Index = () => (
           <ProjectCard
             title="Personal Website"
             dates=""
-            link="https://www.behance.net/gallery/58937147/Freiheit"
+            link="https://www.ryandixonportfolio.com/"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
             This project is my personal website - you're on it now!
             It's made using ReactJS, Styled Components, TailWind CSS and Gatsby
           </ProjectCard>
           
+          <ProjectCard
+            title="ReactJS"
+            dates=""
+            link="../ReactWork"
+            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+          >
+            A collecion of ReactJS projects I've worked on
+          </ProjectCard>
+
           <ProjectCard
             title="See more on my GitHub account"
             dates=""
@@ -138,7 +133,7 @@ const Index = () => (
         </ProjectsWrapper>
       
       </Slide>
-      </Projects>
+    
         
       <About>
         <Title>About</Title>

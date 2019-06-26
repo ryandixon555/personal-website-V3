@@ -12,6 +12,7 @@ const Wrapper = styled.a`
   &:hover {
     transform: translateY(-5px);
     text-decoration: none;
+    color: black;
   }
 `
 const Title = styled.div`

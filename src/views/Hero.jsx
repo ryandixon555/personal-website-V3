@@ -8,6 +8,10 @@ const Wrapper = styled.div`
   width: 100%;
   background: white;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 `
 const Hero = ({ children }) => (
   <>
