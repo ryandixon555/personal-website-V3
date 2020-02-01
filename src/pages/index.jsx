@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import MyFooter from '../components/Footer'
 
 // Components
 import Layout from '../components/Layout'
@@ -14,12 +13,13 @@ import MyNavBar from '../components/NavBar'
 // Elements
 import Inner from '../elements/Inner'
 import { Title, BigTitle, Subtitle } from '../elements/Titles'
+import { ProjectsWrapper } from '../elements/ProjectsWrapper'
 
 // Views
 import Hero from '../views/Hero'
-import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
+import Projects from '../views/Projects'
 
 // Animations
 import Fade from 'react-reveal/Fade';
@@ -29,23 +29,10 @@ import Roll from 'react-reveal/Roll';
 // Images
 import avatar from '../images/avatar.png'
 
-const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
-  display: grid;
-  grid-gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 20px;
-  @media (max-width: 1200px) {
-    grid-gap: 3rem;
-  }
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
-`
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
   padding: 20px;
+  justify-content: center;
 `
 const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};

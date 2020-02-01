@@ -1,17 +1,18 @@
-V3
-
 The Personal Portfolio Website for Ryan Dixon.
 
 Made using:
-- ReactJS
-- Tailwind CSS
-- Styled Components
+-ReactJS
+-Tailwind CSS
+-Styled Components
 
-To Run:
-- gatsby develop
+## To Run:
 
-To Build:
-- gatsy build
+gatsby develop
 
-Help:
-- gatsby help
+## To Build:
+
+gatsby build
+
+## For Help
+
+gatsby --help

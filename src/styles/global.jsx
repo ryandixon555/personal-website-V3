@@ -13,6 +13,11 @@ const GlobalStyle = createGlobalStyle`
     // background-color: black !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   html, body {
     width: 100%;
