@@ -20,4 +20,6 @@ export const Title = styled.h1`
   text-align: center;
   font-size: 48px;
   color: black;
+  margin-top: 20px;
+  padding: 10px;
 `
