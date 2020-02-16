@@ -47,6 +47,7 @@ const AboutDesc = styled.p`
   padding: 20px;
   color: black;
   text-align: center;
+  max-width: 60%;
 `
 const ContactText = styled.p`
   ${tw`font-sans text-xl md:text-2xl lg:text-3xl`};
