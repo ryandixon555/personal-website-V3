@@ -5,5 +5,5 @@ export const InnerText = styled.div`
   width: 100%;
   color: black;
   font-size: 24px;
-  padding: 20px;
+  padding: 10px;
 `

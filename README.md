@@ -1,18 +1,15 @@
+## Welcome to Ryan Dixon's portfolio
 The Personal Portfolio Website for Ryan Dixon.
 
-Made using:
--ReactJS
--Tailwind CSS
--Styled Components
-
 ## To Run:
-
-gatsby develop
+* npm i
+* gatsby develop
 
 ## To Build:
-
-gatsby build
+* gatsby build
 
 ## For Help
+* gatsby --help
 
-gatsby --help
+## Site:
+https://www.ryandixonportfolio.com/

@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
+  "name": "ryan-dixon-portfolio",
+  "description": "portfolio",
   "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "author": "Ryan Dixon",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "bootstrap": "^4.3.1",
-    "gatsby": "^2.1.37",
+    "gatsby": "^2.20.8",
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-manifest": "^2.0.24",
@@ -30,6 +30,7 @@
     "react-router-dom": "^5.0.0",
     "react-spring": "^8.0.15",
     "styled-components": "^4.1.3",
+    "styled-components-breakpoint": "^3.0.0-preview.20",
     "tailwind.macro": "^0.5.10",
     "tailwindcss": "^0.7.4",
     "typeface-cantata-one": "^0.0.72",
@@ -60,11 +61,11 @@
     "prettier": "^1.16.4"
   },
   "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "url": "",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
+    "url": ""
   },
-  "homepage": "https://cara.lekoarts.de"
+  "homepage": ""
 }

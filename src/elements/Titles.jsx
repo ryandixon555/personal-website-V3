@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
 
 export const BigTitle = styled.h1`
   position: relative;
@@ -6,7 +7,6 @@ export const BigTitle = styled.h1`
   text-align: left;
   font-size: 64px;
   color: black;
-  padding:  20px;
 `
 export const Title = styled.h1`
   position: relative;
@@ -14,7 +14,7 @@ export const Title = styled.h1`
   text-align: center;
   font-size: 48px;
   color: black;
-  padding:  20px;
+  margin-top: 40px;
 `
 
 export const Subtitle = styled.p`
@@ -23,5 +23,8 @@ export const Subtitle = styled.p`
   text-align: left;
   font-size: 40px;
   color: black;
-  padding:  20px;
+
+  ${breakpoint('md')`
+    font-size: 32px;
+  `}
 `
