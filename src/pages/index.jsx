@@ -30,28 +30,27 @@ import Roll from 'react-reveal/Roll';
 import avatar from '../images/avatar.jpg'
 
 const AboutHero = styled.div`
-  ${tw`flex flex-col lg:flex-row items-center mt-8`};
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 `
 const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
 `
 const AboutSub = styled.span`
-  ${tw`pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
-  padding: 20px;
+  font-size: 32px;
   color: black;
 `
 const AboutDesc = styled.p`
-  ${tw`text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
-  padding: 20px;
+  font-size: 32px;
   color: black;
   text-align: center;
-  max-width: 60%;
+  max-width: 100%;
+  margin-top: 40px;
 `
 const ContactText = styled.p`
   ${tw`font-sans text-xl md:text-2xl lg:text-3xl`};
-  padding: 20px;
   padding-bottom: 80px;
   color: black;
   text-align: center;
