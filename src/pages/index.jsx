@@ -27,7 +27,7 @@ import Slide from 'react-reveal/Slide';
 import Roll from 'react-reveal/Roll';
 
 // Images
-import avatar from '../images/avatar.png'
+import avatar from '../images/avatar.jpg'
 
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
@@ -103,7 +103,7 @@ const Index = () => (
           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
         >
           Realistic Games are a gambling company.
-          I was responsible for the full lifecycle development of slot games, using JavsScript, HTML, CSS and Pixi JS
+          I was responsible for the full lifecycle development of slot games, using JavsScript, HTML, CSS and PixiJS.
         </ProjectCard>
         <ProjectCard
           title="The Logic Room"
@@ -112,7 +112,7 @@ const Index = () => (
           bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
         >
           The Logic Room are an app development company.
-          During my time here I worked on a commercial app, making use of ReactJS
+          During my time here I worked on a commercial app, making use of ReactJS.
         </ProjectCard>
         <ProjectCard
           title="Avvio Reply"
@@ -120,7 +120,7 @@ const Index = () => (
           link=""
           bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
         >
-          Avvio Reply are a digital agency.
+          Avvio Reply are a employee engagement agency.
           During my time here I am a website developer, making use of CSS, HTML, Vanilla JavaScript and ReactJS.
         </ProjectCard>
         </ProjectsWrapper>

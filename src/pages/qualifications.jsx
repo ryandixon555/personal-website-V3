@@ -29,12 +29,21 @@ const Qualifications = () => (
     <MyNavBar/>
     <Background>
       <Title>
-      Qualifications
-        </Title>
+        Qualifications
+      </Title>
       <InnerText>
-      A 2:1 Degree (Hons) from Bucks New University, 2009 - 2012
-    </InnerText>
-   
+        A 2:1 Degree (Hons) from Bucks New University, 2009 - 2012.
+      </InnerText>
+      <InnerText>
+        Modules include:
+        <ul>
+          <li>Software Engineering</li>
+          <li>Artificial Intelligence</li>
+          <li>Object-Orientated Principles and Design</li>
+          <li>C++</li>
+          <li>Web Development</li>
+        </ul>
+      </InnerText>
     </Background>
   </>
 )

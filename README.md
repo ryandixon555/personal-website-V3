@@ -1,18 +1,19 @@
+## personal-portfolio
 The Personal Portfolio Website for Ryan Dixon.
 
 Made using:
--ReactJS
--Tailwind CSS
--Styled Components
+* ReactJS
+* Tailwind CSS
+* Styled Components
 
 ## To Run:
-
-gatsby develop
+* gatsby develop
 
 ## To Build:
-
-gatsby build
+* gatsby build
 
 ## For Help
+* gatsby --help
 
-gatsby --help
+## Site:
+https://www.ryandixonportfolio.com/
