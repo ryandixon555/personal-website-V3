@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components takes precedence over default styles.
 import React from 'react'
 import styled from 'styled-components'
-import MyFooter from '../components/Footer'
 
 // Components
 import MyNavBar from '../components/NavBar'

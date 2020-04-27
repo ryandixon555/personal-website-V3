@@ -57,7 +57,7 @@ const ContactText = styled.p`
 `
 
 const Index = () => (
-  <>
+  <div>
     <MyNavBar/>
     <Layout/>
     <Hero>
@@ -76,7 +76,7 @@ const Index = () => (
         <ProjectCard
           title="See My Work"
           dates=""
-          link="https://ryandixon555.github.io/portfolio/public/index.html"
+          link="../portfolio"
           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
         >
           See a selection of my work here
@@ -155,7 +155,7 @@ const Index = () => (
         </ContactText>
       </Inner>
     </Contact>
-  </>
+  </div>
 )
 
 export default Index
