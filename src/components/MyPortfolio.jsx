@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components takes precedence over default styles.
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
+import breakpoint, {map} from 'styled-components-breakpoint';
 
 import Fade from 'react-reveal/Fade';
 import Information from '../data/projects'
@@ -70,15 +70,21 @@ const Project = styled.div `
 `
 
 export default function MyPortfolio () {
-  const [searchTerm, setSearchTerm] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
-  const handleChange = e => setSearchTerm(e.target.value);
+  const handleChange = (e) => {
+    const filteredTerm = e.target.value.toLowerCase();
+    
+    setSearchTerm(filteredTerm);
+  }
 
   useEffect(() => {
     const results = Information.filter(data => data.keywords.includes(searchTerm));
 
     setSearchResults(results);
+
+    console.log(searchTerm)
 
   }, [searchTerm]);
 
@@ -89,7 +95,7 @@ export default function MyPortfolio () {
         type="text"
         value={searchTerm}
         onChange={handleChange}
-        placeholder="search"
+        placeholder="Search for 'reactjs'..."
       />
       </Fade>
      
