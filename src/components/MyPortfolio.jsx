@@ -1,7 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.css';
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 
+import Fade from 'react-reveal/Fade';
 import Information from '../data/projects'
 
 const PortfolioPageWrapper = styled.div `
@@ -80,27 +84,32 @@ export default function MyPortfolio () {
 
   return (
     <PortfolioPageWrapper>
+      <Fade top>
       <Input
         type="text"
         value={searchTerm}
         onChange={handleChange}
         placeholder="search"
       />
+      </Fade>
+     
       <PortfolioWrapper>
+      <Fade bottom>
         <ProjectWrapper>
           {searchResults &&
               searchResults.map(item => 
               <Project key={item.id}>
-                  <h5>Client:</h5>
+                  <h4>Client:</h4>
                   <p>{item.client}</p>
-                  <h5>Project Name:</h5>
+                  <h4>Project Name:</h4>
                   <p>{item.name}</p>
-                  <h5>Project Description:</h5>
+                  <h4>Project Description:</h4>
                   <p>{item.description}</p>
                   <a href = {item.playableLink} target="_blank" rel="noopener">Playable Link</a>
                   <a href = {item.githubLink} target="_blank" rel="noopener">GitHub Link</a>
               </Project>)}
         </ProjectWrapper>
+        </Fade>
       </PortfolioWrapper>
     </PortfolioPageWrapper>
   );
