@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import breakpoint, {map} from 'styled-components-breakpoint';
 
 import Fade from 'react-reveal/Fade';
-import Information from '../data/projects'
+import Projects from '../data/projects'
 
 const PortfolioPageWrapper = styled.div `
     position: relative;
@@ -80,11 +80,9 @@ export default function MyPortfolio () {
   }
 
   useEffect(() => {
-    const results = Information.filter(data => data.keywords.includes(searchTerm));
+    const results = Projects.filter(data => data.keywords.includes(searchTerm));
 
     setSearchResults(results);
-
-    console.log(searchTerm)
 
   }, [searchTerm]);
 
@@ -103,16 +101,16 @@ export default function MyPortfolio () {
       <Fade bottom>
         <ProjectWrapper>
           {searchResults &&
-              searchResults.map(item => 
-              <Project key={item.id}>
+              searchResults.map(project => 
+              <Project key={project.id}>
                   <h4>Client:</h4>
-                  <p>{item.client}</p>
+                  <p>{project.client}</p>
                   <h4>Project Name:</h4>
-                  <p>{item.name}</p>
+                  <p>{project.name}</p>
                   <h4>Project Description:</h4>
-                  <p>{item.description}</p>
-                  <a href = {item.playableLink} target="_blank" rel="noopener">Playable Link</a>
-                  <a href = {item.githubLink} target="_blank" rel="noopener">GitHub Link</a>
+                  <p>{project.description}</p>
+                  <a href = {project.playableLink} target="_blank" rel="noopener">Playable Link</a>
+                  <a href = {project.githubLink} target="_blank" rel="noopener">GitHub Link</a>
               </Project>)}
         </ProjectWrapper>
         </Fade>
