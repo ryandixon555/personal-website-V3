@@ -7,6 +7,8 @@ import tw from 'tailwind.macro'
 
 // Components
 import Layout from '../components/Layout'
+import PortfolioProjectCard from '../components/PortfolioProjectCard'
+import GitHubProjectCard from '../components/GitHubProjectCard'
 import ProjectCard from '../components/ProjectCard'
 import MyNavBar from '../components/NavBar'
 
@@ -73,22 +75,22 @@ const Index = () => (
       <Slide right>
       <Title>See My Work</Title>
       <ProjectsWrapper>
-        <ProjectCard
+        <PortfolioProjectCard
           title="See My Work"
           dates=""
-          link="../portfolio"
+          portfolioLink="../portfolio"
           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
         >
           See a selection of my work here
-        </ProjectCard>
-        <ProjectCard
+        </PortfolioProjectCard>
+        <GitHubProjectCard
             title="See more on my GitHub account"
             dates=""
-            link="https://github.com/ryandixon555"
+            githubLink="https://github.com/ryandixon555"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
             See more at my GitHub account
-        </ProjectCard>
+        </GitHubProjectCard>
       </ProjectsWrapper>
       </Slide>
 

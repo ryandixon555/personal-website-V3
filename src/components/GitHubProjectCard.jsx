@@ -31,12 +31,12 @@ const Text = styled.div`
   padding-top: 20px;
 `
 
-const ProjectCard = ({ title, link, dates, children, bg }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
+const GitHubProjectCard = ({ title, githubLink, dates, children, bg }) => (
+  <Wrapper href={githubLink} target="_blank" rel="noopener noreferrer" bg={bg}>
     <Title>{title}</Title>
     <Dates>{dates}</Dates>
     <Text>{children}</Text>
   </Wrapper>
 )
 
-export default ProjectCard;
+export default GitHubProjectCard;
