@@ -32,6 +32,8 @@ const InputStyling = styled.input`
   border-radius: 3px;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
   text-align: center;
+  width: 100%;
+  max-width: 300px;
 `
 
 const ProjectStyling = styled.div `
@@ -79,7 +81,6 @@ function SearchComponent ({projects}) {
         <ProjectWrapper>
           {result &&
               result.map(project => {
-                console.log(project);
                 if (project.item) project = project.item;
                 return (
                   <ProjectStyling key={project.id}>
@@ -89,6 +90,8 @@ function SearchComponent ({projects}) {
                     <p>{project.name}</p>
                     <h4>Project Description:</h4>
                     <p>{project.description}</p>
+                    <h4>Project Tags:</h4>
+                    <p>{(project ? ' ' : ' , ') + project.keywords}</p>
                     <a href = {project.playableLink} target="_blank" rel="noopener">Playable Link</a>
                     <a href = {project.githubLink} target="_blank" rel="noopener">GitHub Link</a>
                   </ProjectStyling>
