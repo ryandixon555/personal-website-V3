@@ -4,7 +4,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "ReactJS JSON Filtering",
 		"description": "A filtering app built using ReactJS",
-		"keywords": ["reactjs", "javascript", "hooks", "filtering", "search", ""],
+		"keywords": ["reactjs", "javascript", "hooks", "filtering", "search"],
 		"playableLink": "https://react-json-search.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/react-json-search"
 	},
@@ -13,7 +13,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "ReactJS Weather App",
 		"description": "A weather app built using ReactJS",
-		"keywords": ["reactjs", "javascript", "hooks", "api", "weather", ""],
+		"keywords": ["reactjs", "javascript", "hooks", "api", "weather"],
 		"playableLink": "https://react-weather-app.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/react-weather-app"
 	},
@@ -22,7 +22,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "ReactJS Quiz",
 		"description": "A quiz built using ReactJS",
-		"keywords": ["reactjs", "javascript", "hooks", "quiz", ""],
+		"keywords": ["reactjs", "javascript", "hooks", "quiz"],
 		"playableLink": "https://reactjs-quiz.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/reactjs-quiz"
 	},
@@ -31,7 +31,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "ReactJS Shopping Cart",
 		"description": "A shopping cart application made using ReactJS",
-		"keywords": ["reactjs", "javascript", "nodejs", "redux", ""],
+		"keywords": ["reactjs", "javascript", "nodejs", "redux"],
 		"playableLink": "https://react-shopping-site.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/react-ecommerce"
 	},
@@ -40,7 +40,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Pokedex",
 		"description": "A Pokedex made using ReactJS",
-		"keywords": ["reactjs", "javascript", "api", ""],
+		"keywords": ["reactjs", "javascript", "api"],
 		"playableLink": "https://pokedex-reactjs.netlify.com/#/",
 		"githubLink": "https://github.com/ryandixon555/react-pokedex"
 	},
@@ -49,7 +49,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Bingo",
 		"description": "A bingo game that tracks the score. Connects to a Firebase DB.",
-		"keywords": ["reactjs", "javascript", "firebase", "full stack", ""],
+		"keywords": ["reactjs", "javascript", "firebase", "full stack"],
 		"playableLink": "https://react-bingo.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/bingo"
 	},
@@ -58,7 +58,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Fun Food Friends",
 		"description": "An app showing what friends bring to a picnic, using ReactJS and a Firebase DB",
-		"keywords": ["reactjs", "javascript", "firebase", "full stack", ""],
+		"keywords": ["reactjs", "javascript", "firebase", "full stack"],
 		"playableLink": "https://fun-food-friends.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/fun-food-friends"
 	},
@@ -67,7 +67,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "React Evernote Clone",
 		"description": "An evernote clone built using ReactJS and Firebase",
-		"keywords": ["reactjs", "javascript", "materialui", "firebase", ""],
+		"keywords": ["reactjs", "javascript", "materialui", "firebase"],
 		"playableLink": "https://react-evernote-tutorial.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/react-evernote-tutorial"
 	},
@@ -76,7 +76,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "React Board Game",
 		"description": "A local 2 player board game made using ReactJS",
-		"keywords": ["reactjs", "javascript", "game", ""],
+		"keywords": ["reactjs", "javascript", "game"],
 		"playableLink": "https://react-board-game-2.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/create-react-app-board-game-2"
 	},
@@ -85,7 +85,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "React Hooks - Budget Calculator",
 		"description": "A budget calculator using React Hooks",
-		"keywords": ["reactjs", "hooks", "javascript", ""],
+		"keywords": ["reactjs", "hooks", "javascript"],
 		"playableLink": "https://budget-react-hooks.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/react-hooks-budget-calculator"
 	},
@@ -94,7 +94,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Flappy Bird",
 		"description": "A small JS game based on Flappy Bird",
-		"keywords": ["game", "vanilla js", ""],
+		"keywords": ["game", "vanilla js"],
 		"playableLink": "https://ryandixon555.github.io/flappy-bird/",
 		"githubLink": "https://github.com/ryandixon555/flappy-bird"
 	},
@@ -103,7 +103,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Portfolio",
 		"description": "My portfolio, made using GatsbyJS",
-		"keywords": ["reactjs", "gatsbyjs", "javascript", "styled components", ""],
+		"keywords": ["reactjs", "gatsbyjs", "javascript", "styled components"],
 		"playableLink": "https://www.ryandixonportfolio.com/",
 		"githubLink": "https://github.com/ryandixon555/personal-website-V3"
 	},
@@ -112,7 +112,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Exercise Tracker",
 		"description": "An app showing an exercise tracker using the MERN stack",
-		"keywords": ["reactjs", "mern", "javascript", "api", "bootstrap", "mongodb", "full stack", "node", ""],
+		"keywords": ["reactjs", "mern", "javascript", "api", "bootstrap", "mongodb", "full stack", "node"],
 		"playableLink": "https://5e49823334f94f567773d0db--frosty-goldwasser-5ce2b8.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/react-full-stack-exercise-tracker"
 	},
@@ -121,7 +121,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "To Do List",
 		"description": "A To Do list made using ReactJS",
-		"keywords": ["reactjs", "javascript", ""],
+		"keywords": ["reactjs", "javascript"],
 		"playableLink": "https://react-js-to-do.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/react-todo-app"
 	},
@@ -130,7 +130,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Recipe App",
 		"description": "An app showing you recipes. Made using ReactJS where is connects to an API. Also includes filtering.",
-		"keywords": ["reactjs", "filtering", "javascript", "api", ""],
+		"keywords": ["reactjs", "filtering", "javascript", "api"],
 		"playableLink": "https://react-js-recipe.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/"
 	}
