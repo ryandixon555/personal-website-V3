@@ -47,7 +47,7 @@ module.exports = exports = [
 	{
 		"id": 11,
 		"client": "Personal Projects",
-		"name": "Pokedex",
+		"name": "ReactJS Pokedex",
 		"description": "A Pokedex made using ReactJS",
 		"keywords": ["ReactJS", "JavaScript", "API"],
 		"playableLink": "https://pokedex-reactjs.netlify.com/#/",

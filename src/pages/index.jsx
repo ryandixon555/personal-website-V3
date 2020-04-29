@@ -104,7 +104,7 @@ const Index = () => (
           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
         >
           Realistic Games are a gambling company.
-          I was responsible for the full lifecycle development of slot games, using JavsScript, HTML, CSS and PixiJS.
+          I was responsible for the full lifecycle development of slot games, using JavaScript, HTML, CSS and PixiJS.
         </ProjectCard>
         <ProjectCard
           title="The Logic Room"
@@ -121,8 +121,8 @@ const Index = () => (
           link=""
           bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
         >
-          Avvio Reply are a employee engagement agency.
-          During my time here I am a website developer, making use of CSS, HTML, Vanilla JavaScript and ReactJS.
+          Avvio Reply are an employee engagement agency.
+          During my time here I am a front end developer, making use of CSS, HTML, Vanilla JavaScript and ReactJS.
         </ProjectCard>
         </ProjectsWrapper>
       </Slide>
