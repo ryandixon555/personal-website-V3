@@ -1,5 +1,77 @@
 module.exports = exports = [
 	{
+		"id": "24",
+		"client": "Personal Projects",
+		"name": "JS Whack A Mole Game",
+		"description": "A simple whack-a-mole game built using Vanilla JS",
+		"keywords": ["Vanilla JS", "JavaScript"],
+		"playableLink": "https://js-whack-a-mole.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/js-whack-a-mole"
+	},
+	{
+		"id": "23",
+		"client": "Personal Projects",
+		"name": "JS Memory Matching Game",
+		"description": "A simple memory matching game built using Vanilla JS",
+		"keywords": ["Vanilla JS", "JavaScript"],
+		"playableLink": "https://vanilla-js-memory-game.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/js-memory-game"
+	},
+	{
+		"id": "22",
+		"client": "Personal Projects",
+		"name": "JS Tetris",
+		"description": "A simple Tetris game built using Vanilla JS",
+		"keywords": ["Vanilla JS", "JavaScript"],
+		"playableLink": "https://vanilla-js-tetris.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/js-tetris"
+	},
+	{
+		"id": "21",
+		"client": "Personal Projects",
+		"name": "JS Connect Four",
+		"description": "A simple connect four game built using Vanilla JS",
+		"keywords": ["Vanilla JS", "JavaScript"],
+		"playableLink": "https://js-connect-four.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/js-connect-four"
+	},
+	{
+		"id": "20",
+		"client": "Personal Projects",
+		"name": "JS Frogger",
+		"description": "A simple frogger game built using Vanilla JS",
+		"keywords": ["Vanilla JS", "JavaScript"],
+		"playableLink": "https://js-frogger.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/js-frogger"
+	},
+	{
+		"id": "19",
+		"client": "Personal Projects",
+		"name": "JS Beer Generator",
+		"description": "A beer generator built Vanilla JS and an API",
+		"keywords": ["Vanilla JS", "JavaScript", "API"],
+		"playableLink": "https://js-beer-generator.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/js-beer-generator"
+	},
+	{
+		"id": "18",
+		"client": "Personal Projects",
+		"name": "JS Snake",
+		"description": "A simple version of Snake built using Vanilla JS",
+		"keywords": ["Vanilla JS", "JavaScript"],
+		"playableLink": "https://vanillajs-snake.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/js-snake"
+	},
+	{
+		"id": "17",
+		"client": "Personal Projects",
+		"name": "Vanilla JS Pac-Man",
+		"description": "A simple version of Pac-Man built using Vanilla JS",
+		"keywords": ["Vanilla JS", "JavaScript"],
+		"playableLink": "https://js-pacman.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/JS-pacman"
+	},
+	{
 		"id": "16",
 		"client": "Personal Projects",
 		"name": "ReactJS Fuzzy Searching",
