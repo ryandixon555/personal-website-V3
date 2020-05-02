@@ -51,6 +51,11 @@ const ProjectStyling = styled.div `
     text-align: center;
     cursor: pointer;
     min-height: 370px;
+    transition: transform 0.8s ease-out; 
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     ${breakpoint('md')`
         width: 90%;
