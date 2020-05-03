@@ -38,8 +38,11 @@ const InputStyling = styled.input`
 
 const ProjectStyling = styled.div `
     background-color: #fff;
-    width: 50%;
+    width: 30%;
     max-width: 600px;
+    height: 100%;
+    min-height: 410px;
+    max-height: 450px;
     margin: 25px auto 0;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     border: 3px solid black;
@@ -50,7 +53,6 @@ const ProjectStyling = styled.div `
     padding: 10px;
     text-align: center;
     cursor: pointer;
-    min-height: 370px;
     transition: transform 0.8s ease-out; 
 
     &:hover {
