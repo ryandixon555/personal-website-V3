@@ -26,8 +26,8 @@ const ProjectWrapper = styled.div `
 `
 
 const InputStyling = styled.input`
-  padding: 5px;
-  margin: 5px;
+  padding: 20px;
+  margin: 20px;
   border: 2px solid black;
   border-radius: 3px;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
@@ -64,6 +64,12 @@ const ProjectStyling = styled.div `
     `}
 `
 
+const NumberOfProjectsStyling = styled.p `
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+`
+
 function SearchComponent ({projects}) {
   const options = {
     threshold: 0.1,
@@ -76,36 +82,44 @@ function SearchComponent ({projects}) {
     data: projects,
     options
   });
+ 
+  const numberOfProjects = projects.length;
 
   return (
-      <PortfolioPageWrapper>
-          <InputStyling
-              onChange={e => search(e.target.value)}
-              value={term}
-              placeholder="Search for a project..."
-          />
+    <PortfolioPageWrapper>
+      <InputStyling
+          onChange={e => search(e.target.value)}
+          value={term}
+          placeholder="Search for a project..."
+      />
 
-        <ProjectWrapper>
-          {result &&
-              result.map(project => {
-                if (project.item) project = project.item;
-                return (
-                  <ProjectStyling key={project.id}>
-                    <h4>Client:</h4>
-                    <p>{project.client}</p>
-                    <h4>Project Name:</h4>
-                    <p>{project.name}</p>
-                    <h4>Project Description:</h4>
-                    <p>{project.description}</p>
-                    <h4>Project Tags:</h4>
-                    <p>{project.keywords.join(', ')}</p>
-                    <a href = {project.playableLink} target="_blank" rel="noopener">Playable Link</a>
-                    <a href = {project.githubLink} target="_blank" rel="noopener">GitHub Link</a>
-                  </ProjectStyling>
-                );
-              })}
-         </ProjectWrapper>
-      </PortfolioPageWrapper>
+      <div>
+        <NumberOfProjectsStyling>
+          Number Of Projects: {numberOfProjects}
+        </NumberOfProjectsStyling>
+      </div>
+
+      <ProjectWrapper>
+        {result &&
+            result.map(project => {
+              if (project.item) project = project.item;
+              return (
+                <ProjectStyling key={project.id}>
+                  <h4>Client:</h4>
+                  <p>{project.client}</p>
+                  <h4>Project Name:</h4>
+                  <p>{project.name}</p>
+                  <h4>Project Description:</h4>
+                  <p>{project.description}</p>
+                  <h4>Project Tags:</h4>
+                  <p>{project.keywords.join(', ')}</p>
+                  <a href = {project.playableLink} target="_blank" rel="noopener">Playable Link</a>
+                  <a href = {project.githubLink} target="_blank" rel="noopener">GitHub Link</a>
+                </ProjectStyling>
+              );
+            })}
+      </ProjectWrapper>
+    </PortfolioPageWrapper>
   )
 }
 
