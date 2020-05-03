@@ -90,7 +90,7 @@ function SearchComponent ({projects}) {
       <InputStyling
           onChange={e => search(e.target.value)}
           value={term}
-          placeholder="Search for a project..."
+          placeholder="Search for a project by name or tag..."
       />
 
       <div>
