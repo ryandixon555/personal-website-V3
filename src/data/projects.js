@@ -2,6 +2,15 @@ module.exports = exports = [
 	{
 		"id": "24",
 		"client": "Personal Projects",
+		"name": "JS Candy Crush Game",
+		"description": "A simple candy crush game built using Vanilla JS",
+		"keywords": ["Vanilla JS", "JavaScript"],
+		"playableLink": "https://js-candy-crush.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/js-candy-crush"
+	},
+	{
+		"id": "24",
+		"client": "Personal Projects",
 		"name": "JS Whack A Mole Game",
 		"description": "A simple whack-a-mole game built using Vanilla JS",
 		"keywords": ["Vanilla JS", "JavaScript"],
