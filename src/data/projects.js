@@ -1,5 +1,14 @@
 module.exports = exports = [
 	{
+		"id": "25",
+		"client": "Barry Symons Autos",
+		"name": "Barry Symons Autos",
+		"description": "A static site made using Wix, to enable the client to make any future changes",
+		"keywords": ["Wix"],
+		"playableLink": "https://www.barrysymonsautos.com/",
+		"githubLink": ""
+	},
+	{
 		"id": "24",
 		"client": "Personal Projects",
 		"name": "JS Candy Crush Game",

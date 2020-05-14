@@ -113,7 +113,7 @@ function SearchComponent ({projects}) {
                   <p>{project.description}</p>
                   <h4>Project Tags:</h4>
                   <p>{project.keywords.join(', ')}</p>
-                  <a href = {project.playableLink} target="_blank" rel="noopener">Playable Link</a>
+                  <a href = {project.playableLink} target="_blank" rel="noopener">Published Link</a>
                   <a href = {project.githubLink} target="_blank" rel="noopener">GitHub Link</a>
                 </ProjectStyling>
               );
