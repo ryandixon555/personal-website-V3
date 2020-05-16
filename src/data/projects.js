@@ -1,8 +1,17 @@
 module.exports = exports = [
 	{
+		"id": "29",
+		"client": "Personal Projects",
+		"name": "Example E-Commerce Site",
+		"description": "An example e-commerce site made using GatsbyJS and using DataCMS . Also includes SnipCart integration.",
+		"keywords": ["DatoCMS, CMS, GatsbyJS, SnipCart"],
+		"playableLink": "https://ecommerce-cms-example.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/datocms-Snipcart-Gatsby-Shop-demo"
+	},
+	{
 		"id": "28",
 		"client": "Personal Projects",
-		"name": "Example Business",
+		"name": "Example Business Site",
 		"description": "An example business site portfolio, made using GatsbyJS and using Netlify as a CMS and for collecting form data. ALso includes blogs.",
 		"keywords": ["NetlifyCMS, CMS, GatsbyJS, Forms, Blog"],
 		"playableLink": "https://gatsby-business-starter.netlify.app/",
@@ -11,7 +20,7 @@ module.exports = exports = [
 	{
 		"id": "27",
 		"client": "Personal Projects",
-		"name": "Designer Portfolio",
+		"name": "Example Designer Portfolio",
 		"description": "An example designer portfolio, made using GatsbyJS and using DatoCMS",
 		"keywords": ["DatoCMS, CMS, GatsbyJS"],
 		"playableLink": "https://starter-portfolio-app.netlify.app/",
