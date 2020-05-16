@@ -1,5 +1,14 @@
 module.exports = exports = [
 	{
+		"id": "27",
+		"client": "Personal Projects",
+		"name": "Designer Portfolio",
+		"description": "An example designer portfolio, made using GatsbyJS and using DatoCMS",
+		"keywords": ["DatoCMS, CMS, GatsbyJS"],
+		"playableLink": "https://starter-portfolio-app.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/datocms-Gatsby-Portfolio-Website-demo"
+	},
+	{
 		"id": "26",
 		"client": "Barry Symons Autos",
 		"name": "Barry Symons Autos",
