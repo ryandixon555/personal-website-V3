@@ -1,5 +1,14 @@
 module.exports = exports = [
 	{
+		"id": "28",
+		"client": "Personal Projects",
+		"name": "Example Business",
+		"description": "An example business site portfolio, made using GatsbyJS and using Netlify as a CMS and for collecting form data. ALso includes blogs.",
+		"keywords": ["NetlifyCMS, CMS, GatsbyJS, Forms, Blog"],
+		"playableLink": "https://gatsby-business-starter.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/gatsby-starter-business"
+	},
+	{
 		"id": "27",
 		"client": "Personal Projects",
 		"name": "Designer Portfolio",
