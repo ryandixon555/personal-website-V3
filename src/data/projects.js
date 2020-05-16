@@ -3,7 +3,7 @@ module.exports = exports = [
 		"id": "29",
 		"client": "Personal Projects",
 		"name": "Example E-Commerce Site",
-		"description": "An example e-commerce site made using GatsbyJS and using DataCMS . Also includes SnipCart integration.",
+		"description": "An example e-commerce site made using GatsbyJS and using DataCMS. Also includes SnipCart integration.",
 		"keywords": ["DatoCMS, CMS, GatsbyJS, SnipCart"],
 		"playableLink": "https://ecommerce-cms-example.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/datocms-Snipcart-Gatsby-Shop-demo"
