@@ -73,7 +73,7 @@ const ContactForm = () => {
         </div>
 
         <DropdownStyling>
-            <div class="select" name="work"> 
+            <div className="select" name="work" id="work"> 
                 <select>
                     <option>Select type of work:</option>
                     <option>Permanent Employment</option>
@@ -82,7 +82,7 @@ const ContactForm = () => {
                 </select>
             </div>
 
-            <div class="select" name="FreelanceWork">
+            <div className="select" name="FreelanceWork" id="FreelanceWork">
                 <select>
                     <option>Select type of freelance work (if applicable):</option>
                     <option>None</option>
