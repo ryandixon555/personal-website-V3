@@ -21,7 +21,7 @@ const SuccessPage = () => (
     <Background>
       <section>
           <Title>
-            Success
+            Submitted
           </Title>
       </section>
       <section>

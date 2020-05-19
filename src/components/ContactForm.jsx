@@ -22,7 +22,7 @@ const encode = (data) => {
 const ContactForm = () => {
   return (
     <Formik
-      initialValues={{ name: '', email: '', message: '' }}
+      initialValues={{ name: '', email: '', message: '', work: 'Other', FreelanceWork: 'None'}}
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting }) => {
         fetch("/?no-cache=1", {                                 //eslint-disable-line
@@ -73,15 +73,16 @@ const ContactForm = () => {
         </div>
 
         <DropdownStyling>
-            <div class="select">
+            <div class="select" name="work"> 
                 <select>
                     <option>Select type of work:</option>
                     <option>Permanent Employment</option>
                     <option>Freelance</option>
+                    <option>Other</option>
                 </select>
             </div>
 
-            <div class="select">
+            <div class="select" name="FreelanceWork">
                 <select>
                     <option>Select type of freelance work (if applicable):</option>
                     <option>None</option>
