@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 // Elements
 import { Title} from '../elements/Titles'
