@@ -68,7 +68,6 @@ const Index = () => (
       </BigTitle>
       <Subtitle>I'm a Front End Developer.</Subtitle>
       <Subtitle>I make websites, games, apps and more!</Subtitle>
-      <Subtitle>Get in touch at <a href="mailto:ryan555@sky.com">ryan555@sky.com</a></Subtitle>
     </Hero>
 
     <Projects>
@@ -136,7 +135,7 @@ const Index = () => (
         </Roll>
         <Fade>
         <AboutSub>
-          I'm a Front End Developer based in Reading, UK.
+          I'm a Front End Developer based in the UK.
           </AboutSub>
         </Fade>
       </AboutHero>
@@ -151,7 +150,7 @@ const Index = () => (
       <Inner>
         <Title>Get in touch</Title>
         <ContactText>
-          Say <a href="mailto:ryan555@sky.com">Hi (ryan555@sky.com) </a> or find me on other platforms:{' '}
+          Find me on other platforms:{' '}
           <a href="https://github.com/ryandixon555" target="_blank">GitHub</a> &{' '}
           <a href="https://www.linkedin.com/in/ryan-dixon-85372642/" target="_blank">LinkedIn</a>
         </ContactText>

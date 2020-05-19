@@ -6,7 +6,7 @@ module.exports = {
   siteTitle: 'Ryan Dixon | Portfolio', // Navigation and Site Title
   siteTitleAlt: 'Ryan Dixon Portfolio', // Alternative Site title for SEO
   siteTitleShort: 'Ryan Dixon Portfolio', // short_name for manifest
-  siteHeadline: 'Ryan Dixon Portfolios', // Headline for schema.org JSONLD
+  siteHeadline: 'Ryan Dixon Portfolio', // Headline for schema.org JSONLD
   siteUrl: 'https://www.ryandixonportfolio.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest

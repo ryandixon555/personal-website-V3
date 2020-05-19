@@ -8,6 +8,7 @@ const MyNavBar = () => (
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto">
         <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="../contact">Contact</Nav.Link>
         <Nav.Link href="../portfolio">Portfolio</Nav.Link>
         <Nav.Link href="../skills">Skills</Nav.Link>
         <Nav.Link href="../qualifications">Qualifications</Nav.Link>

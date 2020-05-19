@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components takes precedence over default styles.
 import React from 'react'
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade';
 
 // Components
 import MyNavBar from '../components/NavBar'
@@ -26,24 +27,26 @@ const InnerText = styled.div`
 const Qualifications = () => (
   <>
     <MyNavBar/>
-    <Background>
-      <Title>
-        Qualifications
-      </Title>
-      <InnerText>
-        A 2:1 Degree (Hons) from Bucks New University, 2009 - 2012.
-      </InnerText>
-      <InnerText>
-        Modules include:
-        <ul>
-          <li>Software Engineering</li>
-          <li>Artificial Intelligence</li>
-          <li>Object-Orientated Principles and Design</li>
-          <li>C++</li>
-          <li>Web Development</li>
-        </ul>
-      </InnerText>
-    </Background>
+    <Fade>
+      <Background>
+        <Title>
+          Qualifications
+        </Title>
+        <InnerText>
+          A 2:1 Degree (Hons) from Bucks New University, 2009 - 2012.
+        </InnerText>
+        <InnerText>
+          Modules include:
+          <ul>
+            <li>Software Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Object-Orientated Principles and Design</li>
+            <li>C++</li>
+            <li>Web Development</li>
+          </ul>
+        </InnerText>
+      </Background>
+    </Fade>
   </>
 )
 
