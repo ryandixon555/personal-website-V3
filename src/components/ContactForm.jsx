@@ -5,14 +5,6 @@ import validationSchema from './validationSchema'
 import styled from 'styled-components'
 import '../styles/styles.sass'
 
-export const DropdownStyling = styled.div`
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-`
-
 const encode = (data) => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -22,7 +14,7 @@ const encode = (data) => {
 const ContactForm = () => {
   return (
     <Formik
-      initialValues={{ name: '', email: '', message: '', work: 'Other', FreelanceWork: 'None'}}
+      initialValues={{ name: '', email: '', message: ''}}
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting }) => {
         fetch("/?no-cache=1", {                                 //eslint-disable-line
@@ -71,29 +63,6 @@ const ContactForm = () => {
           </div>
           {touched.email && errors.email && <small className='has-text-danger'>{errors.email}</small>}
         </div>
-
-        <DropdownStyling>
-            <div className="select" name="work" id="work"> 
-                <select>
-                    <option>Select type of work:</option>
-                    <option>Permanent Employment</option>
-                    <option>Freelance</option>
-                    <option>Other</option>
-                </select>
-            </div>
-
-            <div className="select" name="FreelanceWork" id="FreelanceWork">
-                <select>
-                    <option>Select type of freelance work (if applicable):</option>
-                    <option>None</option>
-                    <option>Portfolio</option>
-                    <option>Business Site</option>
-                    <option>Marketing</option>
-                    <option>E-Commerce</option>
-                    <option>Other</option>
-                </select>
-            </div>
-        </DropdownStyling>
         
         <div className='field'>
           <label className='label'>Message</label>
