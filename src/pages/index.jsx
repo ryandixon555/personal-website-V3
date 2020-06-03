@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import "animate.css/animate.min.css";
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 import React from 'react'
@@ -27,6 +28,7 @@ import Projects from '../views/Projects'
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import Roll from 'react-reveal/Roll';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 // Images
 import avatar from '../images/avatar.jpg'
@@ -62,6 +64,7 @@ const Index = () => (
   <div>
     <MyNavBar/>
     <Layout/>
+    <Fade>
     <Hero>
       <BigTitle>
         Hello, I'm Ryan Dixon.
@@ -69,6 +72,7 @@ const Index = () => (
       <Subtitle>I'm a Front End Developer.</Subtitle>
       <Subtitle>I make websites, games, apps and more!</Subtitle>
     </Hero>
+    </Fade>
 
     <Projects>
       <Slide right>

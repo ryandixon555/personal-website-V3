@@ -56,12 +56,16 @@ const ProjectStyling = styled.div `
     transition: transform 0.8s ease-out; 
 
     &:hover {
-      transform: scale(1.1);
+      position: relative;
+      top: -5px;
     }
 
     ${breakpoint('md')`
         width: 90%;
     `}
+`
+const HeaderStyling = styled.h4`
+  font-weight: bold;
 `
 
 const NumberOfProjectsStyling = styled.p `
@@ -98,20 +102,20 @@ function SearchComponent ({projects}) {
           Number Of Projects: {numberOfProjects}
         </NumberOfProjectsStyling>
       </div>
-
+     
       <ProjectWrapper>
         {result &&
             result.map(project => {
               if (project.item) project = project.item;
               return (
                 <ProjectStyling key={project.id}>
-                  <h4>Client:</h4>
+                  <HeaderStyling>Client:</HeaderStyling>
                   <p>{project.client}</p>
-                  <h4>Project Name:</h4>
+                  <HeaderStyling>Project Name:</HeaderStyling>
                   <p>{project.name}</p>
-                  <h4>Project Description:</h4>
+                  <HeaderStyling>Project Description:</HeaderStyling>
                   <p>{project.description}</p>
-                  <h4>Project Tags:</h4>
+                  <HeaderStyling>Project Tags:</HeaderStyling>
                   <p>{project.keywords.join(', ')}</p>
                   <a href = {project.playableLink} target="_blank" rel="noopener">Published Link</a>
                   <a href = {project.githubLink} target="_blank" rel="noopener">GitHub Link</a>

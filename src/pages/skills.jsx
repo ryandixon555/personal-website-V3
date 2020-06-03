@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components takes precedence over default styles.
 import React from 'react'
 import Fade from 'react-reveal/Fade';
+import styled from 'styled-components'
 
 // Components
 import MyNavBar from '../components/NavBar'
@@ -12,6 +13,21 @@ import { Title} from '../elements/Titles'
 import { InnerText } from './../elements/InnerText';
 import { Background } from '../elements/Background'
 
+
+const SkillContainer = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+`
+
+const Skill = styled.div`
+  position: relative;
+  border: 2px solid green;
+  margin: 5px;
+  padding: 5px;
+`
 const Skills = () => (
   <>
     <MyNavBar/>
@@ -21,34 +37,41 @@ const Skills = () => (
             Skills
           </Title>
             <InnerText>
-            Skills gained during my time as a Front-End Developer:
+            Professional Experience Of:
               <br/><br/>
-              <ul>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JSX</li>
-                <li>JQuery</li>
-                <li>Bootstrap</li>
-                <li>ReactJS</li>
-                <li>NodeJS</li>
-                <li>CSS in JS (Styled Components)</li>
-                <li>JS Testing Frameworks, such as Jest</li>
-                <li>Asset Management</li>
-                <li>TDD</li>
-                <li>BDD</li>
-                <li>Agile Methodoligies (scrum, kanban etc)</li>
-                <li>Handlebars</li>
-                <li>SASS</li>
-                <li>Gatsby</li>
-                <li>Frontend tools such as Grunt, Gulp and Webpack</li>
-                <li>Git/GitHub</li>
-                <li>SVN</li>
-                <li>Responsive Web Design</li>
-                <li>BEM</li>
-                <li>Bulma CSS</li>
-                <li>DatoCMS</li>
-              </ul>
+              <SkillContainer>
+                <Skill>JavaScript</Skill>
+                <Skill>HTML</Skill>
+                <Skill>CSS</Skill>
+                <Skill>JSX</Skill>
+                <Skill>JQuery</Skill>
+                <Skill>ReactJS</Skill>
+                <Skill>JS Testing Frameworks, such as Jest</Skill>
+                <Skill>Asset Management</Skill>
+                <Skill>TDD</Skill>
+                <Skill>BDD</Skill>
+                <Skill>Agile Methodoligies (scrum, kanban etc)</Skill>
+                <Skill>Handlebars</Skill>
+                <Skill>SASS</Skill>
+                <Skill>Frontend tools such as Grunt, Gulp and Webpack</Skill>
+                <Skill>Git/GitHub</Skill>
+                <Skill>SVN</Skill>
+                <Skill>Responsive Web Design</Skill>
+                <Skill>BEM</Skill>
+              </SkillContainer>
+            </InnerText>
+
+            <InnerText>
+            Working Knowledge Of:
+              <br/><br/>
+              <SkillContainer>
+                <Skill>Bootstrap</Skill>
+                <Skill>NodeJS</Skill>
+                <Skill>CSS in JS (Styled Components)</Skill>
+                <Skill>GatsbyJS</Skill>
+                <Skill>Bulma CSS</Skill>
+                <Skill>DatoCMS</Skill>
+              </SkillContainer>
             </InnerText>
       </Background>
     </Fade>
