@@ -64,7 +64,7 @@ const Index = () => (
   <div>
     <MyNavBar/>
     <Layout/>
-    <Fade>
+    <Fade delay={0}>
     <Hero>
       <BigTitle>
         Hello, I'm Ryan Dixon.
@@ -75,7 +75,7 @@ const Index = () => (
     </Fade>
 
     <Projects>
-      <Slide right>
+      <Slide right delay={0}>
       <Title>See My Work</Title>
       <ProjectsWrapper>
         <PortfolioProjectCard
@@ -97,7 +97,7 @@ const Index = () => (
       </ProjectsWrapper>
       </Slide>
 
-      <Slide left>
+      <Slide left delay={0}>
       <Title>Commercial Work</Title>
       <ProjectsWrapper>
         <ProjectCard
