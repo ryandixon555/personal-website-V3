@@ -1,9 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from "react";
 import styled from 'styled-components'
-import Fade from 'react-reveal/Fade';
+import { keyframes } from 'styled-components'
+
 import Projects from '../data/projects'
 import SearchComponent from './SearchComponent'
+
+const SlideInPortfolio = keyframes`
+ 0% { opacity:0; left: -150%;}
+ 100% { opacity:1; left: 0%; }
+`
 
 const PortfolioPageWrapper = styled.div `
     position: relative;
@@ -13,6 +19,10 @@ const PortfolioPageWrapper = styled.div `
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    animation-name: ${SlideInPortfolio};
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 `
 
 const PortfolioWrapper = styled.div `
@@ -24,15 +34,10 @@ const PortfolioWrapper = styled.div `
 `
 
 export default function MyPortfolio () {
-  
   return (
     <PortfolioPageWrapper>
       <PortfolioWrapper>
-        <Fade bottom>
-        
-            <SearchComponent projects={Projects} />
-        
-        </Fade>
+        <SearchComponent projects={Projects} />
       </PortfolioWrapper>
     </PortfolioPageWrapper>
   );

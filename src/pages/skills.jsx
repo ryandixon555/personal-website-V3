@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 import React from 'react'
-import Fade from 'react-reveal/Fade';
+import { keyframes } from 'styled-components'
 import styled from 'styled-components'
 
 // Components
@@ -11,8 +11,23 @@ import MyNavBar from '../components/NavBar'
 // Elements
 import { Title} from '../elements/Titles'
 import { InnerText } from './../elements/InnerText';
-import { Background } from '../elements/Background'
 
+const SkillsAnimation = keyframes`
+ 0% { opacity: 0}
+ 100% { opacity: 1; }
+`
+const Background = styled.div`
+  position: relative;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  animation-name: ${SkillsAnimation};
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+`
 
 const SkillContainer = styled.div`
   position: relative;
@@ -31,7 +46,6 @@ const Skill = styled.div`
 const Skills = () => (
   <>
     <MyNavBar/>
-    <Fade>
       <Background>
           <Title>
             Skills
@@ -74,7 +88,6 @@ const Skills = () => (
               </SkillContainer>
             </InnerText>
       </Background>
-    </Fade>
   </>
 )
 

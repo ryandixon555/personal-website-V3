@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components takes precedence over default styles.
 import React from 'react'
 import styled from 'styled-components'
-import Fade from 'react-reveal/Fade';
+import { keyframes } from 'styled-components'
 
 // Components
 import MyNavBar from '../components/NavBar'
@@ -13,13 +13,22 @@ import { ContactForm } from '../components/ContactForm'
 import Inner from '../elements/Inner'
 import { Title } from '../elements/Titles'
 
-export const Background = styled.div`
+const FadeInAnimationContact = keyframes`
+ 0% { opacity: 0}
+ 100% { opacity: 1; }
+`
+
+const Background = styled.div`
   position: relative;
   width: 100%;
   background: white;
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  animation-name: ${FadeInAnimationContact};
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 `
 const ContactDesc = styled.p`
   font-size: 32px;
@@ -32,10 +41,10 @@ const ContactDesc = styled.p`
 const Contact = () => (
   <>
     <MyNavBar/>
-    <Fade>
     <Background>
       <Inner>
         <Title>Contact</Title>
+
         <ContactDesc>
           Please fill in the form below regarding any job opportunities, including full time or freelance work.
         </ContactDesc>
@@ -44,15 +53,13 @@ const Contact = () => (
         </ContactDesc>
 
         <section className='section'>
-      <div className='container'>
-        <ContactForm />
-      </div>
-    </section>
-      
+          <div className='container'>
+            <ContactForm />
+          </div>
+        </section>
 
       </Inner>
     </Background>
-  </Fade>
   </>
 )
 

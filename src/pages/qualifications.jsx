@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components takes precedence over default styles.
 import React from 'react'
 import styled from 'styled-components'
-import Fade from 'react-reveal/Fade';
+import { keyframes } from 'styled-components'
 
 // Components
 import MyNavBar from '../components/NavBar'
@@ -11,11 +11,20 @@ import MyNavBar from '../components/NavBar'
 // Elements
 import { Title } from '../elements/Titles'
 
+const FadeInAnimationQualifications = keyframes`
+ 0% { opacity: 0}
+ 100% { opacity: 1; }
+`
+
 const Background = styled.div`
   position: relative;
   width: 100%;
   height: 1001px;
   background: white;
+
+  animation-name: ${FadeInAnimationQualifications};
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 `
 const InnerText = styled.div`
   position: relative;
@@ -27,7 +36,6 @@ const InnerText = styled.div`
 const Qualifications = () => (
   <>
     <MyNavBar/>
-    <Fade>
       <Background>
         <Title>
           Qualifications
@@ -46,7 +54,6 @@ const Qualifications = () => (
           </ul>
         </InnerText>
       </Background>
-    </Fade>
   </>
 )
 

@@ -73,7 +73,6 @@ const Index = () => (
     </Hero>
 
     <Projects>
-      <Slide right delay={100}>
       <Title>See My Work</Title>
       <ProjectsWrapper>
         <PortfolioProjectCard
@@ -93,9 +92,7 @@ const Index = () => (
             See more at my GitHub account
         </GitHubProjectCard>
       </ProjectsWrapper>
-      </Slide>
 
-      <Slide left delay={100}>
       <Title>Commercial Work</Title>
       <ProjectsWrapper>
         <ProjectCard
@@ -126,7 +123,6 @@ const Index = () => (
           During my time here I am a front end developer, making use of CSS, HTML, Vanilla JavaScript and ReactJS.
         </ProjectCard>
         </ProjectsWrapper>
-      </Slide>
     </Projects>
 
     <About>
