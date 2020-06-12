@@ -4,7 +4,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Example E-Commerce Site",
 		"description": "An example e-commerce site made using GatsbyJS and using DataCMS. Also includes SnipCart integration.",
-		"keywords": ["DatoCMS, CMS, GatsbyJS, SnipCart"],
+		"keywords": ["DatoCMS, CMS, GatsbyJS, SnipCart, GraphQL, React"],
 		"playableLink": "https://ecommerce-cms-example.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/datocms-Snipcart-Gatsby-Shop-demo"
 	},
@@ -13,7 +13,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Example Business Site",
 		"description": "An example business site portfolio, made using GatsbyJS and using Netlify as a CMS and for collecting form data. Also includes blogs.",
-		"keywords": ["NetlifyCMS, CMS, GatsbyJS, Forms, Blog"],
+		"keywords": ["NetlifyCMS, CMS, GatsbyJS, Forms, Blog, React, GraphQL"],
 		"playableLink": "https://gatsby-business-starter.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/gatsby-starter-business"
 	},
@@ -22,7 +22,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Example Designer Portfolio",
 		"description": "An example designer portfolio, made using GatsbyJS and using DatoCMS",
-		"keywords": ["DatoCMS, CMS, GatsbyJS"],
+		"keywords": ["DatoCMS, CMS, GatsbyJS, React"],
 		"playableLink": "https://starter-portfolio-app.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/datocms-Gatsby-Portfolio-Website-demo"
 	},
@@ -40,7 +40,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "JS Candy Crush Game",
 		"description": "A simple candy crush game built using Vanilla JS",
-		"keywords": ["Vanilla JS", "JavaScript"],
+		"keywords": ["VanillaJS", "JavaScript", "Game"],
 		"playableLink": "https://js-candy-crush.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/js-candy-crush"
 	},
@@ -49,7 +49,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "JS Whack A Mole Game",
 		"description": "A simple whack-a-mole game built using Vanilla JS",
-		"keywords": ["Vanilla JS", "JavaScript"],
+		"keywords": ["VanillaJS", "JavaScript", "Game"],
 		"playableLink": "https://js-whack-a-mole.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/js-whack-a-mole"
 	},
@@ -58,7 +58,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "JS Memory Matching Game",
 		"description": "A simple memory matching game built using Vanilla JS",
-		"keywords": ["Vanilla JS", "JavaScript"],
+		"keywords": ["VanillaJS", "JavaScript", "Game"],
 		"playableLink": "https://vanilla-js-memory-game.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/js-memory-game"
 	},
@@ -67,7 +67,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "JS Tetris",
 		"description": "A simple Tetris game built using Vanilla JS",
-		"keywords": ["Vanilla JS", "JavaScript"],
+		"keywords": ["VanillaJS", "JavaScript", "Game"],
 		"playableLink": "https://vanilla-js-tetris.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/js-tetris"
 	},
@@ -76,7 +76,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "JS Connect Four",
 		"description": "A simple connect four game built using Vanilla JS",
-		"keywords": ["Vanilla JS", "JavaScript"],
+		"keywords": ["VanillaJS", "JavaScript", "Game"],
 		"playableLink": "https://js-connect-four.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/js-connect-four"
 	},
@@ -85,7 +85,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "JS Frogger",
 		"description": "A simple frogger game built using Vanilla JS",
-		"keywords": ["Vanilla JS", "JavaScript"],
+		"keywords": ["VanillaJS", "JavaScript", "Game"],
 		"playableLink": "https://js-frogger.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/js-frogger"
 	},
@@ -94,7 +94,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "JS Beer Generator",
 		"description": "A beer generator built Vanilla JS and an API",
-		"keywords": ["Vanilla JS", "JavaScript", "API"],
+		"keywords": ["VanillaJS", "JavaScript", "API"],
 		"playableLink": "https://js-beer-generator.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/js-beer-generator"
 	},
@@ -103,7 +103,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "JS Snake",
 		"description": "A simple version of Snake built using Vanilla JS",
-		"keywords": ["Vanilla JS", "JavaScript"],
+		"keywords": ["VanillaJS", "JavaScript", "Game"],
 		"playableLink": "https://vanillajs-snake.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/js-snake"
 	},
@@ -112,7 +112,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Vanilla JS Pac-Man",
 		"description": "A simple version of Pac-Man built using Vanilla JS",
-		"keywords": ["Vanilla JS", "JavaScript"],
+		"keywords": ["VanillaJS", "JavaScript", "Game"],
 		"playableLink": "https://js-pacman.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/JS-pacman"
 	},
@@ -148,7 +148,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "ReactJS Quiz",
 		"description": "A quiz built using ReactJS",
-		"keywords": ["ReactJS", "JavaScript", "React Hooks", "Quiz"],
+		"keywords": ["ReactJS", "JavaScript", "React Hooks", "Quiz", "Game"],
 		"playableLink": "https://reactjs-quiz.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/reactjs-quiz"
 	},
@@ -175,7 +175,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Bingo",
 		"description": "A bingo game that tracks the score. Connects to a Firebase DB.",
-		"keywords": ["ReactJS", "JavaScript", "Firebase", "Full Stack"],
+		"keywords": ["ReactJS", "JavaScript", "FireBase", "Full Stack"],
 		"playableLink": "https://react-bingo.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/bingo"
 	},
@@ -193,7 +193,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "React Evernote Clone",
 		"description": "An evernote clone built using ReactJS and Firebase",
-		"keywords": ["ReactJS", "JavaScript", "MaterialUI", "Firebase"],
+		"keywords": ["ReactJS", "JavaScript", "MaterialUI", "Firebase", "Full Stack"],
 		"playableLink": "https://react-evernote-tutorial.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/react-evernote-tutorial"
 	},
@@ -220,7 +220,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Flappy Bird",
 		"description": "A small JS game based on Flappy Bird",
-		"keywords": ["Game", "Vanilla JS"],
+		"keywords": ["Game", "VanillaJS"],
 		"playableLink": "https://ryandixon555.github.io/flappy-bird/",
 		"githubLink": "https://github.com/ryandixon555/flappy-bird"
 	},
