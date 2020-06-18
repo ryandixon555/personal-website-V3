@@ -2,6 +2,15 @@ module.exports = exports = [
 	{
 		"id": "29",
 		"client": "Personal Projects",
+		"name": "Phaser Slot Game",
+		"description": "A slot game built with PhaserJS.",
+		"keywords": ["Phaser, Game, Slot Machine"],
+		"playableLink": "https://phaser-slot-example.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/phaser-jackpot-five"
+	},
+	{
+		"id": "29",
+		"client": "Personal Projects",
 		"name": "Example E-Commerce Site",
 		"description": "An example e-commerce site made using GatsbyJS and using DataCMS. Also includes SnipCart integration.",
 		"keywords": ["DatoCMS, CMS, GatsbyJS, SnipCart, GraphQL, React"],
