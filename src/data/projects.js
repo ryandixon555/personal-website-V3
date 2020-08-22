@@ -1,6 +1,15 @@
 module.exports = exports = [
 	{
-		"id": "29",
+		"id": "31",
+		"client": "Personal Projects",
+		"name": "ReactJS Multiple Search Filtering",
+		"description": "A multiple filtering app using ReactJS",
+		"keywords": ["ReactJS, Filtering, React, JavaScript"],
+		"playableLink": "https://react-multiple-search.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/react-multiple-search"
+	}
+	,{
+		"id": "30",
 		"client": "Personal Projects",
 		"name": "Phaser Slot Game",
 		"description": "A slot game built with PhaserJS.",

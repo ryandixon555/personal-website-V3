@@ -6,8 +6,12 @@ Made using:
 * Tailwind CSS
 * Styled Components
 
+## To Install:
+* npm i
+  
 ## To Run:
 * gatsby develop
+* load on localhost:8000
 
 ## To Build:
 * gatsby build
