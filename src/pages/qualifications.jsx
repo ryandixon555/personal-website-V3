@@ -41,7 +41,7 @@ const Qualifications = () => (
           Qualifications
         </Title>
         <InnerText>
-          A 2:1 Degree (Hons) from Bucks New University, 2009 - 2012.
+          A Games Development 2:1 Degree (Hons) from Bucks New University, 2009 - 2012.
         </InnerText>
         <InnerText>
           Modules include:

@@ -115,12 +115,21 @@ const Index = () => (
         </ProjectCard>
         <ProjectCard
           title="Avvio Reply"
-          dates="February 2019 - Present"
+          dates="February 2019 - July 2020"
           link=""
           bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
         >
           Avvio Reply are an employee engagement agency.
-          During my time here I am a front end developer, making use of CSS, HTML, Vanilla JavaScript and ReactJS.
+          I was the lead front end developer here, making use of CSS, HTML, Vanilla JavaScript and ReactJS to develop sites based around gamification.
+        </ProjectCard>
+        <ProjectCard
+          title="Crucible Games"
+          dates="August 2020 - Present"
+          link=""
+          bg="linear-gradient(to right, #4267B2 0%, #00FFEE 100%)"
+        >
+          Crucible games are a slot development company.
+          I'm a front end game developer, responsible for developing the front end of slot games, making use of JavaScript and PhaserJS.
         </ProjectCard>
         </ProjectsWrapper>
     </Projects>

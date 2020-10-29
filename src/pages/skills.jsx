@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 import { keyframes } from 'styled-components'
 import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 // Components
 import MyNavBar from '../components/NavBar'
@@ -39,9 +40,10 @@ const SkillContainer = styled.div`
 
 const Skill = styled.div`
   position: relative;
-  border: 2px solid green;
-  margin: 5px;
-  padding: 5px;
+  ${tw`shadow-lg relative no-underline rounded-lg text-white`};
+  background: linear-gradient(to right, #00B2FF 0%, #006AFF 100%);
+  padding: 10px;
+  margin: 10px;
 `
 const Skills = () => (
   <>
@@ -57,6 +59,8 @@ const Skills = () => (
                 <Skill>JavaScript</Skill>
                 <Skill>HTML</Skill>
                 <Skill>CSS</Skill>
+                <Skill>PhaserJS</Skill>
+                <Skill>PixiJS</Skill>
                 <Skill>JSX</Skill>
                 <Skill>JQuery</Skill>
                 <Skill>ReactJS</Skill>
@@ -67,23 +71,15 @@ const Skills = () => (
                 <Skill>Agile Methodoligies (scrum, kanban etc)</Skill>
                 <Skill>Handlebars</Skill>
                 <Skill>SASS</Skill>
-                <Skill>Frontend tools such as Grunt, Gulp and Webpack</Skill>
+                <Skill>Frontend build tools such as Grunt, Gulp and Webpack</Skill>
                 <Skill>Git/GitHub</Skill>
                 <Skill>SVN</Skill>
                 <Skill>Responsive Web Design</Skill>
                 <Skill>BEM</Skill>
-              </SkillContainer>
-            </InnerText>
-
-            <InnerText>
-            Working Knowledge Of:
-              <br/><br/>
-              <SkillContainer>
                 <Skill>Bootstrap</Skill>
                 <Skill>NodeJS</Skill>
                 <Skill>CSS in JS (Styled Components)</Skill>
                 <Skill>GatsbyJS</Skill>
-                <Skill>Bulma CSS</Skill>
                 <Skill>DatoCMS</Skill>
               </SkillContainer>
             </InnerText>
