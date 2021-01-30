@@ -1,5 +1,68 @@
 module.exports = exports = [
 	{
+		"id": "38",
+		"client": "Crucible Games",
+		"name": "Blazin Hot 7s Stack Em Up",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"playableLink": "https://demo.sgdigital.com/games/all?query=blazin#game70550-desktop",
+		"githubLink": ""
+	},
+	{
+		"id": "37",
+		"client": "Realistic Games",
+		"name": "Rainbow Magic",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"playableLink": "https://www.slotstemple.com/free-slots/rainbow-magic/",
+		"githubLink": ""
+	},
+	{
+		"id": "36",
+		"client": "Realistic Games",
+		"name": "Time Is Money",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"playableLink": "https://www.slotstemple.com/free-slots/time-is-money/",
+		"githubLink": ""
+	},
+	{
+		"id": "35",
+		"client": "Realistic Games",
+		"name": "Fireworks",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"playableLink": "https://www.slotstemple.com/free-slots/fireworks/",
+		"githubLink": ""
+	},
+	{
+		"id": "34",
+		"client": "Realistic Games",
+		"name": "Spin Dizzy",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"playableLink": "https://www.slotstemple.com/free-slots/spin-dizzy/",
+		"githubLink": ""
+	},
+	{
+		"id": "33",
+		"client": "Realistic Games",
+		"name": "Clockwork Mice",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"playableLink": "https://www.slotstemple.com/free-slots/clockwork-mice/",
+		"githubLink": ""
+	},
+	{
+		"id": "32",
+		"client": "Realistic Games",
+		"name": "Super Graphics Upside Down",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"playableLink": "https://www.slotstemple.com/free-slots/super-graphics-upside-down/",
+		"githubLink": ""
+	},
+	{
 		"id": "31",
 		"client": "Personal Projects",
 		"name": "ReactJS Multiple Search Filtering",

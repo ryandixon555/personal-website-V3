@@ -103,6 +103,7 @@ const Index = () => (
         >
           Realistic Games are a gambling company.
           I was responsible for the full lifecycle development of slot games, using JavaScript, HTML, CSS and PixiJS.
+          Select my portfolio for some game examples.
         </ProjectCard>
         <ProjectCard
           title="The Logic Room"
@@ -130,6 +131,7 @@ const Index = () => (
         >
           Crucible games are a slot development company.
           I'm a front end game developer, responsible for developing the front end of slot games, making use of JavaScript and PhaserJS.
+          Select my portfolio for some game examples.
         </ProjectCard>
         </ProjectsWrapper>
     </Projects>
