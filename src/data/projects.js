@@ -1,10 +1,19 @@
 module.exports = exports = [
 	{
+		"id": "39",
+		"client": "Personal Projects",
+		"name": "Lucky Slot Game",
+		"description": "A basic slot Game using Phaser V3",
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"playableLink": "https://ryandixon555.github.io/lucky-slot-game/src/index.html",
+		"githubLink": "https://github.com/ryandixon555/lucky-slot-game"
+	},
+	{
 		"id": "38",
 		"client": "Crucible Games",
 		"name": "Blazin Hot 7s Stack Em Up",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
 		"playableLink": "https://demo.sgdigital.com/games/all?query=blazin#game70550-desktop",
 		"githubLink": ""
 	},
@@ -13,7 +22,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Rainbow Magic",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
 		"playableLink": "https://www.slotstemple.com/free-slots/rainbow-magic/",
 		"githubLink": ""
 	},
@@ -22,7 +31,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Time Is Money",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
 		"playableLink": "https://www.slotstemple.com/free-slots/time-is-money/",
 		"githubLink": ""
 	},
@@ -31,7 +40,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Fireworks",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
 		"playableLink": "https://www.slotstemple.com/free-slots/fireworks/",
 		"githubLink": ""
 	},
@@ -40,7 +49,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Spin Dizzy",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
 		"playableLink": "https://www.slotstemple.com/free-slots/spin-dizzy/",
 		"githubLink": ""
 	},
@@ -49,7 +58,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Clockwork Mice",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
 		"playableLink": "https://www.slotstemple.com/free-slots/clockwork-mice/",
 		"githubLink": ""
 	},
@@ -58,7 +67,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Super Graphics Upside Down",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, React, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
 		"playableLink": "https://www.slotstemple.com/free-slots/super-graphics-upside-down/",
 		"githubLink": ""
 	},
