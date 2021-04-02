@@ -96,23 +96,14 @@ const Index = () => (
       <Title>Commercial Work</Title>
       <ProjectsWrapper>
         <ProjectCard
-          title="Realistic Games"
-          dates="July 2015 - November 2018"
+          title="Crucible Games"
+          dates="August 2020 - Present"
           link=""
-          bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+          bg="linear-gradient(to right, #4267B2 0%, #00FFEE 100%)"
         >
-          Realistic Games are a gambling company.
-          I was responsible for the full lifecycle development of slot games, using JavaScript, HTML, CSS and PixiJS.
+          Crucible games are a slot development company.
+          I'm a senior front end game developer, responsible for developing the front end of slot games, making use of JavaScript and PhaserJS.
           Select my portfolio for some game examples.
-        </ProjectCard>
-        <ProjectCard
-          title="The Logic Room"
-          dates="December 2018 - January 2019"
-          link=""
-          bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-        >
-          The Logic Room are an app development company.
-          During my time here I worked on a commercial app, making use of ReactJS.
         </ProjectCard>
         <ProjectCard
           title="Avvio Reply"
@@ -124,13 +115,22 @@ const Index = () => (
           I was the lead front end developer here, making use of CSS, HTML, Vanilla JavaScript and ReactJS to develop sites based around gamification.
         </ProjectCard>
         <ProjectCard
-          title="Crucible Games"
-          dates="August 2020 - Present"
+          title="The Logic Room"
+          dates="December 2018 - January 2019"
           link=""
-          bg="linear-gradient(to right, #4267B2 0%, #00FFEE 100%)"
+          bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
         >
-          Crucible games are a slot development company.
-          I'm a front end game developer, responsible for developing the front end of slot games, making use of JavaScript and PhaserJS.
+          The Logic Room are an app development company.
+          During my time here I worked on a commercial app, making use of ReactJS.
+        </ProjectCard>
+        <ProjectCard
+          title="Realistic Games"
+          dates="July 2015 - November 2018"
+          link=""
+          bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+        >
+          Realistic Games are a gambling company.
+          I was responsible for the full lifecycle development of slot games, using JavaScript, HTML, CSS and PixiJS.
           Select my portfolio for some game examples.
         </ProjectCard>
         </ProjectsWrapper>
