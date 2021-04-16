@@ -1,6 +1,6 @@
 module.exports = exports = [
 	{
-		"id": "39",
+		"id": "41",
 		"client": "Personal Projects",
 		"name": "Lucky Slot Game",
 		"description": "A basic slot Game using Phaser V3",
@@ -9,7 +9,7 @@ module.exports = exports = [
 		"githubLink": "https://github.com/ryandixon555/lucky-slot-game"
 	},
 	{
-		"id": "38",
+		"id": "40",
 		"client": "Crucible Games",
 		"name": "Blazin Hot 7s Stack Em Up",
 		"description": "A Slot Game",
@@ -18,39 +18,57 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "37",
+		"id": "39",
 		"client": "Realistic Games",
-		"name": "Rainbow Magic",
+		"name": "8th Wonder",
 		"description": "A Slot Game",
 		"keywords": ["PhaserJS, JavaScript, Game, Games"],
-		"playableLink": "https://www.slotstemple.com/free-slots/rainbow-magic/",
+		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400038-desktop",
+		"githubLink": ""
+	},
+	{
+		"id": "38",
+		"client": "Realistic Games",
+		"name": "Tutankhamun",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400012-desktop",
+		"githubLink": ""
+	},
+	{
+		"id": "37",
+		"client": "Realistic Games",
+		"name": "Slot It In",
+		"description": "A Slot Game",
+		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400067-desktop",
 		"githubLink": ""
 	},
 	{
 		"id": "36",
 		"client": "Realistic Games",
-		"name": "Time Is Money",
+		"name": "Rainbow Magic",
 		"description": "A Slot Game",
 		"keywords": ["PhaserJS, JavaScript, Game, Games"],
-		"playableLink": "https://www.slotstemple.com/free-slots/time-is-money/",
+		"playableLink": "https://demo.sgdigital.com/games/all?query=rainbow#game400044-desktop",
 		"githubLink": ""
 	},
 	{
 		"id": "35",
 		"client": "Realistic Games",
-		"name": "Fireworks",
+		"name": "Time Is Money",
 		"description": "A Slot Game",
 		"keywords": ["PhaserJS, JavaScript, Game, Games"],
-		"playableLink": "https://www.slotstemple.com/free-slots/fireworks/",
+		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400042-desktop",
 		"githubLink": ""
 	},
 	{
 		"id": "34",
 		"client": "Realistic Games",
-		"name": "Spin Dizzy",
+		"name": "Fireworks",
 		"description": "A Slot Game",
 		"keywords": ["PhaserJS, JavaScript, Game, Games"],
-		"playableLink": "https://www.slotstemple.com/free-slots/spin-dizzy/",
+		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400034-desktop",
 		"githubLink": ""
 	},
 	{
@@ -59,7 +77,7 @@ module.exports = exports = [
 		"name": "Clockwork Mice",
 		"description": "A Slot Game",
 		"keywords": ["PhaserJS, JavaScript, Game, Games"],
-		"playableLink": "https://www.slotstemple.com/free-slots/clockwork-mice/",
+		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400068-desktop",
 		"githubLink": ""
 	},
 	{
@@ -68,7 +86,7 @@ module.exports = exports = [
 		"name": "Super Graphics Upside Down",
 		"description": "A Slot Game",
 		"keywords": ["PhaserJS, JavaScript, Game, Games"],
-		"playableLink": "https://www.slotstemple.com/free-slots/super-graphics-upside-down/",
+		"playableLink": "https://demo.sgdigital.com/games/all?query=super%20graphic#game400010-desktop",
 		"githubLink": ""
 	},
 	{
