@@ -98,7 +98,7 @@ const Index = () => (
         <ProjectCard
           title="Crucible Games"
           dates="August 2020 - Present"
-          link=""
+          link="Seniot Front End Game Developer"
           bg="linear-gradient(to right, #4267B2 0%, #00FFEE 100%)"
         >
           Crucible games are a slot development company.
@@ -108,7 +108,7 @@ const Index = () => (
         <ProjectCard
           title="Avvio Reply"
           dates="February 2019 - July 2020"
-          link=""
+          link="Front End Developer"
           bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
         >
           Avvio Reply are an employee engagement agency.
@@ -117,7 +117,7 @@ const Index = () => (
         <ProjectCard
           title="The Logic Room"
           dates="December 2018 - January 2019"
-          link=""
+          link="Front End Developer"
           bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
         >
           The Logic Room are an app development company.
@@ -126,7 +126,7 @@ const Index = () => (
         <ProjectCard
           title="Realistic Games"
           dates="July 2015 - November 2018"
-          link=""
+          link="Front End Game Developer"
           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
         >
           Realistic Games are a gambling company.
