@@ -11,6 +11,7 @@ import Layout from '../components/Layout'
 import PortfolioProjectCard from '../components/PortfolioProjectCard'
 import GitHubProjectCard from '../components/GitHubProjectCard'
 import ProjectCard from '../components/ProjectCard'
+import ProjectCardNoLink from '../components/ProjectCardNoLink';
 import MyNavBar from '../components/NavBar'
 
 // Elements
@@ -95,44 +96,40 @@ const Index = () => (
 
       <Title>Commercial Work</Title>
       <ProjectsWrapper>
-        <ProjectCard
+        <ProjectCardNoLink
           title="Crucible Games"
           dates="August 2020 - Present"
-          link="Seniot Front End Game Developer"
           bg="linear-gradient(to right, #4267B2 0%, #00FFEE 100%)"
         >
           Crucible games are a slot development company.
           I'm a senior front end game developer, responsible for developing the front end of slot games, making use of JavaScript and PhaserJS.
           Select my portfolio for some game examples.
-        </ProjectCard>
-        <ProjectCard
+        </ProjectCardNoLink>
+        <ProjectCardNoLink
           title="Avvio Reply"
           dates="February 2019 - July 2020"
-          link="Front End Developer"
           bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
         >
           Avvio Reply are an employee engagement agency.
           I was the lead front end developer here, making use of CSS, HTML, Vanilla JavaScript and ReactJS to develop sites based around gamification.
-        </ProjectCard>
-        <ProjectCard
+        </ProjectCardNoLink>
+        <ProjectCardNoLink
           title="The Logic Room"
           dates="December 2018 - January 2019"
-          link="Front End Developer"
           bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
         >
           The Logic Room are an app development company.
           During my time here I worked on a commercial app, making use of ReactJS.
-        </ProjectCard>
-        <ProjectCard
+        </ProjectCardNoLink>
+        <ProjectCardNoLink
           title="Realistic Games"
           dates="July 2015 - November 2018"
-          link="Front End Game Developer"
           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
         >
           Realistic Games are a gambling company.
           I was responsible for the full lifecycle development of slot games, using JavaScript, HTML, CSS and PixiJS.
           Select my portfolio for some game examples.
-        </ProjectCard>
+        </ProjectCardNoLink>
         </ProjectsWrapper>
     </Projects>
 

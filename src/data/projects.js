@@ -1,10 +1,28 @@
 module.exports = exports = [
 	{
+		"id": "43",
+		"client": "Crucible Games",
+		"name": "Perfect Potions",
+		"description": "A slot game using MegaWays",
+		"keywords": ["JavaScript, Game, Games, PhaserJS, slot"],
+		"playableLink": "https://demo.sgdigital.com/games/all?query=perfect%20potions#game70551-desktop",
+		"githubLink": ""
+	},
+	{
+		"id": "42",
+		"client": "Personal Projects",
+		"name": "Lottery Matching Game",
+		"description": "A basic number matching generator. You get wins for the numbers 3,4,5,6",
+		"keywords": ["JavaScript, Game, Games"],
+		"playableLink": "https://heuristic-mclean-4c5049.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/lottery-generator-js"
+	},
+	{
 		"id": "41",
 		"client": "Personal Projects",
 		"name": "Lucky Slot Game",
 		"description": "A basic slot Game using Phaser V3",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://ryandixon555.github.io/lucky-slot-game/src/index.html",
 		"githubLink": "https://github.com/ryandixon555/lucky-slot-game"
 	},
@@ -13,7 +31,7 @@ module.exports = exports = [
 		"client": "Crucible Games",
 		"name": "Blazin Hot 7s Stack Em Up",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?query=blazin#game70550-desktop",
 		"githubLink": ""
 	},
@@ -22,7 +40,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "8th Wonder",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400038-desktop",
 		"githubLink": ""
 	},
@@ -31,7 +49,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Tutankhamun",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400012-desktop",
 		"githubLink": ""
 	},
@@ -40,7 +58,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Slot It In",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400067-desktop",
 		"githubLink": ""
 	},
@@ -49,7 +67,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Rainbow Magic",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?query=rainbow#game400044-desktop",
 		"githubLink": ""
 	},
@@ -58,7 +76,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Time Is Money",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400042-desktop",
 		"githubLink": ""
 	},
@@ -67,7 +85,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Fireworks",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400034-desktop",
 		"githubLink": ""
 	},
@@ -76,7 +94,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Clockwork Mice",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?studio=realistic#game400068-desktop",
 		"githubLink": ""
 	},
@@ -85,7 +103,7 @@ module.exports = exports = [
 		"client": "Realistic Games",
 		"name": "Super Graphics Upside Down",
 		"description": "A Slot Game",
-		"keywords": ["PhaserJS, JavaScript, Game, Games"],
+		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
 		"playableLink": "https://demo.sgdigital.com/games/all?query=super%20graphic#game400010-desktop",
 		"githubLink": ""
 	},
@@ -103,7 +121,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Phaser Slot Game",
 		"description": "A slot game built with PhaserJS.",
-		"keywords": ["Phaser, Game, Slot Machine"],
+		"keywords": ["Phaser, Game, Slot Machine, slot"],
 		"playableLink": "https://phaser-slot-example.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/phaser-jackpot-five"
 	},
