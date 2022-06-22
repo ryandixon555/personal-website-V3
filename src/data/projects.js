@@ -3,7 +3,7 @@ module.exports = exports = [
 		"id": "44",
 		"client": "Personal Projects",
 		"name": "A basic slot game using Pixi",
-		"description": "A verbasic slot game made using PixiJS",
+		"description": "A very basic slot game made using PixiJS",
 		"keywords": ["JavaScript, Game, Games, PixiJS, slot, TypeScript"],
 		"playableLink": "https://basic-pixi-slot.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/basic-pixi-slot"

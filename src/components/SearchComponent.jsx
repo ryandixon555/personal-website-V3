@@ -43,7 +43,6 @@ const ProjectStyling = styled.div `
     max-width: 400px;
     height: 100%;
     min-height: 410px;
-    max-height: 350px;
     margin: 25px auto 0;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     border: 3px solid black;
