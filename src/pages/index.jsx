@@ -10,7 +10,6 @@ import tw from 'tailwind.macro'
 import Layout from '../components/Layout'
 import PortfolioProjectCard from '../components/PortfolioProjectCard'
 import GitHubProjectCard from '../components/GitHubProjectCard'
-import ProjectCard from '../components/ProjectCard'
 import ProjectCardNoLink from '../components/ProjectCardNoLink';
 import MyNavBar from '../components/NavBar'
 
@@ -27,9 +26,7 @@ import Projects from '../views/Projects'
 
 // Animations
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
 import Roll from 'react-reveal/Roll';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 // Images
 import avatar from '../images/avatar.jpg'

@@ -80,7 +80,6 @@ const Skills = () => (
                 <Skill>NodeJS</Skill>
                 <Skill>CSS in JS (Styled Components)</Skill>
                 <Skill>GatsbyJS</Skill>
-                <Skill>DatoCMS</Skill>
               </SkillContainer>
             </InnerText>
       </Background>

@@ -2,8 +2,6 @@ import React from 'react'
 import { Formik, Field } from 'formik'
 import { navigate } from 'gatsby-link'
 import validationSchema from './validationSchema'
-import styled from 'styled-components'
-import '../styles/styles.sass'
 
 const encode = (data) => {
   return Object.keys(data)

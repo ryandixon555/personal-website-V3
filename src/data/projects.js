@@ -1,15 +1,42 @@
 module.exports = exports = [
 	{
+		"id": "44",
+		"client": "Personal Projects",
+		"name": "A basic slot game using Pixi",
+		"description": "A verbasic slot game made using PixiJS",
+		"keywords": ["JavaScript, Game, Games, PixiJS, slot, TypeScript"],
+		"playableLink": "https://basic-pixi-slot.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/basic-pixi-slot"
+	},
+	{
 		"id": "43",
 		"client": "Crucible Games",
-		"name": "Perfect Potions",
-		"description": "A slot game using MegaWays",
+		"name": "Key To Success",
+		"description": "A slot game using unlockable bonuses",
 		"keywords": ["JavaScript, Game, Games, PhaserJS, slot"],
-		"playableLink": "https://demo.sgdigital.com/games/all?query=perfect%20potions#game70551-desktop",
+		"playableLink": "https://igaming-demo.lnw.com/games/all?query=key#game70676-desktop",
 		"githubLink": ""
 	},
 	{
 		"id": "42",
+		"client": "Crucible Games",
+		"name": "Reign of the Mountain King",
+		"description": "A slot game using free spins and wild multipliers",
+		"keywords": ["JavaScript, Game, Games, PhaserJS, slot"],
+		"playableLink": "https://igaming-demo.lnw.com/games/all?query=reign#game70639-desktop",
+		"githubLink": ""
+	},
+	{
+		"id": "41",
+		"client": "Crucible Games",
+		"name": "Perfect Potions",
+		"description": "A slot game using MegaWays",
+		"keywords": ["JavaScript, Game, Games, PhaserJS, slot"],
+		"playableLink": "https://igaming-demo.lnw.com/games/all?query=perfect#game70551-desktop",
+		"githubLink": ""
+	},
+	{
+		"id": "40",
 		"client": "Personal Projects",
 		"name": "Lottery Matching Game",
 		"description": "A basic number matching generator. You get wins for the numbers 3,4,5,6",
@@ -18,25 +45,16 @@ module.exports = exports = [
 		"githubLink": "https://github.com/ryandixon555/lottery-generator-js"
 	},
 	{
-		"id": "41",
-		"client": "Personal Projects",
-		"name": "Lucky Slot Game",
-		"description": "A basic slot Game using Phaser V3",
-		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
-		"playableLink": "https://ryandixon555.github.io/lucky-slot-game/src/index.html",
-		"githubLink": "https://github.com/ryandixon555/lucky-slot-game"
-	},
-	{
-		"id": "40",
+		"id": "39",
 		"client": "Crucible Games",
 		"name": "Blazin Hot 7s Stack Em Up",
 		"description": "A Slot Game",
 		"keywords": ["PhaserJS, JavaScript, Game, Games, slot"],
-		"playableLink": "https://demo.sgdigital.com/games/all?query=blazin#game70550-desktop",
+		"playableLink": "https://igaming-demo.lnw.com/games/all?query=blazin#game70550-desktop",
 		"githubLink": ""
 	},
 	{
-		"id": "39",
+		"id": "38",
 		"client": "Realistic Games",
 		"name": "8th Wonder",
 		"description": "A Slot Game",
@@ -45,7 +63,7 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "38",
+		"id": "37",
 		"client": "Realistic Games",
 		"name": "Tutankhamun",
 		"description": "A Slot Game",
@@ -54,7 +72,7 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "37",
+		"id": "36",
 		"client": "Realistic Games",
 		"name": "Slot It In",
 		"description": "A Slot Game",
@@ -63,7 +81,7 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "36",
+		"id": "35",
 		"client": "Realistic Games",
 		"name": "Rainbow Magic",
 		"description": "A Slot Game",
@@ -72,7 +90,7 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "35",
+		"id": "34",
 		"client": "Realistic Games",
 		"name": "Time Is Money",
 		"description": "A Slot Game",
@@ -81,7 +99,7 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "34",
+		"id": "33",
 		"client": "Realistic Games",
 		"name": "Fireworks",
 		"description": "A Slot Game",
@@ -90,7 +108,7 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "33",
+		"id": "32",
 		"client": "Realistic Games",
 		"name": "Clockwork Mice",
 		"description": "A Slot Game",
@@ -99,7 +117,7 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "32",
+		"id": "31",
 		"client": "Realistic Games",
 		"name": "Super Graphics Upside Down",
 		"description": "A Slot Game",
@@ -108,29 +126,20 @@ module.exports = exports = [
 		"githubLink": ""
 	},
 	{
-		"id": "31",
+		"id": "30",
 		"client": "Personal Projects",
 		"name": "ReactJS Multiple Search Filtering",
 		"description": "A multiple filtering app using ReactJS",
 		"keywords": ["ReactJS, Filtering, React, JavaScript"],
 		"playableLink": "https://react-multiple-search.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/react-multiple-search"
-	}
-	,{
-		"id": "30",
-		"client": "Personal Projects",
-		"name": "Phaser Slot Game",
-		"description": "A slot game built with PhaserJS.",
-		"keywords": ["Phaser, Game, Slot Machine, slot"],
-		"playableLink": "https://phaser-slot-example.netlify.app/",
-		"githubLink": "https://github.com/ryandixon555/phaser-jackpot-five"
 	},
 	{
 		"id": "29",
 		"client": "Personal Projects",
 		"name": "Example E-Commerce Site",
 		"description": "An example e-commerce site made using GatsbyJS and using DataCMS. Also includes SnipCart integration.",
-		"keywords": ["DatoCMS, CMS, GatsbyJS, SnipCart, GraphQL, React"],
+		"keywords": ["DatoCMS, CMS, GatsbyJS, SnipCart, GraphQL, React, Fullstack"],
 		"playableLink": "https://ecommerce-cms-example.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/datocms-Snipcart-Gatsby-Shop-demo"
 	},
@@ -139,7 +148,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Example Business Site",
 		"description": "An example business site portfolio, made using GatsbyJS and using Netlify as a CMS and for collecting form data. Also includes blogs.",
-		"keywords": ["NetlifyCMS, CMS, GatsbyJS, Forms, Blog, React, GraphQL"],
+		"keywords": ["NetlifyCMS, CMS, GatsbyJS, Forms, Blog, React, GraphQL, Fullstack"],
 		"playableLink": "https://gatsby-business-starter.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/gatsby-starter-business"
 	},
@@ -148,7 +157,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Example Designer Portfolio",
 		"description": "An example designer portfolio, made using GatsbyJS and using DatoCMS",
-		"keywords": ["DatoCMS, CMS, GatsbyJS, React"],
+		"keywords": ["DatoCMS, CMS, GatsbyJS, React, Fullstack"],
 		"playableLink": "https://starter-portfolio-app.netlify.app/",
 		"githubLink": "https://github.com/ryandixon555/datocms-Gatsby-Portfolio-Website-demo"
 	},
@@ -364,7 +373,7 @@ module.exports = exports = [
 		"client": "Personal Projects",
 		"name": "Exercise Tracker",
 		"description": "An app showing an exercise tracker using the MERN stack",
-		"keywords": ["ReactJS", "MERN Stack", "JavaScript", "API", "BootStrap", "MongoDB", "Full Stack", "NodeJS"],
+		"keywords": ["ReactJS", "MERN Stack", "JavaScript", "API", "BootStrap", "MongoDB", "Full Stack", "NodeJS", "Fullstack"],
 		"playableLink": "https://5e49823334f94f567773d0db--frosty-goldwasser-5ce2b8.netlify.com/",
 		"githubLink": "https://github.com/ryandixon555/react-full-stack-exercise-tracker"
 	},

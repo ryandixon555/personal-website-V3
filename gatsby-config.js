@@ -37,18 +37,18 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'standalone',
-        // icons: [
-        //   {
-        //     src: '/favicons/favicon.ico',
-        //     sizes: '192x192',
-        //     type: 'image/ico',
-        //   },
-        //   {
-        //     src: '/favicons/favicon.ico',
-        //     sizes: '512x512',
-        //     type: 'image/ico',
-        //   },
-        // ],
+        icons: [
+          {
+            src: '/favicons/favicon.ico',
+            sizes: '192x192',
+            type: 'image/ico',
+          },
+          {
+            src: '/favicons/favicon.ico',
+            sizes: '512x512',
+            type: 'image/ico',
+          },
+        ],
       },
     },
     /* Must be placed at the end */
