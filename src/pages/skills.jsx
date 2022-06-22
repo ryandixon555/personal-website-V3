@@ -56,6 +56,8 @@ const Skills = () => (
             Professional Experience Of:
               <br/><br/>
               <SkillContainer>
+                <Skill>Game Development</Skill>
+                <Skill>Web Development</Skill>
                 <Skill>JavaScript</Skill>
                 <Skill>HTML</Skill>
                 <Skill>CSS</Skill>
@@ -64,21 +66,17 @@ const Skills = () => (
                 <Skill>JSX</Skill>
                 <Skill>JQuery</Skill>
                 <Skill>ReactJS</Skill>
-                <Skill>JS Testing Frameworks, such as Jest</Skill>
+                <Skill>JavaScript Testing Frameworks</Skill>
                 <Skill>Asset Management</Skill>
-                <Skill>TDD</Skill>
-                <Skill>BDD</Skill>
-                <Skill>Agile Methodoligies (scrum, kanban etc)</Skill>
-                <Skill>Handlebars</Skill>
+                <Skill>Test Driven Development</Skill>
+                <Skill>Behavioural Driven Development</Skill>
+                <Skill>Agile Methodoligies</Skill>
                 <Skill>SASS</Skill>
                 <Skill>Frontend build tools such as Grunt, Gulp and Webpack</Skill>
-                <Skill>Git/GitHub</Skill>
-                <Skill>SVN</Skill>
+                <Skill>Git</Skill>
                 <Skill>Responsive Web Design</Skill>
-                <Skill>BEM</Skill>
                 <Skill>Bootstrap</Skill>
                 <Skill>NodeJS</Skill>
-                <Skill>CSS in JS (Styled Components)</Skill>
                 <Skill>GatsbyJS</Skill>
               </SkillContainer>
             </InnerText>

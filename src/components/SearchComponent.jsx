@@ -37,12 +37,13 @@ const InputStyling = styled.input`
 `
 
 const ProjectStyling = styled.div `
-    background-color: #fff;
-    width: 30%;
-    max-width: 600px;
+    background: linear-gradient(to right, #ffffff 0%, #C3E0E5 100%);
+    color: #000;
+    width: 15%;
+    max-width: 400px;
     height: 100%;
     min-height: 410px;
-    max-height: 450px;
+    max-height: 350px;
     margin: 25px auto 0;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     border: 3px solid black;

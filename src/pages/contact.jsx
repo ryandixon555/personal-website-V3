@@ -38,6 +38,22 @@ const ContactDesc = styled.p`
   margin-top: 40px;
 `
 
+const SectionContainer = styled.section`
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`
+
+const Container = styled.div`
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`
+
 const Contact = () => (
   <>
     <MyNavBar/>
@@ -52,11 +68,11 @@ const Contact = () => (
           Examples can be seen on on my Portfolio page.
         </ContactDesc>
 
-        <section className='section'>
-          <div className='container'>
+        <SectionContainer>
+          <Container>
             <ContactForm />
-          </div>
-        </section>
+          </Container>
+        </SectionContainer>
 
       </Inner>
     </Background>
