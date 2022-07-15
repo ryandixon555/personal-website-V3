@@ -46,6 +46,8 @@ const Qualifications = () => (
         <InnerText>
           Modules include:
           <ul>
+            <li>3D Game Development</li>
+            <li>2D Game Development</li>
             <li>Software Engineering</li>
             <li>Artificial Intelligence</li>
             <li>Object-Orientated Principles and Design</li>

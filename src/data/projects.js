@@ -1,5 +1,14 @@
 module.exports = exports = [
 	{
+		"id": "45",
+		"client": "Personal Projects",
+		"name": "A basic 3 reeler mobile friendly slot game using Pixi",
+		"description": "A basic 3 reeler mobile friendly slot game using Pixi",
+		"keywords": ["JavaScript, Game, Games, PixiJS, slot, TypeScript"],
+		"playableLink": "https://fastidious-ganache-ae4686.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/3-reel-pixi-slot"
+	},
+	{
 		"id": "44",
 		"client": "Personal Projects",
 		"name": "A basic slot game using Pixi",
