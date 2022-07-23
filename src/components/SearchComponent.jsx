@@ -97,11 +97,11 @@ function SearchComponent ({projects}) {
           placeholder="Search for a project by name or tag..."
       />
 
-      <div>
+      {/* <div>
         <NumberOfProjectsStyling>
           Number Of Projects: {numberOfProjects}
         </NumberOfProjectsStyling>
-      </div>
+      </div> */}
      
       <ProjectWrapper>
         {result &&
