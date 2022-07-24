@@ -1,5 +1,14 @@
 module.exports = exports = [
 	{
+		"id": "46",
+		"client": "Personal Projects",
+		"name": "A basic fullstack LinkedIn Clone",
+		"description": "A basic fullstack LinkedIn Clone using ReactJS and connecting to a Firebase back End",
+		"keywords": ["ReactJS, JavaScript, Full Stack, Firebase"],
+		"playableLink": "https://polite-crumble-a41e28.netlify.app/",
+		"githubLink": "https://github.com/ryandixon555/linkedin-clone"
+	},
+	{
 		"id": "45",
 		"client": "Personal Projects",
 		"name": "A basic 3 reeler mobile friendly slot game using Pixi",
