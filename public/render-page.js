@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("D:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js"), require("fs"), require("D:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("C:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js"), require("fs"), require("C:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["D:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js", "fs", "D:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js", "path", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["C:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js", "fs", "C:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js", "path", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("D:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js"), require("fs"), require("D:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("C:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js"), require("fs"), require("C:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["D:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js"], root["fs"], root["D:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["C:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js"], root["fs"], root["C:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -162,7 +162,8 @@ var plugins = [{
   options: {
     "plugins": []
   }
-}]; // During bootstrap, we write requires at top of this file which looks like:
+}];
+// During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
 //     plugin: require("/path/to/plugin1/gatsby-ssr.js"),
@@ -174,35 +175,32 @@ var plugins = [{
 //   },
 // ]
 
-const apis = __webpack_require__(/*! ./api-ssr-docs */ "./.cache/api-ssr-docs.js"); // Run the specified API in any plugins that have implemented it
+const apis = __webpack_require__(/*! ./api-ssr-docs */ "./.cache/api-ssr-docs.js");
 
-
+// Run the specified API in any plugins that have implemented it
 module.exports = (api, args, defaultReturn, argTransform) => {
   if (!apis[api]) {
     console.log(`This API doesn't exist`, api);
-  } // Run each plugin in series.
+  }
+
+  // Run each plugin in series.
   // eslint-disable-next-line no-undef
-
-
   let results = plugins.map(plugin => {
     if (!plugin.plugin[api]) {
       return undefined;
     }
-
     const result = plugin.plugin[api](args, plugin.options);
-
     if (result && argTransform) {
       args = argTransform({
         args,
         result
       });
     }
-
     return result;
-  }); // Filter out undefined results.
+  });
 
+  // Filter out undefined results.
   results = results.filter(result => typeof result !== `undefined`);
-
   if (results.length > 0) {
     return results;
   } else {
@@ -263,6 +261,7 @@ module.exports = (api, args, defaultReturn, argTransform) => {
  * }
  */
 exports.replaceRenderer = true;
+
 /**
  * Called after every page Gatsby server renders while building HTML so you can
  * set head and body components to be rendered in your `html.js`.
@@ -325,8 +324,8 @@ exports.replaceRenderer = true;
  *   setBodyAttributes(BodyAttributes)
  * }
  */
-
 exports.onRenderBody = true;
+
 /**
  * Called after every page Gatsby server renders while building HTML so you can
  * replace head components to be rendered in your `html.js`. This is useful if
@@ -364,8 +363,8 @@ exports.onRenderBody = true;
  *   replaceHeadComponents(headComponents)
  * }
  */
-
 exports.onPreRenderHTML = true;
+
 /**
  * Allow a plugin to wrap the page element.
  *
@@ -391,8 +390,8 @@ exports.onPreRenderHTML = true;
  *   return <Layout {...props}>{element}</Layout>
  * }
  */
-
 exports.wrapPageElement = true;
+
 /**
  * Allow a plugin to wrap the root element.
  *
@@ -422,7 +421,6 @@ exports.wrapPageElement = true;
  *   )
  * }
  */
-
 exports.wrapRootElement = true;
 
 /***/ }),
@@ -491,19 +489,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import testRequireError from "./test-require-error"
+
+// import testRequireError from "./test-require-error"
 // For some extremely mysterious reason, webpack adds the above module *after*
 // this module so that when this code runs, testRequireError is undefined.
 // So in the meantime, we'll just inline it.
-
 const testRequireError = (moduleName, err) => {
   const regex = new RegExp(`Error: Cannot find module\\s.${moduleName}`);
   const firstLine = err.toString().split(`\n`)[0];
   return regex.test(firstLine);
 };
-
 let Html;
-
 try {
   Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 } catch (err) {
@@ -514,7 +510,6 @@ try {
     process.exit();
   }
 }
-
 Html = Html && Html.__esModule ? Html.default : Html;
 /* harmony default export */ __webpack_exports__["default"] = ((pagePath, callback) => {
   let headComponents = [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -528,49 +523,36 @@ Html = Html && Html.__esModule ? Html.default : Html;
   let postBodyComponents = [];
   let bodyProps = {};
   let htmlStr;
-
   const setHeadComponents = components => {
     headComponents = headComponents.concat(components);
   };
-
   const setHtmlAttributes = attributes => {
     htmlAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()(htmlAttributes, attributes);
   };
-
   const setBodyAttributes = attributes => {
     bodyAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()(bodyAttributes, attributes);
   };
-
   const setPreBodyComponents = components => {
     preBodyComponents = preBodyComponents.concat(components);
   };
-
   const setPostBodyComponents = components => {
     postBodyComponents = postBodyComponents.concat(components);
   };
-
   const setBodyProps = props => {
     bodyProps = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()({}, bodyProps, props);
   };
-
   const getHeadComponents = () => headComponents;
-
   const replaceHeadComponents = components => {
     headComponents = components;
   };
-
   const getPreBodyComponents = () => preBodyComponents;
-
   const replacePreBodyComponents = components => {
     preBodyComponents = components;
   };
-
   const getPostBodyComponents = () => postBodyComponents;
-
   const replacePostBodyComponents = components => {
     postBodyComponents = components;
   };
-
   _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3___default()(`onRenderBody`, {
     setHeadComponents,
     setHtmlAttributes,
@@ -589,7 +571,8 @@ Html = Html && Html.__esModule ? Html.default : Html;
     replacePostBodyComponents,
     pathname: pagePath
   });
-  const htmlElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Html, { ...bodyProps,
+  const htmlElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Html, {
+    ...bodyProps,
     body: ``,
     headComponents: headComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
       key: `io`,
@@ -653,36 +636,35 @@ __webpack_require__.r(__webpack_exports__);
 
 const pathCache = new Map();
 let matchPaths = [];
-
 const trimPathname = rawPathname => {
-  const pathname = decodeURIComponent(rawPathname); // Remove the pathPrefix from the pathname.
-
-  const trimmedPathname = Object(_strip_prefix__WEBPACK_IMPORTED_MODULE_1__["default"])(pathname, "") // Remove any hashfragment
-  .split(`#`)[0] // Remove search query
+  const pathname = decodeURIComponent(rawPathname);
+  // Remove the pathPrefix from the pathname.
+  const trimmedPathname = Object(_strip_prefix__WEBPACK_IMPORTED_MODULE_1__["default"])(pathname, "")
+  // Remove any hashfragment
+  .split(`#`)[0]
+  // Remove search query
   .split(`?`)[0];
   return trimmedPathname;
 };
-
 function absolutify(path) {
   // If it's already absolute, return as-is
   if (path.startsWith(`/`) || path.startsWith(`https://`) || path.startsWith(`http://`)) {
     return path;
-  } // Calculate path relative to current location, adding a trailing slash to
+  }
+  // Calculate path relative to current location, adding a trailing slash to
   // match behavior of @reach/router
-
-
   return new URL(path, window.location.href + (window.location.href.endsWith(`/`) ? `` : `/`)).pathname;
 }
+
 /**
  * Set list of matchPaths
  *
  * @param {Array<{path: string, matchPath: string}>} value collection of matchPaths
  */
-
-
 const setMatchPaths = value => {
   matchPaths = value;
 };
+
 /**
  * Return a matchpath url
  * if `match-paths.json` contains `{ "/foo*": "/page1", ...}`, then
@@ -691,7 +673,6 @@ const setMatchPaths = value => {
  * @param {string} rawPathname A raw pathname
  * @return {string|null}
  */
-
 const findMatchPath = rawPathname => {
   const trimmedPathname = cleanPath(rawPathname);
   const pickPaths = matchPaths.map(({
@@ -704,13 +685,12 @@ const findMatchPath = rawPathname => {
     };
   });
   const path = Object(_reach_router_lib_utils__WEBPACK_IMPORTED_MODULE_0__["pick"])(pickPaths, trimmedPathname);
-
   if (path) {
     return Object(_normalize_page_path__WEBPACK_IMPORTED_MODULE_2__["default"])(path.route.originalPath);
   }
-
   return null;
 };
+
 /**
  * Return a matchpath params from reach/router rules
  * if `match-paths.json` contains `{ ":bar/*foo" }`, and the path is /baz/zaz/zoo
@@ -720,7 +700,6 @@ const findMatchPath = rawPathname => {
  * @param {string} rawPathname A raw pathname
  * @return {object}
  */
-
 const grabMatchParams = rawPathname => {
   const trimmedPathname = cleanPath(rawPathname);
   const pickPaths = matchPaths.map(({
@@ -733,13 +712,13 @@ const grabMatchParams = rawPathname => {
     };
   });
   const path = Object(_reach_router_lib_utils__WEBPACK_IMPORTED_MODULE_0__["pick"])(pickPaths, trimmedPathname);
-
   if (path) {
     return path.params;
   }
-
   return {};
-}; // Given a raw URL path, returns the cleaned version of it (trim off
+};
+
+// Given a raw URL path, returns the cleaned version of it (trim off
 // `#` and query params), or if it matches an entry in
 // `match-paths.json`, its matched path is returned
 //
@@ -747,23 +726,19 @@ const grabMatchParams = rawPathname => {
 //
 // Or if `match-paths.json` contains `{ "/foo*": "/page1", ...}`, then
 // `/foo?bar=far` => `/page1`
-
 const findPath = rawPathname => {
   const trimmedPathname = trimPathname(absolutify(rawPathname));
-
   if (pathCache.has(trimmedPathname)) {
     return pathCache.get(trimmedPathname);
   }
-
   let foundPath = findMatchPath(trimmedPathname);
-
   if (!foundPath) {
     foundPath = cleanPath(rawPathname);
   }
-
   pathCache.set(trimmedPathname, foundPath);
   return foundPath;
 };
+
 /**
  * Clean a url and converts /index.html => /
  * E.g. `/foo?bar=far` => `/foo`
@@ -771,15 +746,12 @@ const findPath = rawPathname => {
  * @param {string} rawPathname A raw pathname
  * @return {string}
  */
-
 const cleanPath = rawPathname => {
   const trimmedPathname = trimPathname(absolutify(rawPathname));
   let foundPath = trimmedPathname;
-
   if (foundPath === `/index.html`) {
     foundPath = `/`;
   }
-
   foundPath = Object(_normalize_page_path__WEBPACK_IMPORTED_MODULE_2__["default"])(foundPath);
   return foundPath;
 };
@@ -837,7 +809,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const prefetchPathname = _loader__WEBPACK_IMPORTED_MODULE_5__["default"].enqueue;
 const StaticQueryContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({});
-
 function StaticQueryDataRenderer({
   staticQueryData,
   data,
@@ -847,7 +818,6 @@ function StaticQueryDataRenderer({
   const finalData = data ? data.data : staticQueryData[query] && staticQueryData[query].data;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, finalData && render(finalData), !finalData && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Loading (StaticQuery)"));
 }
-
 const StaticQuery = props => {
   const {
     data,
@@ -862,18 +832,16 @@ const StaticQuery = props => {
     staticQueryData: staticQueryData
   }));
 };
-
 const useStaticQuery = query => {
   var _context$query;
-
   if (typeof react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext !== `function` && "development" === `development`) {
     throw new Error(`You're likely using a version of React that doesn't support Hooks\n` + `Please update React and ReactDOM to 16.8.0 or later to use the useStaticQuery hook.`);
   }
+  const context = react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext(StaticQueryContext);
 
-  const context = react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext(StaticQueryContext); // query is a stringified number like `3303882` when wrapped with graphql, If a user forgets
+  // query is a stringified number like `3303882` when wrapped with graphql, If a user forgets
   // to wrap the query in a grqphql, then casting it to a Number results in `NaN` allowing us to
   // catch the misuse of the API and give proper direction
-
   if (isNaN(Number(query))) {
     throw new Error(`useStaticQuery was called with a string but expects to be called using \`graphql\`. Try this:
 
@@ -882,25 +850,21 @@ import { useStaticQuery, graphql } from 'gatsby';
 useStaticQuery(graphql\`${query}\`);
 `);
   }
-
   if ((_context$query = context[query]) !== null && _context$query !== void 0 && _context$query.data) {
     return context[query].data;
   } else {
     throw new Error(`The result of this StaticQuery could not be fetched.\n\n` + `This is likely a bug in Gatsby and if refreshing the page does not fix it, ` + `please open an issue in https://github.com/gatsbyjs/gatsby/issues`);
   }
 };
-
 StaticQuery.propTypes = {
   data: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
   query: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
   render: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
 };
-
 function graphql() {
   throw new Error(`It appears like Gatsby is misconfigured. Gatsby related \`graphql\` calls ` + `are supposed to only be evaluated at compile time, and then compiled away. ` + `Unfortunately, something went wrong and the query was left in the compiled code.\n\n` + `Unless your site has a complex or custom babel/Gatsby configuration this is likely a bug in Gatsby.`);
 }
-
 
 
 /***/ }),
@@ -926,64 +890,53 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 /**
  * Available resource loading statuses
  */
-
 const PageResourceStatus = {
   /**
    * At least one of critical resources failed to load
    */
   Error: `error`,
-
   /**
    * Resources loaded successfully
    */
   Success: `success`
 };
-
 const preferDefault = m => m && m.default || m;
-
 const stripSurroundingSlashes = s => {
   s = s[0] === `/` ? s.slice(1) : s;
   s = s.endsWith(`/`) ? s.slice(0, -1) : s;
   return s;
 };
-
 const createPageDataUrl = path => {
   const fixedPath = path === `/` ? `index` : stripSurroundingSlashes(path);
   return `${""}/page-data/${fixedPath}/page-data.json`;
 };
-
 function doFetch(url, method = `GET`) {
   return new Promise((resolve, reject) => {
     const req = new XMLHttpRequest();
     req.open(method, url, true);
-
     req.onreadystatechange = () => {
       if (req.readyState == 4) {
         resolve(req);
       }
     };
-
     req.send(null);
   });
 }
-
 const doesConnectionSupportPrefetch = () => {
   if (`connection` in navigator && typeof navigator.connection !== `undefined`) {
     if ((navigator.connection.effectiveType || ``).includes(`2g`)) {
       return false;
     }
-
     if (navigator.connection.saveData) {
       return false;
     }
   }
-
   return true;
 };
-
 const toPageResources = (pageData, component = null) => {
   const page = {
     componentChunkName: pageData.componentChunkName,
@@ -998,7 +951,6 @@ const toPageResources = (pageData, component = null) => {
     page
   };
 };
-
 class BaseLoader {
   constructor(loadComponent, matchPaths) {
     this.inFlightNetworkRequests = new Map();
@@ -1026,16 +978,14 @@ class BaseLoader {
     this.loadComponent = loadComponent;
     Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["setMatchPaths"])(matchPaths);
   }
-
   memoizedGet(url) {
     let inFlightPromise = this.inFlightNetworkRequests.get(url);
-
     if (!inFlightPromise) {
       inFlightPromise = doFetch(url, `GET`);
       this.inFlightNetworkRequests.set(url, inFlightPromise);
-    } // Prefer duplication with then + catch over .finally to prevent problems in ie11 + firefox
+    }
 
-
+    // Prefer duplication with then + catch over .finally to prevent problems in ie11 + firefox
     return inFlightPromise.then(response => {
       this.inFlightNetworkRequests.delete(url);
       return response;
@@ -1044,12 +994,10 @@ class BaseLoader {
       throw err;
     });
   }
-
   setApiRunner(apiRunner) {
     this.apiRunner = apiRunner;
     this.prefetchDisabled = apiRunner(`disableCorePrefetching`).some(a => a);
   }
-
   fetchPageDataJson(loadObj) {
     const {
       pagePath,
@@ -1060,73 +1008,69 @@ class BaseLoader {
       const {
         status,
         responseText
-      } = req; // Handle 200
+      } = req;
 
+      // Handle 200
       if (status === 200) {
         try {
           const jsonPayload = JSON.parse(responseText);
-
           if (jsonPayload.path === undefined) {
             throw new Error(`not a valid pageData response`);
           }
-
           return Object.assign(loadObj, {
             status: PageResourceStatus.Success,
             payload: jsonPayload
           });
-        } catch (err) {// continue regardless of error
+        } catch (err) {
+          // continue regardless of error
         }
-      } // Handle 404
+      }
 
-
+      // Handle 404
       if (status === 404 || status === 200) {
         // If the request was for a 404 page and it doesn't exist, we're done
         if (pagePath === `/404.html`) {
           return Object.assign(loadObj, {
             status: PageResourceStatus.Error
           });
-        } // Need some code here to cache the 404 request. In case
+        }
+
+        // Need some code here to cache the 404 request. In case
         // multiple loadPageDataJsons result in 404s
-
-
         return this.fetchPageDataJson(Object.assign(loadObj, {
           pagePath: `/404.html`,
           notFound: true
         }));
-      } // handle 500 response (Unrecoverable)
+      }
 
-
+      // handle 500 response (Unrecoverable)
       if (status === 500) {
         return Object.assign(loadObj, {
           status: PageResourceStatus.Error
         });
-      } // Handle everything else, including status === 0, and 503s. Should retry
+      }
 
-
+      // Handle everything else, including status === 0, and 503s. Should retry
       if (retries < 3) {
         return this.fetchPageDataJson(Object.assign(loadObj, {
           retries: retries + 1
         }));
-      } // Retried 3 times already, result is an error.
+      }
 
-
+      // Retried 3 times already, result is an error.
       return Object.assign(loadObj, {
         status: PageResourceStatus.Error
       });
     });
   }
-
   loadPageDataJson(rawPath) {
     const pagePath = Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["findPath"])(rawPath);
-
     if (this.pageDataDb.has(pagePath)) {
       const pageData = this.pageDataDb.get(pagePath);
-
       if (true) {
         return Promise.resolve(pageData);
       }
     }
-
     return this.fetchPageDataJson({
       pagePath
     }).then(pageData => {
@@ -1134,36 +1078,29 @@ class BaseLoader {
       return pageData;
     });
   }
-
   findMatchPath(rawPath) {
     return Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["findMatchPath"])(rawPath);
-  } // TODO check all uses of this and whether they use undefined for page resources not exist
+  }
 
-
+  // TODO check all uses of this and whether they use undefined for page resources not exist
   loadPage(rawPath) {
     const pagePath = Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["findPath"])(rawPath);
-
     if (this.pageDb.has(pagePath)) {
       const page = this.pageDb.get(pagePath);
-
       if (true) {
         return Promise.resolve(page.payload);
       }
     }
-
     if (this.inFlightDb.has(pagePath)) {
       return this.inFlightDb.get(pagePath);
     }
-
     const inFlightPromise = Promise.all([this.loadAppData(), this.loadPageDataJson(pagePath)]).then(allData => {
       const result = allData[1];
-
       if (result.status === PageResourceStatus.Error) {
         return {
           status: PageResourceStatus.Error
         };
       }
-
       let pageData = result.payload;
       const {
         componentChunkName,
@@ -1173,23 +1110,19 @@ class BaseLoader {
       const componentChunkPromise = this.loadComponent(componentChunkName).then(component => {
         finalResult.createdAt = new Date();
         let pageResources;
-
         if (!component) {
           finalResult.status = PageResourceStatus.Error;
         } else {
           finalResult.status = PageResourceStatus.Success;
-
           if (result.notFound === true) {
             finalResult.notFound = true;
           }
-
           pageData = Object.assign(pageData, {
             webpackCompilationHash: allData[0] ? allData[0].webpackCompilationHash : ``
           });
           pageResources = toPageResources(pageData, component);
-        } // undefined if final result is an error
-
-
+        }
+        // undefined if final result is an error
         return pageResources;
       });
       const staticQueryBatchPromise = Promise.all(staticQueryHashes.map(staticQueryHash => {
@@ -1201,7 +1134,6 @@ class BaseLoader {
             jsonPayload
           };
         }
-
         return this.memoizedGet(`${""}/page-data/sq/d/${staticQueryHash}.json`).then(req => {
           const jsonPayload = JSON.parse(req.responseText);
           return {
@@ -1222,9 +1154,9 @@ class BaseLoader {
       });
       return Promise.all([componentChunkPromise, staticQueryBatchPromise]).then(([pageResources, staticQueryResults]) => {
         let payload;
-
         if (pageResources) {
-          payload = { ...pageResources,
+          payload = {
+            ...pageResources,
             staticQueryResults
           };
           finalResult.payload = payload;
@@ -1233,7 +1165,6 @@ class BaseLoader {
             pageResources: payload
           });
         }
-
         this.pageDb.set(pagePath, finalResult);
         return payload;
       });
@@ -1246,56 +1177,50 @@ class BaseLoader {
     });
     this.inFlightDb.set(pagePath, inFlightPromise);
     return inFlightPromise;
-  } // returns undefined if loading page ran into errors
+  }
 
-
+  // returns undefined if loading page ran into errors
   loadPageSync(rawPath) {
     const pagePath = Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["findPath"])(rawPath);
-
     if (this.pageDb.has(pagePath)) {
       const pageData = this.pageDb.get(pagePath).payload;
       return pageData;
     }
-
     return undefined;
   }
-
   shouldPrefetch(pagePath) {
     // Skip prefetching if we know user is on slow or constrained connection
     if (!doesConnectionSupportPrefetch()) {
       return false;
-    } // Check if the page exists.
+    }
 
-
+    // Check if the page exists.
     if (this.pageDb.has(pagePath)) {
       return false;
     }
-
     return true;
   }
-
   prefetch(pagePath) {
     if (!this.shouldPrefetch(pagePath)) {
       return false;
-    } // Tell plugins with custom prefetching logic that they should start
+    }
+
+    // Tell plugins with custom prefetching logic that they should start
     // prefetching this path.
-
-
     if (!this.prefetchTriggered.has(pagePath)) {
       this.apiRunner(`onPrefetchPathname`, {
         pathname: pagePath
       });
       this.prefetchTriggered.add(pagePath);
-    } // If a plugin has disabled core prefetching, stop now.
+    }
 
-
+    // If a plugin has disabled core prefetching, stop now.
     if (this.prefetchDisabled) {
       return false;
     }
-
-    const realPath = Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["findPath"])(pagePath); // Todo make doPrefetch logic cacheable
+    const realPath = Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["findPath"])(pagePath);
+    // Todo make doPrefetch logic cacheable
     // eslint-disable-next-line consistent-return
-
     this.doPrefetch(realPath).then(() => {
       if (!this.prefetchCompleted.has(pagePath)) {
         this.apiRunner(`onPostPrefetchPathname`, {
@@ -1306,25 +1231,22 @@ class BaseLoader {
     });
     return true;
   }
-
   doPrefetch(pagePath) {
     const pageDataUrl = createPageDataUrl(pagePath);
     return Object(_prefetch__WEBPACK_IMPORTED_MODULE_0__["default"])(pageDataUrl, {
       crossOrigin: `anonymous`,
       as: `fetch`
-    }).then(() => // This was just prefetched, so will return a response from
+    }).then(() =>
+    // This was just prefetched, so will return a response from
     // the cache instead of making another request to the server
     this.loadPageDataJson(pagePath));
   }
-
   hovering(rawPath) {
     this.loadPage(rawPath);
   }
-
   getResourceURLsForPathname(rawPath) {
     const pagePath = Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["findPath"])(rawPath);
     const page = this.pageDataDb.get(pagePath);
-
     if (page) {
       const pageResources = toPageResources(page.payload);
       return [...createComponentUrls(pageResources.page.componentChunkName), createPageDataUrl(pagePath)];
@@ -1332,13 +1254,11 @@ class BaseLoader {
       return null;
     }
   }
-
   isPageNotFound(rawPath) {
     const pagePath = Object(_find_path__WEBPACK_IMPORTED_MODULE_2__["findPath"])(rawPath);
     const page = this.pageDb.get(pagePath);
     return !page || page.notFound;
   }
-
   loadAppData(retries = 0) {
     return this.memoizedGet(`${""}/page-data/app-data.json`).then(req => {
       const {
@@ -1346,55 +1266,46 @@ class BaseLoader {
         responseText
       } = req;
       let appData;
-
       if (status !== 200 && retries < 3) {
         // Retry 3 times incase of non-200 responses
         return this.loadAppData(retries + 1);
-      } // Handle 200
+      }
 
-
+      // Handle 200
       if (status === 200) {
         try {
           const jsonPayload = JSON.parse(responseText);
-
           if (jsonPayload.webpackCompilationHash === undefined) {
             throw new Error(`not a valid app-data response`);
           }
-
           appData = jsonPayload;
-        } catch (err) {// continue regardless of error
+        } catch (err) {
+          // continue regardless of error
         }
       }
-
       return appData;
     });
   }
-
 }
-
 const createComponentUrls = componentChunkName => (window.___chunkMapping[componentChunkName] || []).map(chunk => "" + chunk);
-
 class ProdLoader extends BaseLoader {
   constructor(asyncRequires, matchPaths) {
-    const loadComponent = chunkName => asyncRequires.components[chunkName] ? asyncRequires.components[chunkName]().then(preferDefault) // loader will handle the case when component is null
+    const loadComponent = chunkName => asyncRequires.components[chunkName] ? asyncRequires.components[chunkName]().then(preferDefault)
+    // loader will handle the case when component is null
     .catch(() => null) : Promise.resolve();
-
     super(loadComponent, matchPaths);
   }
-
   doPrefetch(pagePath) {
     return super.doPrefetch(pagePath).then(result => {
       if (result.status !== PageResourceStatus.Success) {
         return Promise.resolve();
       }
-
       const pageData = result.payload;
       const chunkName = pageData.componentChunkName;
       const componentUrls = createComponentUrls(chunkName);
       return Promise.all(componentUrls.map(_prefetch__WEBPACK_IMPORTED_MODULE_0__["default"])).then(() => pageData);
     });
   }
-
   loadPageDataJson(rawPath) {
     return super.loadPageDataJson(rawPath).then(data => {
       if (data.notFound) {
@@ -1408,18 +1319,16 @@ class ProdLoader extends BaseLoader {
             return {
               status: PageResourceStatus.Error
             };
-          } // if HEAD request wasn't 200, return notFound result
+          }
+
+          // if HEAD request wasn't 200, return notFound result
           // and show 404 page
-
-
           return data;
         });
       }
-
       return data;
     });
   }
-
 }
 let instance;
 const setLoader = _loader => {
@@ -1471,15 +1380,12 @@ __webpack_require__.r(__webpack_exports__);
   if (path === undefined) {
     return path;
   }
-
   if (path === `/`) {
     return `/`;
   }
-
   if (path.charAt(path.length - 1) === `/`) {
     return path.slice(0, -1);
   }
-
   return path;
 });
 
@@ -1498,9 +1404,7 @@ const support = function (feature) {
   if (typeof document === `undefined`) {
     return false;
   }
-
   const fakeLink = document.createElement(`link`);
-
   try {
     if (fakeLink.relList && typeof fakeLink.relList.supports === `function`) {
       return fakeLink.relList.supports(feature);
@@ -1508,17 +1412,14 @@ const support = function (feature) {
   } catch (err) {
     return false;
   }
-
   return false;
 };
-
 const linkPrefetchStrategy = function (url, options) {
   return new Promise((resolve, reject) => {
     if (typeof document === `undefined`) {
       reject();
       return;
     }
-
     const link = document.createElement(`link`);
     link.setAttribute(`rel`, `prefetch`);
     link.setAttribute(`href`, url);
@@ -1531,12 +1432,10 @@ const linkPrefetchStrategy = function (url, options) {
     parentElement.appendChild(link);
   });
 };
-
 const xhrPrefetchStrategy = function (url) {
   return new Promise((resolve, reject) => {
     const req = new XMLHttpRequest();
     req.open(`GET`, url, true);
-
     req.onload = () => {
       if (req.status === 200) {
         resolve();
@@ -1544,28 +1443,23 @@ const xhrPrefetchStrategy = function (url) {
         reject();
       }
     };
-
     req.send(null);
   });
 };
-
 const supportedPrefetchStrategy = support(`prefetch`) ? linkPrefetchStrategy : xhrPrefetchStrategy;
 const preFetched = {};
-
 const prefetch = function (url, options) {
   return new Promise(resolve => {
     if (preFetched[url]) {
       resolve();
       return;
     }
-
     supportedPrefetchStrategy(url, options).then(() => {
       resolve();
       preFetched[url] = true;
     }).catch(() => {}); // 404s are logged to the console anyway
   });
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (prefetch);
 
 /***/ }),
@@ -1578,7 +1472,6 @@ const prefetch = function (url, options) {
 /***/ (function(module, exports, __webpack_require__) {
 
 const preferDefault = m => m && m.default || m;
-
 if (false) {} else if (false) {} else {
   module.exports = () => null;
 }
@@ -1599,19 +1492,17 @@ __webpack_require__.r(__webpack_exports__);
  * Remove a prefix from a string. Return the input string if the given prefix
  * isn't found.
  */
+
 function stripPrefix(str, prefix = ``) {
   if (!prefix) {
     return str;
   }
-
   if (str === prefix) {
     return `/`;
   }
-
   if (str.startsWith(`${prefix}/`)) {
     return str.slice(prefix.length);
   }
-
   return str;
 }
 
@@ -1624,14 +1515,10 @@ function stripPrefix(str, prefix = ``) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
+function _assertThisInitialized(e) {
+  if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  return e;
 }
-
 module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -1644,22 +1531,14 @@ module.exports = _assertThisInitialized, module.exports.__esModule = true, modul
 /***/ (function(module, exports) {
 
 function _extends() {
-  module.exports = _extends = Object.assign ? Object.assign.bind() : function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
+  return (module.exports = _extends = Object.assign ? Object.assign.bind() : function (n) {
+    for (var e = 1; e < arguments.length; e++) {
+      var t = arguments[e];
+      for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
     }
-
-    return target;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _extends.apply(this, arguments);
+    return n;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _extends.apply(null, arguments);
 }
-
 module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -1672,13 +1551,9 @@ module.exports = _extends, module.exports.__esModule = true, module.exports["def
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/setPrototypeOf.js");
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  setPrototypeOf(subClass, superClass);
+function _inheritsLoose(t, o) {
+  t.prototype = Object.create(o.prototype), t.prototype.constructor = t, setPrototypeOf(t, o);
 }
-
 module.exports = _inheritsLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -1690,12 +1565,11 @@ module.exports = _inheritsLoose, module.exports.__esModule = true, module.export
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
+function _interopRequireDefault(e) {
+  return e && e.__esModule ? e : {
+    "default": e
   };
 }
-
 module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -1708,57 +1582,31 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
 /***/ (function(module, exports, __webpack_require__) {
 
 var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
-
-function _getRequireWildcardCache(nodeInterop) {
-  if (typeof WeakMap !== "function") return null;
-  var cacheBabelInterop = new WeakMap();
-  var cacheNodeInterop = new WeakMap();
-  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
-    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
-  })(nodeInterop);
+function _getRequireWildcardCache(e) {
+  if ("function" != typeof WeakMap) return null;
+  var r = new WeakMap(),
+    t = new WeakMap();
+  return (_getRequireWildcardCache = function _getRequireWildcardCache(e) {
+    return e ? t : r;
+  })(e);
 }
-
-function _interopRequireWildcard(obj, nodeInterop) {
-  if (!nodeInterop && obj && obj.__esModule) {
-    return obj;
+function _interopRequireWildcard(e, r) {
+  if (!r && e && e.__esModule) return e;
+  if (null === e || "object" != _typeof(e) && "function" != typeof e) return {
+    "default": e
+  };
+  var t = _getRequireWildcardCache(r);
+  if (t && t.has(e)) return t.get(e);
+  var n = {
+      __proto__: null
+    },
+    a = Object.defineProperty && Object.getOwnPropertyDescriptor;
+  for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) {
+    var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
+    i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
   }
-
-  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
-    return {
-      "default": obj
-    };
-  }
-
-  var cache = _getRequireWildcardCache(nodeInterop);
-
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-
-  var newObj = {};
-  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
-
-  for (var key in obj) {
-    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
-
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
-    }
-  }
-
-  newObj["default"] = obj;
-
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-
-  return newObj;
+  return n["default"] = e, t && t.set(e, n), n;
 }
-
 module.exports = _interopRequireWildcard, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -1770,21 +1618,15 @@ module.exports = _interopRequireWildcard, module.exports.__esModule = true, modu
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
+function _objectWithoutPropertiesLoose(r, e) {
+  if (null == r) return {};
+  var t = {};
+  for (var n in r) if ({}.hasOwnProperty.call(r, n)) {
+    if (e.includes(n)) continue;
+    t[n] = r[n];
   }
-
-  return target;
+  return t;
 }
-
 module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -1796,14 +1638,11 @@ module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _setPrototypeOf(o, p);
+function _setPrototypeOf(t, e) {
+  return (module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) {
+    return t.__proto__ = e, t;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _setPrototypeOf(t, e);
 }
-
 module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -1815,16 +1654,15 @@ module.exports = _setPrototypeOf, module.exports.__esModule = true, module.expor
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function _typeof(obj) {
+function _typeof(o) {
   "@babel/helpers - typeof";
 
-  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+    return typeof o;
+  } : function (o) {
+    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
 }
-
 module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -2326,6 +2164,218 @@ function range(a, b, str) {
 
 /***/ }),
 
+/***/ "./node_modules/brace-expansion/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/brace-expansion/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var concatMap = __webpack_require__(/*! concat-map */ "./node_modules/concat-map/index.js");
+var balanced = __webpack_require__(/*! balanced-match */ "./node_modules/balanced-match/index.js");
+
+module.exports = expandTop;
+
+var escSlash = '\0SLASH'+Math.random()+'\0';
+var escOpen = '\0OPEN'+Math.random()+'\0';
+var escClose = '\0CLOSE'+Math.random()+'\0';
+var escComma = '\0COMMA'+Math.random()+'\0';
+var escPeriod = '\0PERIOD'+Math.random()+'\0';
+
+function numeric(str) {
+  return parseInt(str, 10) == str
+    ? parseInt(str, 10)
+    : str.charCodeAt(0);
+}
+
+function escapeBraces(str) {
+  return str.split('\\\\').join(escSlash)
+            .split('\\{').join(escOpen)
+            .split('\\}').join(escClose)
+            .split('\\,').join(escComma)
+            .split('\\.').join(escPeriod);
+}
+
+function unescapeBraces(str) {
+  return str.split(escSlash).join('\\')
+            .split(escOpen).join('{')
+            .split(escClose).join('}')
+            .split(escComma).join(',')
+            .split(escPeriod).join('.');
+}
+
+
+// Basically just str.split(","), but handling cases
+// where we have nested braced sections, which should be
+// treated as individual members, like {a,{b,c},d}
+function parseCommaParts(str) {
+  if (!str)
+    return [''];
+
+  var parts = [];
+  var m = balanced('{', '}', str);
+
+  if (!m)
+    return str.split(',');
+
+  var pre = m.pre;
+  var body = m.body;
+  var post = m.post;
+  var p = pre.split(',');
+
+  p[p.length-1] += '{' + body + '}';
+  var postParts = parseCommaParts(post);
+  if (post.length) {
+    p[p.length-1] += postParts.shift();
+    p.push.apply(p, postParts);
+  }
+
+  parts.push.apply(parts, p);
+
+  return parts;
+}
+
+function expandTop(str) {
+  if (!str)
+    return [];
+
+  // I don't know why Bash 4.3 does this, but it does.
+  // Anything starting with {} will have the first two bytes preserved
+  // but *only* at the top level, so {},a}b will not expand to anything,
+  // but a{},b}c will be expanded to [a}c,abc].
+  // One could argue that this is a bug in Bash, but since the goal of
+  // this module is to match Bash's rules, we escape a leading {}
+  if (str.substr(0, 2) === '{}') {
+    str = '\\{\\}' + str.substr(2);
+  }
+
+  return expand(escapeBraces(str), true).map(unescapeBraces);
+}
+
+function identity(e) {
+  return e;
+}
+
+function embrace(str) {
+  return '{' + str + '}';
+}
+function isPadded(el) {
+  return /^-?0\d/.test(el);
+}
+
+function lte(i, y) {
+  return i <= y;
+}
+function gte(i, y) {
+  return i >= y;
+}
+
+function expand(str, isTop) {
+  var expansions = [];
+
+  var m = balanced('{', '}', str);
+  if (!m || /\$$/.test(m.pre)) return [str];
+
+  var isNumericSequence = /^-?\d+\.\.-?\d+(?:\.\.-?\d+)?$/.test(m.body);
+  var isAlphaSequence = /^[a-zA-Z]\.\.[a-zA-Z](?:\.\.-?\d+)?$/.test(m.body);
+  var isSequence = isNumericSequence || isAlphaSequence;
+  var isOptions = m.body.indexOf(',') >= 0;
+  if (!isSequence && !isOptions) {
+    // {a},b}
+    if (m.post.match(/,.*\}/)) {
+      str = m.pre + '{' + m.body + escClose + m.post;
+      return expand(str);
+    }
+    return [str];
+  }
+
+  var n;
+  if (isSequence) {
+    n = m.body.split(/\.\./);
+  } else {
+    n = parseCommaParts(m.body);
+    if (n.length === 1) {
+      // x{{a,b}}y ==> x{a}y x{b}y
+      n = expand(n[0], false).map(embrace);
+      if (n.length === 1) {
+        var post = m.post.length
+          ? expand(m.post, false)
+          : [''];
+        return post.map(function(p) {
+          return m.pre + n[0] + p;
+        });
+      }
+    }
+  }
+
+  // at this point, n is the parts, and we know it's not a comma set
+  // with a single entry.
+
+  // no need to expand pre, since it is guaranteed to be free of brace-sets
+  var pre = m.pre;
+  var post = m.post.length
+    ? expand(m.post, false)
+    : [''];
+
+  var N;
+
+  if (isSequence) {
+    var x = numeric(n[0]);
+    var y = numeric(n[1]);
+    var width = Math.max(n[0].length, n[1].length)
+    var incr = n.length == 3
+      ? Math.abs(numeric(n[2]))
+      : 1;
+    var test = lte;
+    var reverse = y < x;
+    if (reverse) {
+      incr *= -1;
+      test = gte;
+    }
+    var pad = n.some(isPadded);
+
+    N = [];
+
+    for (var i = x; test(i, y); i += incr) {
+      var c;
+      if (isAlphaSequence) {
+        c = String.fromCharCode(i);
+        if (c === '\\')
+          c = '';
+      } else {
+        c = String(i);
+        if (pad) {
+          var need = width - c.length;
+          if (need > 0) {
+            var z = new Array(need + 1).join('0');
+            if (i < 0)
+              c = '-' + z + c.slice(1);
+            else
+              c = z + c;
+          }
+        }
+      }
+      N.push(c);
+    }
+  } else {
+    N = concatMap(n, function(el) { return expand(el, false) });
+  }
+
+  for (var j = 0; j < N.length; j++) {
+    for (var k = 0; k < post.length; k++) {
+      var expansion = pre + N[j] + post[k];
+      if (!isTop || isSequence || expansion)
+        expansions.push(expansion);
+    }
+  }
+
+  return expansions;
+}
+
+
+
+/***/ }),
+
 /***/ "./node_modules/concat-map/index.js":
 /*!******************************************!*\
   !*** ./node_modules/concat-map/index.js ***!
@@ -2761,12 +2811,9 @@ function parsePath(path) {
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
 exports.__esModule = true;
 exports.onRenderBody = void 0;
-
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-
 var knownOptions = {
   createOnly: {
     clientId: "string",
@@ -2791,15 +2838,12 @@ var knownOptions = {
     transport: "string"
   }
 };
-
 var onRenderBody = function onRenderBody(_ref, pluginOptions) {
   var setHeadComponents = _ref.setHeadComponents,
-      setPostBodyComponents = _ref.setPostBodyComponents;
-
+    setPostBodyComponents = _ref.setPostBodyComponents;
   if (true) {
     return null;
   } // Lighthouse recommends pre-connecting to google analytics
-
 
   setHeadComponents([/*#__PURE__*/_react.default.createElement("link", {
     rel: "preconnect",
@@ -2811,24 +2855,19 @@ var onRenderBody = function onRenderBody(_ref, pluginOptions) {
     href: "https://www.google-analytics.com"
   })]);
   var excludeGAPaths = [];
-
   if (typeof pluginOptions.exclude !== "undefined") {
     var Minimatch = __webpack_require__(/*! minimatch */ "./node_modules/gatsby-plugin-google-analytics/node_modules/minimatch/minimatch.js").Minimatch;
-
     pluginOptions.exclude.map(function (exclude) {
       var mm = new Minimatch(exclude);
       excludeGAPaths.push(mm.makeRe());
     });
   }
-
   var gaCreateOptions = {};
-
   for (var option in knownOptions.createOnly) {
     if (typeof pluginOptions[option] === knownOptions.createOnly[option]) {
       gaCreateOptions[option] = pluginOptions[option];
     }
   }
-
   var setComponents = pluginOptions.head ? setHeadComponents : setPostBodyComponents;
   return setComponents([/*#__PURE__*/_react.default.createElement("script", {
     key: "gatsby-plugin-google-analytics",
@@ -2837,204 +2876,12 @@ var onRenderBody = function onRenderBody(_ref, pluginOptions) {
         if (typeof pluginOptions[option] === knownOptions.general[option]) {
           gaSetCommands += "ga('set', '" + option + "', '" + pluginOptions[option] + "');\n";
         }
-
         return gaSetCommands;
       }, "") + "\n      }"
     }
   })]);
 };
-
 exports.onRenderBody = onRenderBody;
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-google-analytics/node_modules/brace-expansion/index.js":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-google-analytics/node_modules/brace-expansion/index.js ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var concatMap = __webpack_require__(/*! concat-map */ "./node_modules/concat-map/index.js");
-
-var balanced = __webpack_require__(/*! balanced-match */ "./node_modules/balanced-match/index.js");
-
-module.exports = expandTop;
-var escSlash = '\0SLASH' + Math.random() + '\0';
-var escOpen = '\0OPEN' + Math.random() + '\0';
-var escClose = '\0CLOSE' + Math.random() + '\0';
-var escComma = '\0COMMA' + Math.random() + '\0';
-var escPeriod = '\0PERIOD' + Math.random() + '\0';
-
-function numeric(str) {
-  return parseInt(str, 10) == str ? parseInt(str, 10) : str.charCodeAt(0);
-}
-
-function escapeBraces(str) {
-  return str.split('\\\\').join(escSlash).split('\\{').join(escOpen).split('\\}').join(escClose).split('\\,').join(escComma).split('\\.').join(escPeriod);
-}
-
-function unescapeBraces(str) {
-  return str.split(escSlash).join('\\').split(escOpen).join('{').split(escClose).join('}').split(escComma).join(',').split(escPeriod).join('.');
-} // Basically just str.split(","), but handling cases
-// where we have nested braced sections, which should be
-// treated as individual members, like {a,{b,c},d}
-
-
-function parseCommaParts(str) {
-  if (!str) return [''];
-  var parts = [];
-  var m = balanced('{', '}', str);
-  if (!m) return str.split(',');
-  var pre = m.pre;
-  var body = m.body;
-  var post = m.post;
-  var p = pre.split(',');
-  p[p.length - 1] += '{' + body + '}';
-  var postParts = parseCommaParts(post);
-
-  if (post.length) {
-    p[p.length - 1] += postParts.shift();
-    p.push.apply(p, postParts);
-  }
-
-  parts.push.apply(parts, p);
-  return parts;
-}
-
-function expandTop(str) {
-  if (!str) return []; // I don't know why Bash 4.3 does this, but it does.
-  // Anything starting with {} will have the first two bytes preserved
-  // but *only* at the top level, so {},a}b will not expand to anything,
-  // but a{},b}c will be expanded to [a}c,abc].
-  // One could argue that this is a bug in Bash, but since the goal of
-  // this module is to match Bash's rules, we escape a leading {}
-
-  if (str.substr(0, 2) === '{}') {
-    str = '\\{\\}' + str.substr(2);
-  }
-
-  return expand(escapeBraces(str), true).map(unescapeBraces);
-}
-
-function identity(e) {
-  return e;
-}
-
-function embrace(str) {
-  return '{' + str + '}';
-}
-
-function isPadded(el) {
-  return /^-?0\d/.test(el);
-}
-
-function lte(i, y) {
-  return i <= y;
-}
-
-function gte(i, y) {
-  return i >= y;
-}
-
-function expand(str, isTop) {
-  var expansions = [];
-  var m = balanced('{', '}', str);
-  if (!m || /\$$/.test(m.pre)) return [str];
-  var isNumericSequence = /^-?\d+\.\.-?\d+(?:\.\.-?\d+)?$/.test(m.body);
-  var isAlphaSequence = /^[a-zA-Z]\.\.[a-zA-Z](?:\.\.-?\d+)?$/.test(m.body);
-  var isSequence = isNumericSequence || isAlphaSequence;
-  var isOptions = m.body.indexOf(',') >= 0;
-
-  if (!isSequence && !isOptions) {
-    // {a},b}
-    if (m.post.match(/,.*\}/)) {
-      str = m.pre + '{' + m.body + escClose + m.post;
-      return expand(str);
-    }
-
-    return [str];
-  }
-
-  var n;
-
-  if (isSequence) {
-    n = m.body.split(/\.\./);
-  } else {
-    n = parseCommaParts(m.body);
-
-    if (n.length === 1) {
-      // x{{a,b}}y ==> x{a}y x{b}y
-      n = expand(n[0], false).map(embrace);
-
-      if (n.length === 1) {
-        var post = m.post.length ? expand(m.post, false) : [''];
-        return post.map(function (p) {
-          return m.pre + n[0] + p;
-        });
-      }
-    }
-  } // at this point, n is the parts, and we know it's not a comma set
-  // with a single entry.
-  // no need to expand pre, since it is guaranteed to be free of brace-sets
-
-
-  var pre = m.pre;
-  var post = m.post.length ? expand(m.post, false) : [''];
-  var N;
-
-  if (isSequence) {
-    var x = numeric(n[0]);
-    var y = numeric(n[1]);
-    var width = Math.max(n[0].length, n[1].length);
-    var incr = n.length == 3 ? Math.abs(numeric(n[2])) : 1;
-    var test = lte;
-    var reverse = y < x;
-
-    if (reverse) {
-      incr *= -1;
-      test = gte;
-    }
-
-    var pad = n.some(isPadded);
-    N = [];
-
-    for (var i = x; test(i, y); i += incr) {
-      var c;
-
-      if (isAlphaSequence) {
-        c = String.fromCharCode(i);
-        if (c === '\\') c = '';
-      } else {
-        c = String(i);
-
-        if (pad) {
-          var need = width - c.length;
-
-          if (need > 0) {
-            var z = new Array(need + 1).join('0');
-            if (i < 0) c = '-' + z + c.slice(1);else c = z + c;
-          }
-        }
-      }
-
-      N.push(c);
-    }
-  } else {
-    N = concatMap(n, function (el) {
-      return expand(el, false);
-    });
-  }
-
-  for (var j = 0; j < N.length; j++) {
-    for (var k = 0; k < post.length; k++) {
-      var expansion = pre + N[j] + post[k];
-      if (!isTop || isSequence || expansion) expansions.push(expansion);
-    }
-  }
-
-  return expansions;
-}
 
 /***/ }),
 
@@ -3050,15 +2897,11 @@ minimatch.Minimatch = Minimatch;
 var path = {
   sep: '/'
 };
-
 try {
   path = __webpack_require__(/*! path */ "path");
 } catch (er) {}
-
 var GLOBSTAR = minimatch.GLOBSTAR = Minimatch.GLOBSTAR = {};
-
-var expand = __webpack_require__(/*! brace-expansion */ "./node_modules/gatsby-plugin-google-analytics/node_modules/brace-expansion/index.js");
-
+var expand = __webpack_require__(/*! brace-expansion */ "./node_modules/brace-expansion/index.js");
 var plTypes = {
   '!': {
     open: '(?:(?!(?:',
@@ -3080,40 +2923,44 @@ var plTypes = {
     open: '(?:',
     close: ')'
   }
-}; // any single thing other than /
+};
+
+// any single thing other than /
 // don't need to escape / when using new RegExp()
+var qmark = '[^/]';
 
-var qmark = '[^/]'; // * => any number of characters
+// * => any number of characters
+var star = qmark + '*?';
 
-var star = qmark + '*?'; // ** when dots are allowed.  Anything goes, except .. and .
+// ** when dots are allowed.  Anything goes, except .. and .
 // not (^ or / followed by one or two dots followed by $ or /),
 // followed by anything, any number of times.
+var twoStarDot = '(?:(?!(?:\\\/|^)(?:\\.{1,2})($|\\\/)).)*?';
 
-var twoStarDot = '(?:(?!(?:\\\/|^)(?:\\.{1,2})($|\\\/)).)*?'; // not a ^ or / followed by a dot,
+// not a ^ or / followed by a dot,
 // followed by anything, any number of times.
+var twoStarNoDot = '(?:(?!(?:\\\/|^)\\.).)*?';
 
-var twoStarNoDot = '(?:(?!(?:\\\/|^)\\.).)*?'; // characters that need to be escaped in RegExp.
+// characters that need to be escaped in RegExp.
+var reSpecials = charSet('().*{}+?[]^$\\!');
 
-var reSpecials = charSet('().*{}+?[]^$\\!'); // "abc" -> { a:true, b:true, c:true }
-
+// "abc" -> { a:true, b:true, c:true }
 function charSet(s) {
   return s.split('').reduce(function (set, c) {
     set[c] = true;
     return set;
   }, {});
-} // normalizes slashes.
+}
 
-
+// normalizes slashes.
 var slashSplit = /\/+/;
 minimatch.filter = filter;
-
 function filter(pattern, options) {
   options = options || {};
   return function (p, i, list) {
     return minimatch(p, pattern, options);
   };
 }
-
 function ext(a, b) {
   a = a || {};
   b = b || {};
@@ -3126,135 +2973,126 @@ function ext(a, b) {
   });
   return t;
 }
-
 minimatch.defaults = function (def) {
   if (!def || !Object.keys(def).length) return minimatch;
   var orig = minimatch;
-
   var m = function minimatch(p, pattern, options) {
     return orig.minimatch(p, pattern, ext(def, options));
   };
-
   m.Minimatch = function Minimatch(pattern, options) {
     return new orig.Minimatch(pattern, ext(def, options));
   };
-
   return m;
 };
-
 Minimatch.defaults = function (def) {
   if (!def || !Object.keys(def).length) return Minimatch;
   return minimatch.defaults(def).Minimatch;
 };
-
 function minimatch(p, pattern, options) {
   if (typeof pattern !== 'string') {
     throw new TypeError('glob pattern string required');
   }
+  if (!options) options = {};
 
-  if (!options) options = {}; // shortcut: comments match nothing.
-
+  // shortcut: comments match nothing.
   if (!options.nocomment && pattern.charAt(0) === '#') {
     return false;
-  } // "" only matches ""
+  }
 
-
+  // "" only matches ""
   if (pattern.trim() === '') return p === '';
   return new Minimatch(pattern, options).match(p);
 }
-
 function Minimatch(pattern, options) {
   if (!(this instanceof Minimatch)) {
     return new Minimatch(pattern, options);
   }
-
   if (typeof pattern !== 'string') {
     throw new TypeError('glob pattern string required');
   }
-
   if (!options) options = {};
-  pattern = pattern.trim(); // windows support: need to use /, not \
+  pattern = pattern.trim();
 
+  // windows support: need to use /, not \
   if (path.sep !== '/') {
     pattern = pattern.split(path.sep).join('/');
   }
-
   this.options = options;
   this.set = [];
   this.pattern = pattern;
   this.regexp = null;
   this.negate = false;
   this.comment = false;
-  this.empty = false; // make the set of regexps etc.
+  this.empty = false;
 
+  // make the set of regexps etc.
   this.make();
 }
-
 Minimatch.prototype.debug = function () {};
-
 Minimatch.prototype.make = make;
-
 function make() {
   // don't do it more than once.
   if (this._made) return;
   var pattern = this.pattern;
-  var options = this.options; // empty patterns and comments match nothing.
+  var options = this.options;
 
+  // empty patterns and comments match nothing.
   if (!options.nocomment && pattern.charAt(0) === '#') {
     this.comment = true;
     return;
   }
-
   if (!pattern) {
     this.empty = true;
     return;
-  } // step 1: figure out negation, etc.
+  }
 
+  // step 1: figure out negation, etc.
+  this.parseNegate();
 
-  this.parseNegate(); // step 2: expand braces
-
+  // step 2: expand braces
   var set = this.globSet = this.braceExpand();
   if (options.debug) this.debug = console.error;
-  this.debug(this.pattern, set); // step 3: now we have a set, so turn each one into a series of path-portion
+  this.debug(this.pattern, set);
+
+  // step 3: now we have a set, so turn each one into a series of path-portion
   // matching patterns.
   // These will be regexps, except in the case of "**", which is
   // set to the GLOBSTAR object for globstar behavior,
   // and will not contain any / characters
-
   set = this.globParts = set.map(function (s) {
     return s.split(slashSplit);
   });
-  this.debug(this.pattern, set); // glob --> regexps
+  this.debug(this.pattern, set);
 
+  // glob --> regexps
   set = set.map(function (s, si, set) {
     return s.map(this.parse, this);
   }, this);
-  this.debug(this.pattern, set); // filter out everything that didn't compile properly.
+  this.debug(this.pattern, set);
 
+  // filter out everything that didn't compile properly.
   set = set.filter(function (s) {
     return s.indexOf(false) === -1;
   });
   this.debug(this.pattern, set);
   this.set = set;
 }
-
 Minimatch.prototype.parseNegate = parseNegate;
-
 function parseNegate() {
   var pattern = this.pattern;
   var negate = false;
   var options = this.options;
   var negateOffset = 0;
   if (options.nonegate) return;
-
   for (var i = 0, l = pattern.length; i < l && pattern.charAt(i) === '!'; i++) {
     negate = !negate;
     negateOffset++;
   }
-
   if (negateOffset) this.pattern = pattern.substr(negateOffset);
   this.negate = negate;
-} // Brace expansion:
+}
+
+// Brace expansion:
 // a{b,c}d -> abd acd
 // a{b,}c -> abc ac
 // a{0..3}d -> a0d a1d a2d a3d
@@ -3264,14 +3102,10 @@ function parseNegate() {
 // Invalid sets are not expanded.
 // a{2..}b -> a{2..}b
 // a{b}c -> a{b}c
-
-
 minimatch.braceExpand = function (pattern, options) {
   return braceExpand(pattern, options);
 };
-
 Minimatch.prototype.braceExpand = braceExpand;
-
 function braceExpand(pattern, options) {
   if (!options) {
     if (this instanceof Minimatch) {
@@ -3280,20 +3114,18 @@ function braceExpand(pattern, options) {
       options = {};
     }
   }
-
   pattern = typeof pattern === 'undefined' ? this.pattern : pattern;
-
   if (typeof pattern === 'undefined') {
     throw new TypeError('undefined pattern');
   }
-
   if (options.nobrace || !pattern.match(/\{.*\}/)) {
     // shortcut. no need to expand.
     return [pattern];
   }
-
   return expand(pattern);
-} // parse a component of the expanded set.
+}
+
+// parse a component of the expanded set.
 // At this point, no pattern may contain "/" in it
 // so we're going to return a 2d array, where each entry is the full
 // pattern, split on '/', and then turned into a regular expression.
@@ -3304,37 +3136,33 @@ function braceExpand(pattern, options) {
 // when it is the *only* thing in a path portion.  Otherwise, any series
 // of * is equivalent to a single *.  Globstar behavior is enabled by
 // default, and can be disabled by setting options.noglobstar.
-
-
 Minimatch.prototype.parse = parse;
 var SUBPARSE = {};
-
 function parse(pattern, isSub) {
   if (pattern.length > 1024 * 64) {
     throw new TypeError('pattern is too long');
   }
+  var options = this.options;
 
-  var options = this.options; // shortcuts
-
+  // shortcuts
   if (!options.noglobstar && pattern === '**') return GLOBSTAR;
   if (pattern === '') return '';
   var re = '';
   var hasMagic = !!options.nocase;
-  var escaping = false; // ? => one single character
-
+  var escaping = false;
+  // ? => one single character
   var patternListStack = [];
   var negativeLists = [];
   var stateChar;
   var inClass = false;
   var reClassStart = -1;
-  var classStart = -1; // . and .. never match anything that doesn't start with .,
+  var classStart = -1;
+  // . and .. never match anything that doesn't start with .,
   // even when options.dot is set.
-
   var patternStart = pattern.charAt(0) === '.' ? '' // anything
   // not (start or / followed by . or .. followed by / or end)
   : options.dot ? '(?!(?:^|\\\/)\\.{1,2}(?:$|\\\/))' : '(?!\\.)';
   var self = this;
-
   function clearStateChar() {
     if (stateChar) {
       // we had some state-tracking character
@@ -3344,142 +3172,126 @@ function parse(pattern, isSub) {
           re += star;
           hasMagic = true;
           break;
-
         case '?':
           re += qmark;
           hasMagic = true;
           break;
-
         default:
           re += '\\' + stateChar;
           break;
       }
-
       self.debug('clearStateChar %j %j', stateChar, re);
       stateChar = false;
     }
   }
-
   for (var i = 0, len = pattern.length, c; i < len && (c = pattern.charAt(i)); i++) {
-    this.debug('%s\t%s %s %j', pattern, i, re, c); // skip over any that are escaped.
+    this.debug('%s\t%s %s %j', pattern, i, re, c);
 
+    // skip over any that are escaped.
     if (escaping && reSpecials[c]) {
       re += '\\' + c;
       escaping = false;
       continue;
     }
-
     switch (c) {
       case '/':
         // completely not allowed, even escaped.
         // Should already be path-split by now.
         return false;
-
       case '\\':
         clearStateChar();
         escaping = true;
         continue;
+
       // the various stateChar values
       // for the "extglob" stuff.
-
       case '?':
       case '*':
       case '+':
       case '@':
       case '!':
-        this.debug('%s\t%s %s %j <-- stateChar', pattern, i, re, c); // all of those are literals inside a class, except that
-        // the glob [!a] means [^a] in regexp
+        this.debug('%s\t%s %s %j <-- stateChar', pattern, i, re, c);
 
+        // all of those are literals inside a class, except that
+        // the glob [!a] means [^a] in regexp
         if (inClass) {
           this.debug('  in class');
           if (c === '!' && i === classStart + 1) c = '^';
           re += c;
           continue;
-        } // if we already have a stateChar, then it means
+        }
+
+        // if we already have a stateChar, then it means
         // that there was something like ** or +? in there.
         // Handle the stateChar, then proceed with this one.
-
-
         self.debug('call clearStateChar %j', stateChar);
         clearStateChar();
-        stateChar = c; // if extglob is disabled, then +(asdf|foo) isn't a thing.
+        stateChar = c;
+        // if extglob is disabled, then +(asdf|foo) isn't a thing.
         // just clear the statechar *now*, rather than even diving into
         // the patternList stuff.
-
         if (options.noext) clearStateChar();
         continue;
-
       case '(':
         if (inClass) {
           re += '(';
           continue;
         }
-
         if (!stateChar) {
           re += '\\(';
           continue;
         }
-
         patternListStack.push({
           type: stateChar,
           start: i - 1,
           reStart: re.length,
           open: plTypes[stateChar].open,
           close: plTypes[stateChar].close
-        }); // negation is (?:(?!js)[^/]*)
-
+        });
+        // negation is (?:(?!js)[^/]*)
         re += stateChar === '!' ? '(?:(?!(?:' : '(?:';
         this.debug('plType %j %j', stateChar, re);
         stateChar = false;
         continue;
-
       case ')':
         if (inClass || !patternListStack.length) {
           re += '\\)';
           continue;
         }
-
         clearStateChar();
         hasMagic = true;
-        var pl = patternListStack.pop(); // negation is (?:(?!js)[^/]*)
+        var pl = patternListStack.pop();
+        // negation is (?:(?!js)[^/]*)
         // The others are (?:<pattern>)<type>
-
         re += pl.close;
-
         if (pl.type === '!') {
           negativeLists.push(pl);
         }
-
         pl.reEnd = re.length;
         continue;
-
       case '|':
         if (inClass || !patternListStack.length || escaping) {
           re += '\\|';
           escaping = false;
           continue;
         }
-
         clearStateChar();
         re += '|';
         continue;
-      // these are mostly the same in regexp and glob
 
+      // these are mostly the same in regexp and glob
       case '[':
         // swallow any state-tracking char before the [
         clearStateChar();
-
         if (inClass) {
           re += '\\' + c;
           continue;
         }
-
         inClass = true;
         classStart = i;
         reClassStart = re.length;
         re += c;
         continue;
-
       case ']':
         //  a right bracket shall lose its special
         //  meaning and represent itself in
@@ -3489,10 +3301,10 @@ function parse(pattern, isSub) {
           re += '\\' + c;
           escaping = false;
           continue;
-        } // handle the case where we left a class open.
+        }
+
+        // handle the case where we left a class open.
         // "[z-a]" is valid, equivalent to "\[z-a\]"
-
-
         if (inClass) {
           // split where the last [ was, make sure we don't have
           // an invalid re. if so, re-walk the contents of the
@@ -3502,7 +3314,6 @@ function parse(pattern, isSub) {
           // without a try/catch and a new RegExp, but it's tricky
           // to do safely.  For now, this is safe and works.
           var cs = pattern.substring(classStart + 1, i);
-
           try {
             RegExp('[' + cs + ']');
           } catch (er) {
@@ -3513,33 +3324,28 @@ function parse(pattern, isSub) {
             inClass = false;
             continue;
           }
-        } // finish up the class.
+        }
 
-
+        // finish up the class.
         hasMagic = true;
         inClass = false;
         re += c;
         continue;
-
       default:
         // swallow any state char that wasn't consumed
         clearStateChar();
-
         if (escaping) {
           // no need
           escaping = false;
         } else if (reSpecials[c] && !(c === '^' && inClass)) {
           re += '\\';
         }
-
         re += c;
     } // switch
-
   } // for
+
   // handle the case where we left a class open.
   // "[abc" is valid, equivalent to "\[abc"
-
-
   if (inClass) {
     // split where the last [ was, and escape it
     // this is a huge pita.  We now have to re-walk
@@ -3549,115 +3355,107 @@ function parse(pattern, isSub) {
     sp = this.parse(cs, SUBPARSE);
     re = re.substr(0, reClassStart) + '\\[' + sp[0];
     hasMagic = hasMagic || sp[1];
-  } // handle the case where we had a +( thing at the *end*
+  }
+
+  // handle the case where we had a +( thing at the *end*
   // of the pattern.
   // each pattern list stack adds 3 chars, and we need to go through
   // and escape any | chars that were passed through as-is for the regexp.
   // Go through and escape them, taking care not to double-escape any
   // | chars that were already escaped.
-
-
   for (pl = patternListStack.pop(); pl; pl = patternListStack.pop()) {
     var tail = re.slice(pl.reStart + pl.open.length);
-    this.debug('setting tail', re, pl); // maybe some even number of \, then maybe 1 \, followed by a |
-
+    this.debug('setting tail', re, pl);
+    // maybe some even number of \, then maybe 1 \, followed by a |
     tail = tail.replace(/((?:\\{2}){0,64})(\\?)\|/g, function (_, $1, $2) {
       if (!$2) {
         // the | isn't already escaped, so escape it.
         $2 = '\\';
-      } // need to escape all those slashes *again*, without escaping the
+      }
+
+      // need to escape all those slashes *again*, without escaping the
       // one that we need for escaping the | character.  As it works out,
       // escaping an even number of slashes can be done by simply repeating
       // it exactly after itself.  That's why this trick works.
       //
       // I am sorry that you have to see this.
-
-
       return $1 + $1 + $2 + '|';
     });
     this.debug('tail=%j\n   %s', tail, tail, pl, re);
     var t = pl.type === '*' ? star : pl.type === '?' ? qmark : '\\' + pl.type;
     hasMagic = true;
     re = re.slice(0, pl.reStart) + t + '\\(' + tail;
-  } // handle trailing things that only matter at the very end.
+  }
 
-
+  // handle trailing things that only matter at the very end.
   clearStateChar();
-
   if (escaping) {
     // trailing \\
     re += '\\\\';
-  } // only need to apply the nodot start if the re starts with
+  }
+
+  // only need to apply the nodot start if the re starts with
   // something that could conceivably capture a dot
-
-
   var addPatternStart = false;
-
   switch (re.charAt(0)) {
     case '.':
     case '[':
     case '(':
       addPatternStart = true;
-  } // Hack to work around lack of negative lookbehind in JS
+  }
+
+  // Hack to work around lack of negative lookbehind in JS
   // A pattern like: *.!(x).!(y|z) needs to ensure that a name
   // like 'a.xyz.yz' doesn't match.  So, the first negative
   // lookahead, has to look ALL the way ahead, to the end of
   // the pattern.
-
-
   for (var n = negativeLists.length - 1; n > -1; n--) {
     var nl = negativeLists[n];
     var nlBefore = re.slice(0, nl.reStart);
     var nlFirst = re.slice(nl.reStart, nl.reEnd - 8);
     var nlLast = re.slice(nl.reEnd - 8, nl.reEnd);
     var nlAfter = re.slice(nl.reEnd);
-    nlLast += nlAfter; // Handle nested stuff like *(*.js|!(*.json)), where open parens
+    nlLast += nlAfter;
+
+    // Handle nested stuff like *(*.js|!(*.json)), where open parens
     // mean that we should *not* include the ) in the bit that is considered
     // "after" the negated section.
-
     var openParensBefore = nlBefore.split('(').length - 1;
     var cleanAfter = nlAfter;
-
     for (i = 0; i < openParensBefore; i++) {
       cleanAfter = cleanAfter.replace(/\)[+*?]?/, '');
     }
-
     nlAfter = cleanAfter;
     var dollar = '';
-
     if (nlAfter === '' && isSub !== SUBPARSE) {
       dollar = '$';
     }
-
     var newRe = nlBefore + nlFirst + nlAfter + dollar + nlLast;
     re = newRe;
-  } // if the re is not "" at this point, then we need to make sure
+  }
+
+  // if the re is not "" at this point, then we need to make sure
   // it doesn't match against an empty path part.
   // Otherwise a/* will match a/, which it should not.
-
-
   if (re !== '' && hasMagic) {
     re = '(?=.)' + re;
   }
-
   if (addPatternStart) {
     re = patternStart + re;
-  } // parsing just a piece of a larger pattern.
+  }
 
-
+  // parsing just a piece of a larger pattern.
   if (isSub === SUBPARSE) {
     return [re, hasMagic];
-  } // skip the regexp for non-magical patterns
+  }
+
+  // skip the regexp for non-magical patterns
   // unescape anything in it, though, so that it'll be
   // an exact match against a file etc.
-
-
   if (!hasMagic) {
     return globUnescape(pattern);
   }
-
   var flags = options.nocase ? 'i' : '';
-
   try {
     var regExp = new RegExp('^' + re + '$', flags);
   } catch (er) {
@@ -3667,33 +3465,28 @@ function parse(pattern, isSub) {
     // mode, but it's not a /m regex.
     return new RegExp('$.');
   }
-
   regExp._glob = pattern;
   regExp._src = re;
   return regExp;
 }
-
 minimatch.makeRe = function (pattern, options) {
   return new Minimatch(pattern, options || {}).makeRe();
 };
-
 Minimatch.prototype.makeRe = makeRe;
-
 function makeRe() {
-  if (this.regexp || this.regexp === false) return this.regexp; // at this point, this.set is a 2d array of partial
+  if (this.regexp || this.regexp === false) return this.regexp;
+
+  // at this point, this.set is a 2d array of partial
   // pattern strings, or "**".
   //
   // It's better to use .match().  This function shouldn't
   // be used, really, but it's pretty convenient sometimes,
   // when you just want to work with a regex.
-
   var set = this.set;
-
   if (!set.length) {
     this.regexp = false;
     return this.regexp;
   }
-
   var options = this.options;
   var twoStar = options.noglobstar ? star : options.dot ? twoStarDot : twoStarNoDot;
   var flags = options.nocase ? 'i' : '';
@@ -3701,96 +3494,90 @@ function makeRe() {
     return pattern.map(function (p) {
       return p === GLOBSTAR ? twoStar : typeof p === 'string' ? regExpEscape(p) : p._src;
     }).join('\\\/');
-  }).join('|'); // must match entire pattern
+  }).join('|');
+
+  // must match entire pattern
   // ending in a * or ** will make it less strict.
+  re = '^(?:' + re + ')$';
 
-  re = '^(?:' + re + ')$'; // can match anything, as long as it's not this.
-
+  // can match anything, as long as it's not this.
   if (this.negate) re = '^(?!' + re + ').*$';
-
   try {
     this.regexp = new RegExp(re, flags);
   } catch (ex) {
     this.regexp = false;
   }
-
   return this.regexp;
 }
-
 minimatch.match = function (list, pattern, options) {
   options = options || {};
   var mm = new Minimatch(pattern, options);
   list = list.filter(function (f) {
     return mm.match(f);
   });
-
   if (mm.options.nonull && !list.length) {
     list.push(pattern);
   }
-
   return list;
 };
-
 Minimatch.prototype.match = match;
-
 function match(f, partial) {
-  this.debug('match', f, this.pattern); // short-circuit in the case of busted things.
+  this.debug('match', f, this.pattern);
+  // short-circuit in the case of busted things.
   // comments, etc.
-
   if (this.comment) return false;
   if (this.empty) return f === '';
   if (f === '/' && partial) return true;
-  var options = this.options; // windows: need to use /, not \
+  var options = this.options;
 
+  // windows: need to use /, not \
   if (path.sep !== '/') {
     f = f.split(path.sep).join('/');
-  } // treat the test path as a set of pathparts.
+  }
 
-
+  // treat the test path as a set of pathparts.
   f = f.split(slashSplit);
-  this.debug(this.pattern, 'split', f); // just ONE of the pattern sets in this.set needs to match
+  this.debug(this.pattern, 'split', f);
+
+  // just ONE of the pattern sets in this.set needs to match
   // in order for it to be valid.  If negating, then just one
   // match means that we have failed.
   // Either way, return on the first hit.
 
   var set = this.set;
-  this.debug(this.pattern, 'set', set); // Find the basename of the path by looking for the last non-empty segment
+  this.debug(this.pattern, 'set', set);
 
+  // Find the basename of the path by looking for the last non-empty segment
   var filename;
   var i;
-
   for (i = f.length - 1; i >= 0; i--) {
     filename = f[i];
     if (filename) break;
   }
-
   for (i = 0; i < set.length; i++) {
     var pattern = set[i];
     var file = f;
-
     if (options.matchBase && pattern.length === 1) {
       file = [filename];
     }
-
     var hit = this.matchOne(file, pattern, partial);
-
     if (hit) {
       if (options.flipNegate) return true;
       return !this.negate;
     }
-  } // didn't get any hits.  this is success if it's a negative
+  }
+
+  // didn't get any hits.  this is success if it's a negative
   // pattern, failure otherwise.
-
-
   if (options.flipNegate) return false;
   return this.negate;
-} // set partial to true to test if, for example,
+}
+
+// set partial to true to test if, for example,
 // "/a/b" matches the start of "/*/b/*/d"
 // Partial means, if you run out of file before you run
 // out of pattern, then that's fine, as long as all
 // the parts match.
-
-
 Minimatch.prototype.matchOne = function (file, pattern, partial) {
   var options = this.options;
   this.debug('matchOne', {
@@ -3799,18 +3586,19 @@ Minimatch.prototype.matchOne = function (file, pattern, partial) {
     pattern: pattern
   });
   this.debug('matchOne', file.length, pattern.length);
-
   for (var fi = 0, pi = 0, fl = file.length, pl = pattern.length; fi < fl && pi < pl; fi++, pi++) {
     this.debug('matchOne loop');
     var p = pattern[pi];
     var f = file[fi];
-    this.debug(pattern, p, f); // should be impossible.
+    this.debug(pattern, p, f);
+
+    // should be impossible.
     // some invalid regexp stuff in the set.
-
     if (p === false) return false;
-
     if (p === GLOBSTAR) {
-      this.debug('GLOBSTAR', [pattern, p, f]); // "**"
+      this.debug('GLOBSTAR', [pattern, p, f]);
+
+      // "**"
       // a/**/b/**/c would match the following:
       // a/b/x/y/z/c
       // a/x/y/z/b/c
@@ -3832,33 +3620,31 @@ Minimatch.prototype.matchOne = function (file, pattern, partial) {
       //       - matchOne(y/z/c, c) -> no
       //       - matchOne(z/c, c) -> no
       //       - matchOne(c, c) yes, hit
-
       var fr = fi;
       var pr = pi + 1;
-
       if (pr === pl) {
-        this.debug('** at the end'); // a ** at the end will just swallow the rest.
+        this.debug('** at the end');
+        // a ** at the end will just swallow the rest.
         // We have found a match.
         // however, it will not swallow /.x, unless
         // options.dot is set.
         // . and .. are *never* matched by **, for explosively
         // exponential reasons.
-
         for (; fi < fl; fi++) {
           if (file[fi] === '.' || file[fi] === '..' || !options.dot && file[fi].charAt(0) === '.') return false;
         }
-
         return true;
-      } // ok, let's see if we can swallow whatever we can.
+      }
 
-
+      // ok, let's see if we can swallow whatever we can.
       while (fr < fl) {
         var swallowee = file[fr];
-        this.debug('\nglobstar while', file, fr, pattern, pr, swallowee); // XXX remove this slice.  Just pass the start index.
+        this.debug('\nglobstar while', file, fr, pattern, pr, swallowee);
 
+        // XXX remove this slice.  Just pass the start index.
         if (this.matchOne(file.slice(fr), pattern.slice(pr), partial)) {
-          this.debug('globstar found match!', fr, fl, swallowee); // found a match.
-
+          this.debug('globstar found match!', fr, fl, swallowee);
+          // found a match.
           return true;
         } else {
           // can't swallow "." or ".." ever.
@@ -3866,46 +3652,44 @@ Minimatch.prototype.matchOne = function (file, pattern, partial) {
           if (swallowee === '.' || swallowee === '..' || !options.dot && swallowee.charAt(0) === '.') {
             this.debug('dot detected!', file, fr, pattern, pr);
             break;
-          } // ** swallows a segment, and continue.
+          }
 
-
+          // ** swallows a segment, and continue.
           this.debug('globstar swallow a segment, and continue');
           fr++;
         }
-      } // no match was found.
+      }
+
+      // no match was found.
       // However, in partial mode, we can't say this is necessarily over.
       // If there's more *pattern* left, then
-
-
       if (partial) {
         // ran out of file
         this.debug('\n>>> no match, partial?', file, fr, pattern, pr);
         if (fr === fl) return true;
       }
-
       return false;
-    } // something other than **
+    }
+
+    // something other than **
     // non-magic patterns just have to match exactly
     // patterns with magic have been turned into regexps.
-
-
     var hit;
-
     if (typeof p === 'string') {
       if (options.nocase) {
         hit = f.toLowerCase() === p.toLowerCase();
       } else {
         hit = f === p;
       }
-
       this.debug('string match', p, f, hit);
     } else {
       hit = f.match(p);
       this.debug('pattern match', p, f, hit);
     }
-
     if (!hit) return false;
-  } // Note: ending in / means that we'll get a final ""
+  }
+
+  // Note: ending in / means that we'll get a final ""
   // at the end of the pattern.  This can only match a
   // corresponding "" at the end of the file.
   // If the file ends in /, then it can only match a
@@ -3915,9 +3699,8 @@ Minimatch.prototype.matchOne = function (file, pattern, partial) {
   // [^/]*? pattern, except in partial mode, where it might
   // simply not be reached yet.
   // However, a/b/ should still satisfy a/*
+
   // now either we fell off the end of the pattern, or we're done.
-
-
   if (fi === fl && pi === pl) {
     // ran out of pattern and filename at the same time.
     // an exact hit!
@@ -3934,17 +3717,16 @@ Minimatch.prototype.matchOne = function (file, pattern, partial) {
     // a/* should match a/b/
     var emptyFileEnd = fi === fl - 1 && file[fi] === '';
     return emptyFileEnd;
-  } // should be unreachable.
+  }
 
-
+  // should be unreachable.
   throw new Error('wtf?');
-}; // replace stuff like \* with *
+};
 
-
+// replace stuff like \* with *
 function globUnescape(s) {
   return s.replace(/\\(.)/g, '$1');
 }
-
 function regExpEscape(s) {
   return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
 }
@@ -3962,11 +3744,8 @@ function regExpEscape(s) {
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
 var _fs = _interopRequireDefault(__webpack_require__(/*! fs */ "fs"));
-
 var _path = _interopRequireDefault(__webpack_require__(/*! path */ "path"));
-
 exports.favicons = [{
   src: "favicon-32x32.png",
   sizes: "32x32",
@@ -4019,7 +3798,6 @@ exports.doesIconExist = function doesIconExist(srcIcon) {
     if (e.code !== "ENOENT") {
       throw e;
     }
-
     return false;
   }
 };
@@ -4028,18 +3806,14 @@ exports.doesIconExist = function doesIconExist(srcIcon) {
  * @param {string} digest The digest of the icon provided in the plugin's options.
  */
 
-
 exports.addDigestToPath = function (path, digest, method) {
   if (method === "name") {
     var parsedPath = _path.default.parse(path);
-
     return parsedPath.dir + "/" + parsedPath.name + "-" + digest + parsedPath.ext;
   }
-
   if (method === "query") {
     return path + "?v=" + digest;
   }
-
   return path;
 };
 
@@ -4056,36 +3830,30 @@ exports.addDigestToPath = function (path, digest, method) {
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
 var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
-
 var React = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-
 var _gatsby = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-
 var _common = __webpack_require__(/*! ./common.js */ "./node_modules/gatsby-plugin-manifest/common.js");
+var _getManifestPathname = _interopRequireDefault(__webpack_require__(/*! ./get-manifest-pathname */ "./node_modules/gatsby-plugin-manifest/get-manifest-pathname.js"));
 
-var _getManifestPathname = _interopRequireDefault(__webpack_require__(/*! ./get-manifest-pathname */ "./node_modules/gatsby-plugin-manifest/get-manifest-pathname.js")); // TODO: remove for v3
-
-
+// TODO: remove for v3
 var withPrefix = _gatsby.withAssetPrefix || _gatsby.withPrefix;
-
 exports.onRenderBody = function (_ref, _ref2) {
   var setHeadComponents = _ref.setHeadComponents,
-      _ref$pathname = _ref.pathname,
-      pathname = _ref$pathname === void 0 ? "/" : _ref$pathname;
+    _ref$pathname = _ref.pathname,
+    pathname = _ref$pathname === void 0 ? "/" : _ref$pathname;
   var localize = _ref2.localize,
-      legacy = _ref2.legacy,
-      cacheBusting = _ref2.cache_busting_mode,
-      cacheDigest = _ref2.cacheDigest,
-      icon = _ref2.icon,
-      pluginIcons = _ref2.icons,
-      insertFaviconLinkTag = _ref2.include_favicon,
-      insertMetaTag = _ref2.theme_color_in_head,
-      theme_color = _ref2.theme_color,
-      _ref2$crossOrigin = _ref2.crossOrigin,
-      crossOrigin = _ref2$crossOrigin === void 0 ? "anonymous" : _ref2$crossOrigin; // We use this to build a final array to pass as the argument to setHeadComponents at the end of onRenderBody.
-
+    legacy = _ref2.legacy,
+    cacheBusting = _ref2.cache_busting_mode,
+    cacheDigest = _ref2.cacheDigest,
+    icon = _ref2.icon,
+    pluginIcons = _ref2.icons,
+    insertFaviconLinkTag = _ref2.include_favicon,
+    insertMetaTag = _ref2.theme_color_in_head,
+    theme_color = _ref2.theme_color,
+    _ref2$crossOrigin = _ref2.crossOrigin,
+    crossOrigin = _ref2$crossOrigin === void 0 ? "anonymous" : _ref2$crossOrigin;
+  // We use this to build a final array to pass as the argument to setHeadComponents at the end of onRenderBody.
   var headComponents = [];
   var srcIconExists = !!icon;
   var icons = pluginIcons || _common.defaultIcons;
@@ -4101,7 +3869,6 @@ exports.onRenderBody = function (_ref, _ref2) {
           type: "image/png"
         }));
       });
-
       if (icon === null || icon === void 0 ? void 0 : icon.endsWith(".svg")) {
         headComponents.push( /*#__PURE__*/React.createElement("link", {
           key: "gatsby-plugin-manifest-icon-link-svg",
@@ -4112,7 +3879,6 @@ exports.onRenderBody = function (_ref, _ref2) {
       }
     }
   } // Add manifest link tag.
-
 
   headComponents.push( /*#__PURE__*/React.createElement("link", {
     key: "gatsby-plugin-manifest-link",
@@ -4128,7 +3894,6 @@ exports.onRenderBody = function (_ref, _ref2) {
       content: theme_color
     }));
   }
-
   if (legacy) {
     icons.forEach(function (icon) {
       headComponents.push( /*#__PURE__*/React.createElement("link", {
@@ -4139,7 +3904,6 @@ exports.onRenderBody = function (_ref, _ref2) {
       }));
     });
   }
-
   setHeadComponents(headComponents);
   return true;
 };
@@ -4158,6 +3922,7 @@ exports.onRenderBody = function (_ref, _ref2) {
 
 exports.__esModule = true;
 exports.default = void 0;
+
 /**
  * Get a manifest filename depending on localized pathname
  *
@@ -4165,25 +3930,19 @@ exports.default = void 0;
  * @param {Array<{start_url: string, lang: string}>} localizedManifests
  * @return string
  */
-
 var _default = function _default(pathname, localizedManifests) {
   var defaultFilename = "manifest.webmanifest";
-
   if (!Array.isArray(localizedManifests)) {
     return defaultFilename;
   }
-
   var localizedManifest = localizedManifests.find(function (app) {
     return pathname.startsWith(app.start_url);
   });
-
   if (!localizedManifest) {
     return defaultFilename;
   }
-
   return "manifest_" + localizedManifest.lang + ".webmanifest";
 };
-
 exports.default = _default;
 
 /***/ }),
@@ -4200,21 +3959,19 @@ exports.default = _default;
 
 exports.__esModule = true;
 exports.onPreRenderHTML = void 0;
-
 var onPreRenderHTML = function onPreRenderHTML(_ref) {
   var getHeadComponents = _ref.getHeadComponents,
-      pathname = _ref.pathname,
-      replaceHeadComponents = _ref.replaceHeadComponents;
+    pathname = _ref.pathname,
+    replaceHeadComponents = _ref.replaceHeadComponents;
   if (pathname !== "/offline-plugin-app-shell-fallback/") return;
   var headComponents = getHeadComponents();
   var filteredHeadComponents = headComponents.filter(function (_ref2) {
     var type = _ref2.type,
-        props = _ref2.props;
+      props = _ref2.props;
     return !(type === "link" && props.as === "fetch" && props.rel === "preload" && (props.href.startsWith("/static/d/") || props.href.startsWith("/page-data/")));
   });
   replaceHeadComponents(filteredHeadComponents);
 };
-
 exports.onPreRenderHTML = onPreRenderHTML;
 
 /***/ }),
@@ -4231,28 +3988,21 @@ exports.onPreRenderHTML = onPreRenderHTML;
 
 exports.__esModule = true;
 exports.onRenderBody = void 0;
-
 var _reactHelmet = __webpack_require__(/*! react-helmet */ "react-helmet");
-
 var onRenderBody = function onRenderBody(_ref) {
   var setHeadComponents = _ref.setHeadComponents,
-      setHtmlAttributes = _ref.setHtmlAttributes,
-      setBodyAttributes = _ref.setBodyAttributes;
-
+    setHtmlAttributes = _ref.setHtmlAttributes,
+    setBodyAttributes = _ref.setBodyAttributes;
   var helmet = _reactHelmet.Helmet.renderStatic(); // These action functions were added partway through the Gatsby 1.x cycle.
-
 
   if (setHtmlAttributes) {
     setHtmlAttributes(helmet.htmlAttributes.toComponent());
   }
-
   if (setBodyAttributes) {
     setBodyAttributes(helmet.bodyAttributes.toComponent());
   }
-
   setHeadComponents([helmet.title.toComponent(), helmet.link.toComponent(), helmet.meta.toComponent(), helmet.noscript.toComponent(), helmet.script.toComponent(), helmet.style.toComponent(), helmet.base.toComponent()]);
 };
-
 exports.onRenderBody = onRenderBody;
 
 /***/ }),
@@ -4268,28 +4018,23 @@ exports.onRenderBody = onRenderBody;
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-
 var _styledComponents = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-
 var sheetByPathname = new Map(); // eslint-disable-next-line react/prop-types,react/display-name
 
 exports.wrapRootElement = function (_ref) {
   var element = _ref.element,
-      pathname = _ref.pathname;
+    pathname = _ref.pathname;
   var sheet = new _styledComponents.ServerStyleSheet();
   sheetByPathname.set(pathname, sheet);
   return /*#__PURE__*/_react.default.createElement(_styledComponents.StyleSheetManager, {
     sheet: sheet.instance
   }, element);
 };
-
 exports.onRenderBody = function (_ref2) {
   var setHeadComponents = _ref2.setHeadComponents,
-      pathname = _ref2.pathname;
+    pathname = _ref2.pathname;
   var sheet = sheetByPathname.get(pathname);
-
   if (sheet) {
     setHeadComponents([sheet.getStyleElement()]);
     sheetByPathname.delete(pathname);
@@ -35444,7 +35189,7 @@ if ( true && typeof window !== 'undefined' && typeof navigator !== 'undefined' &
 
 /***/ "@reach/router":
 /*!****************************************************************************************!*\
-  !*** external "D:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js" ***!
+  !*** external "C:\\Repo\\personal-website-V3\\node_modules\\@reach\\router\\index.js" ***!
   \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -35466,7 +35211,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
 
 /***/ "lodash/merge":
 /*!********************************************************************************!*\
-  !*** external "D:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js" ***!
+  !*** external "C:\\Repo\\personal-website-V3\\node_modules\\lodash\\merge.js" ***!
   \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {

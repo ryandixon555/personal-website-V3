@@ -79,16 +79,16 @@ const Index = () => (
           portfolioLink="../portfolio"
           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
         >
-          See a selection of my work here
+          {/* See a selection of my work here */}
         </PortfolioProjectCard>
-        <GitHubProjectCard
+        {/* <GitHubProjectCard
             title="See more on my GitHub account"
             dates=""
             githubLink="https://github.com/ryandixon555"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
             See more at my GitHub account
-        </GitHubProjectCard>
+        </GitHubProjectCard> */}
       </ProjectsWrapper>
 
       <Title>Commercial Work</Title>
@@ -130,7 +130,7 @@ const Index = () => (
         </ProjectsWrapper>
     </Projects>
 
-    <About>
+    {/* <About>
       <Title>About</Title>
       <AboutHero>
         <Roll>
@@ -148,13 +148,13 @@ const Index = () => (
       <AboutDesc>
         I also take on freelance projects.
       </AboutDesc>
-    </About>
+    </About> */}
     <Contact>
       <Inner>
         <Title>Get in touch</Title>
         <ContactText>
-          Find me on other platforms:{' '}
-          <a href="https://github.com/ryandixon555" target="_blank">GitHub</a> &{' '}
+          {/* Find me on other platforms:{' '} */}
+          {/* <a href="https://github.com/ryandixon555" target="_blank">GitHub</a> &{' '} */}
           <a href="https://www.linkedin.com/in/ryan-dixon-85372642/" target="_blank">LinkedIn</a>
         </ContactText>
       </Inner>

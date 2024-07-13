@@ -4,19 +4,9 @@ export const ProjectsWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 10px;
-  display: grid;
-  grid-gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
   padding: 10px;
   width: 100%;
   margin: 0 auto;
-
-  @media (max-width: 1200px) {
-    grid-gap: 3rem;
-  }
-  
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
 `

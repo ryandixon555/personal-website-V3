@@ -3,7 +3,10 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const Wrapper = styled.a`
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
   ${tw`shadow-lg relative no-underline rounded-lg text-white`};
   background: ${props => props.bg};
   padding: 20px;
