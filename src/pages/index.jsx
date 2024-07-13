@@ -71,7 +71,7 @@ const Index = () => (
     </Hero>
 
     <Projects>
-      <Title>See My Work</Title>
+      {/* <Title>See My Work</Title> */}
       <ProjectsWrapper>
         <PortfolioProjectCard
           title="See My Work"
@@ -93,38 +93,54 @@ const Index = () => (
 
       <Title>Commercial Work</Title>
       <ProjectsWrapper>
-        <ProjectCardNoLink
-          title="Crucible Games"
-          dates="August 2020 - Present"
+      <ProjectCardNoLink
+          title="Reflex Gaming"
+          dates="2022 - Present"
           bg="linear-gradient(to right, #4267B2 0%, #00FFEE 100%)"
         >
-          Crucible games are a slot development company.
-          I'm a senior front end game developer, responsible for developing the front end of slot games, making use of JavaScript and PhaserJS.
+          Head Of Online Game Development
+          Built a team from scratch to build TypeScript slot games. Mentor/Lead/Technically Manage said team.
+          Advise on best practices to business.
+          Still make my own games.
+        </ProjectCardNoLink>
+
+        <ProjectCardNoLink
+          title="Crucible Games"
+          dates="2020 - 2022"
+          bg="linear-gradient(to right, #4267B2 0%, #00FFEE 100%)"
+        >
+          Senior Front End Game Developer
+          I was responsible for the full dev lifecycle  of slot games, using JavaScript, HTML, CSS and PixiJS.
           Select my portfolio for some game examples.
         </ProjectCardNoLink>
+
         <ProjectCardNoLink
           title="Avvio Reply"
-          dates="February 2019 - July 2020"
+          dates="2019 - 2020"
           bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
         >
+          Web/Game Developer
           Avvio Reply are an employee engagement agency.
           I was the lead front end developer here, making use of CSS, HTML, Vanilla JavaScript and ReactJS to develop sites based around gamification.
         </ProjectCardNoLink>
+
         <ProjectCardNoLink
           title="The Logic Room"
-          dates="December 2018 - January 2019"
+          dates="2018 - 2019"
           bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
         >
+          Web/App Developer
           The Logic Room are an app development company.
           During my time here I worked on a commercial app, making use of ReactJS.
         </ProjectCardNoLink>
+
         <ProjectCardNoLink
           title="Realistic Games"
-          dates="July 2015 - November 2018"
+          dates="2015 - 2018"
           bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
         >
-          Realistic Games are a gambling company.
-          I was responsible for the full lifecycle development of slot games, using JavaScript, HTML, CSS and PixiJS.
+          Front End Game Developer
+          I was responsible for the full dev lifecycle  of slot games, using JavaScript, HTML, CSS and PixiJS.
           Select my portfolio for some game examples.
         </ProjectCardNoLink>
         </ProjectsWrapper>

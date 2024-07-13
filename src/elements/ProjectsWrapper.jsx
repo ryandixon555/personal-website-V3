@@ -6,7 +6,6 @@ export const ProjectsWrapper = styled.div`
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  padding: 10px;
   width: 100%;
   margin: 0 auto;
 `
